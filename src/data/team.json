@@ -1,0 +1,8 @@
+[
+  { "initials": "AS", "name": "Alex Smith", "role": "President", "bio": "Computer Science senior passionate about distributed systems and open source." },
+  { "initials": "JP", "name": "Jordan Patel", "role": "Vice President", "bio": "AI/ML enthusiast working on computer vision and natural language processing projects." },
+  { "initials": "SC", "name": "Sam Chen", "role": "Technical Lead", "bio": "Full-stack developer with a focus on building scalable web applications." },
+  { "initials": "MR", "name": "Morgan Rodriguez", "role": "Events Coordinator", "bio": "Organizing hackathons and workshops, passionate about community building." },
+  { "initials": "TL", "name": "Taylor Lee", "role": "Content Lead", "bio": "Technical writer creating tutorials and documentation to help others learn." },
+  { "initials": "RK", "name": "Riley Kumar", "role": "Outreach Coordinator", "bio": "Building partnerships with companies and connecting students with opportunities." }
+]
