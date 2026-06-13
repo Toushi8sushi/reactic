@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
-import articles from '../data/articles.json'
+import { getArticles } from '../lib/content-loader'
 
 export default function Articles() {
+  const articles = getArticles()
+
   return (
     <article className="page">
       <div className="container">

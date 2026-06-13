@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import articles from '../data/articles.json'
+import { getArticles } from '../lib/content-loader'
 
 export default function Astrophotography() {
-  const astroPosts = articles.filter(a => a.tags?.includes('astrophotography'))
+  const astroPosts = getArticles().filter(a => a.tags?.includes('astrophotography'))
 
   return (
     <article className="page">

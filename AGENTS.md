@@ -10,7 +10,8 @@
 | UI | React 19 |
 | Routing | React Router DOM 7 |
 | Build | Vite 8 |
-| CSS | Plain CSS (single `src/index.css`) |
+| CSS | Plain CSS (split under `src/styles/`) |
+| Markdown | react-markdown + remark-gfm |
 | Lint | ESLint 10 (flat config) |
 
 ## Directory Structure
@@ -20,7 +21,11 @@ reactic/
 ├── public/           # Static assets (images, SVGs)
 ├── src/
 │   ├── components/   # Shared components (Header, Footer, Layout, LogoSvg)
-│   ├── data/         # Static JSON content (projects, events, articles, team)
+│   ├── content/      # Markdown content files with frontmatter
+│   │   ├── articles/ # Article .md files (id-based filenames)
+│   │   └── events/   # Event .md files (id-based filenames)
+│   ├── data/         # Static JSON (projects, team only)
+│   ├── lib/          # Utility modules (content-loader, etc.)
 │   ├── pages/        # Route page components
 │   ├── styles/       # Split CSS files
 │   │   ├── variables.css   # CSS custom properties
@@ -56,8 +61,9 @@ reactic/
 
 - **Components:** `export default function PascalCase` — no `React.FC`, no TypeScript, no PropTypes
 - **Imports:** ES module syntax, relative paths (no aliases), no barrel exports
-- **Data:** Static JSON files in `src/data/`, imported directly; HTML content rendered via `dangerouslySetInnerHTML`
-- **CSS:** Single `index.css` with CSS custom properties; BEM-like naming (`.project-card__image`)
+- **Content:** Articles and events stored as Markdown files in `src/content/` with YAML frontmatter for metadata. Loaded via `import.meta.glob` in `src/lib/content-loader.js`. Rendered with `react-markdown` + `remark-gfm` — no `dangerouslySetInnerHTML`
+- **Data:** Static JSON files in `src/data/` for projects and team only
+- **CSS:** Split across `src/styles/` with CSS custom properties; BEM-like naming (`.project-card__image`)
 - **State:** Local `useState` only; no global state library
 - **Hooks used across codebase:** `useState`, `useParams`, `useNavigate` — no custom hooks yet
 
@@ -76,7 +82,8 @@ npm run lint      # ESLint check
 - No CSS framework (no Tailwind, no CSS Modules, no styled-components)
 - No TypeScript — the `@types/react` devDeps exist but are unused; keep JSX
 - No formatter (Prettier) configured — don't reformat files
-- Content is fully static (JSON + `dangerouslySetInnerHTML` for rich text)
+- Content is fully static (Markdown files in `src/content/` + JSON for projects/team)
+- To add a new article/event: create a `.md` file in the right `src/content/` directory with frontmatter; it's auto-discovered at build time
 - All images reference `/assets/images/` paths (public directory)
 - The `icons.svg` sprite in `/public/` has Bluesky/Discord/X icons not yet used anywhere
 - `npm run lint` must pass before considering work complete

@@ -1,9 +1,11 @@
 import { useParams, Link } from 'react-router-dom'
-import articles from '../data/articles.json'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import { getArticle } from '../lib/content-loader'
 
 export default function ArticleDetail() {
   const { id } = useParams()
-  const article = articles.find(a => a.id === id)
+  const article = getArticle(id)
 
   if (!article) {
     return (
@@ -34,7 +36,11 @@ export default function ArticleDetail() {
           )}
         </header>
 
-        <div className="post-content" dangerouslySetInnerHTML={{ __html: article.content }} />
+        <div className="post-content">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {article.content}
+          </ReactMarkdown>
+        </div>
 
         <footer className="post-footer">
           <Link to="/articles" className="back-link">← Back to Articles</Link>

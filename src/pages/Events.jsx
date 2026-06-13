@@ -1,8 +1,11 @@
 import { useState } from 'react'
-import events from '../data/events.json'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import { getEvents } from '../lib/content-loader'
 
 export default function Events() {
   const [modal, setModal] = useState(null)
+  const events = getEvents()
 
   return (
     <article className="page">
@@ -41,7 +44,11 @@ export default function Events() {
             <div className="event-modal__header">
               <h2 id="modalTitle">{modal.title}</h2>
             </div>
-            <div id="modalContent" dangerouslySetInnerHTML={{ __html: modal.content }} />
+            <div id="modalContent">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {modal.content}
+              </ReactMarkdown>
+            </div>
             {modal.youtube && (
               <a id="modalYoutube" href={modal.youtube} target="_blank" rel="noopener">
                 <span>Watch on YouTube</span>
