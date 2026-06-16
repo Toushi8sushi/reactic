@@ -1,3 +1,4 @@
+import { imagePath } from '../lib/image-path'
 export default function Guild() {
   return (
     <article className="guild-page">
@@ -29,7 +30,7 @@ export default function Guild() {
             </p>
           </div>
           <div className="guild-image">
-            <img src="/assets/images/guild/telescope.jpeg" alt="Telescope" />
+            <img src={imagePath('/assets/images/guild/telescope.jpeg')} alt="Telescope" />
           </div>
         </div>
       </section>
@@ -46,7 +47,7 @@ export default function Guild() {
             </p>
           </div>
           <div className="achievement-image">
-            <img src="/assets/images/guild/inpt.jpeg" alt="INPT" />
+            <img src={imagePath('/assets/images/guild/inpt.jpeg')} alt="INPT" />
           </div>
         </div>
 
@@ -60,7 +61,7 @@ export default function Guild() {
             </p>
           </div>
           <div className="achievement-image">
-            <img src="/assets/images/guild/ipt.jpeg" alt="IPT" />
+            <img src={imagePath('/assets/images/guild/ipt.jpeg')} alt="IPT" />
           </div>
         </div>
 
@@ -73,7 +74,7 @@ export default function Guild() {
             </p>
           </div>
           <div className="achievement-image">
-            <img src="/assets/images/guild/interiit.jpeg" alt="Inter-IIT" />
+            <img src={imagePath('/assets/images/guild/interiit.jpeg')} alt="Inter-IIT" />
           </div>
         </div>
 
@@ -86,7 +87,7 @@ export default function Guild() {
             </p>
           </div>
           <div className="achievement-image">
-            <img src="/assets/images/guild/telescope.jpeg" alt="Decoherence" />
+            <img src={imagePath('/assets/images/guild/telescope.jpeg')} alt="Decoherence" />
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { imagePath } from '../lib/image-path'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section footer-brand">
             <a className="footer-logo">
-              <img src="/assets/images/logo.png" alt="Horizon logo" />
+              <img src={imagePath('/assets/images/logo.png')} alt="Horizon logo" />
             </a>
             <p>The Physics and Astronomy Club of IIT Madras</p>
           </div>

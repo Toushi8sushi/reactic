@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
 
 export default function Projects() {
@@ -13,7 +14,7 @@ export default function Projects() {
             {projects.map(project => (
               <Link key={project.id} to={`/projects/${project.id}`} className="project-card">
                 <div className="project-card__image">
-                  <img src={project.image} alt={project.title} />
+                  <img src={imagePath(project.image)} alt={project.title} />
                 </div>
                 <div className="project-card__content">
                   <h3>{project.title}</h3>

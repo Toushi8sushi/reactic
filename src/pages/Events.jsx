@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getEvents } from '../lib/content-loader'
+import { imagePath } from '../lib/image-path'
 
 export default function Events() {
   const [modal, setModal] = useState(null)
@@ -22,7 +23,7 @@ export default function Events() {
                 tabIndex="0"
                 onClick={() => setModal(event)}
               >
-                <img src={event.poster} alt={`${event.title} poster`} />
+                <img src={imagePath(event.poster)} alt={`${event.title} poster`} />
                 <div className="event-card__content">
                   <h3>{event.title}</h3>
                   <span className="event-card__date">{new Date(event.date).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}</span>

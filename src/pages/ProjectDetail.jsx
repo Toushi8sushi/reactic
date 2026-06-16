@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
 
 export default function ProjectDetail() {
@@ -21,7 +22,7 @@ export default function ProjectDetail() {
       <div className="container">
         <header className="project-hero">
           <div className="project-hero__image">
-            <img src={project.image} alt={project.title} />
+            <img src={imagePath(project.image)} alt={project.title} />
           </div>
           <div className="project-hero__content">
             <h1>{project.title}</h1>

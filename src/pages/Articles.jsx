@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { getArticles } from '../lib/content-loader'
+import { imagePath } from '../lib/image-path'
 
 export default function Articles() {
   const articles = getArticles()
@@ -21,7 +22,7 @@ export default function Articles() {
               <article key={article.id} className="article-card scroll-element">
                 <Link to={`/articles/${article.id}`} className="card-visual">
                   {article.image ? (
-                    <img src={article.image} alt={article.title} />
+                    <img src={imagePath(article.image)} alt={article.title} />
                   ) : (
                     <div className="pattern-bg"></div>
                   )}

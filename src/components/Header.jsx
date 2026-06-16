@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { imagePath } from '../lib/image-path'
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -23,7 +24,7 @@ export default function Header() {
         <div className="container">
           <div className="nav-brand">
             <Link to="/" className="nav-logo" aria-label="Home" onClick={closeMenu}>
-              <img src="/assets/images/logo.png" alt="Horizon" style={{ height: 40 }} />
+              <img src={imagePath('/assets/images/logo.png')} alt="Horizon" style={{ height: 40 }} />
             </Link>
           </div>
 
