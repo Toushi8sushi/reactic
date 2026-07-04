@@ -153,18 +153,22 @@ export default function Home() {
         <div className="container">
           <h2>What We Do</h2>
           <div className="features-grid">
-            <div className="feature-card">
-              <h3>Technical Workshops</h3>
-              <p>Regular hands-on sessions covering web development, machine learning, robotics, and more.</p>
-            </div>
-            <div className="feature-card">
-              <h3>Project Collaboration</h3>
-              <p>Work on real-world projects with fellow students and build your portfolio.</p>
-            </div>
-            <div className="feature-card">
+            <Link to="/events" className="feature-card">
               <h3>Community Events</h3>
-              <p>Hackathons, tech talks, and networking opportunities with industry professionals.</p>
-            </div>
+              <p>Student-led sessions, professor lecture series, stargazing nights and physics competitions that bring together curious minds and foster a vibrant scientific community.</p>
+            </Link>
+            <Link to="/projects" className="feature-card">
+              <h3>Club Projects</h3>
+              <p>As a club, we work on a variety of innovative projects across physics and astronomy. Click here to explore our ongoing and completed projects.</p>
+            </Link>
+            <Link to="/astrophotography" className="feature-card">
+              <h3>Astrophotgraphy</h3>
+              <p>Our astronomy team captures the beauty of the night sky through hands-on astrophotography. Click here to view our work.</p>
+            </Link>
+            <Link to="/guild" className="feature-card">
+              <h3>Guild</h3>
+              <p>Our Guild represents the club in various technical and scientific competitions. Click here to explore our achievements.</p>
+            </Link>
           </div>
         </div>
       </section>

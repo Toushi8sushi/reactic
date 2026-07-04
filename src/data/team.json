@@ -1,8 +1,8 @@
 [
-  { "initials": "AS", "name": "Alex Smith", "role": "President", "bio": "Computer Science senior passionate about distributed systems and open source." },
-  { "initials": "JP", "name": "Jordan Patel", "role": "Vice President", "bio": "AI/ML enthusiast working on computer vision and natural language processing projects." },
-  { "initials": "SC", "name": "Sam Chen", "role": "Technical Lead", "bio": "Full-stack developer with a focus on building scalable web applications." },
-  { "initials": "MR", "name": "Morgan Rodriguez", "role": "Events Coordinator", "bio": "Organizing hackathons and workshops, passionate about community building." },
-  { "initials": "TL", "name": "Taylor Lee", "role": "Content Lead", "bio": "Technical writer creating tutorials and documentation to help others learn." },
-  { "initials": "RK", "name": "Riley Kumar", "role": "Outreach Coordinator", "bio": "Building partnerships with companies and connecting students with opportunities." }
+  { "initials": "HM", "name": "Harsh Meena", "role": "Head", "bio": "Electrical Department, 3rd Year Undergraduate", "photo": "/assets/images/team/core/harsh.jpeg" },
+  { "initials": "NK", "name": "Nantha Kumaran", "role": "Head", "bio": "Department of Medical Science and Technology, 3rd Year Undergraduate", "photo": "/assets/images/team/core/nantha.jpeg" },
+  { "initials": "AD", "name": "Ananya Desle", "role": "Strategist", "bio": "Physics Department, 3rd Year Undergraduate", "photo": "/assets/images/team/core/andy.jpeg" },
+  { "initials": "ND", "name": "Nikshep DC", "role": "Strategist", "bio": "Physics Department, 3rd Year Undergraduate", "photo": "/assets/images/team/core/nikshep.jpeg" },
+  { "initials": "AG", "name": "Aditya Goel", "role": "Strategist", "bio": "Engineering Physics Department, 3rd Year Undergraduate", "photo": "/assets/images/team/core/aditya.jpeg" },
+  { "initials": "Nh", "name": "Nikhil Kanakam", "role": "Strategist", "bio": "Mechanical Department, 3rd Year Undergraduate", "photo": "" }
 ]

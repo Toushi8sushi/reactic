@@ -62,6 +62,16 @@
   margin-bottom: 0;
 }
 
+a.feature-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+a.feature-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .team-member {
   text-align: center;
 }
@@ -77,6 +87,12 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   border-radius: 50%;
+  overflow: hidden;
+}
+.team-member .member-avatar--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team-member h3 { margin-bottom: var(--spacing-xs); }
 .team-member .role {
