@@ -1,8 +1,34 @@
-[
-  { "initials": "AS", "name": "Alex Smith", "role": "President", "bio": "Computer Science senior passionate about distributed systems and open source." },
-  { "initials": "JP", "name": "Jordan Patel", "role": "Vice President", "bio": "AI/ML enthusiast working on computer vision and natural language processing projects." },
-  { "initials": "SC", "name": "Sam Chen", "role": "Technical Lead", "bio": "Full-stack developer with a focus on building scalable web applications." },
-  { "initials": "MR", "name": "Morgan Rodriguez", "role": "Events Coordinator", "bio": "Organizing hackathons and workshops, passionate about community building." },
-  { "initials": "TL", "name": "Taylor Lee", "role": "Content Lead", "bio": "Technical writer creating tutorials and documentation to help others learn." },
-  { "initials": "RK", "name": "Riley Kumar", "role": "Outreach Coordinator", "bio": "Building partnerships with companies and connecting students with opportunities." }
-]
+{
+  "2025-26": [
+    { "name": "Rohit", "role": "Head", "section": "core" },
+    { "name": "Mirudhula", "role": "Head", "section": "core" },
+    { "name": "Toshith", "role": "Strategist", "section": "core" },
+    { "name": "Shruti", "role": "Strategist", "section": "core" },
+    { "name": "Lekhashree", "role": "Strategist", "section": "core" },
+    { "name": "RACHANA SRI", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Srikiran Ravanam", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Ajeya P", "role": "Coordinator", "section": "coordinator" },
+    { "name": "HARICCHARAN M", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Nikshep", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Aditya Goel", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Abishekapriyan S", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Suraj Ramnath", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Kirtana Prakash", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Gedela Avinash", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Asim Vats", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Nantha Kumaran", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Harsh Meena", "role": "Coordinator", "section": "coordinator" }
+  ],
+  "2026-27": [
+    { "name": "Arun Sharma", "role": "Head", "section": "core" },
+    { "name": "Priya Nair", "role": "Head", "section": "core" },
+    { "name": "Vikram Joshi", "role": "Strategist", "section": "core" },
+    { "name": "Ananya Iyer", "role": "Strategist", "section": "core" },
+    { "name": "Karthik Rajan", "role": "Strategist", "section": "core" },
+    { "name": "Divya Menon", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Rahul Desai", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Neha Kapoor", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Siddharth Rao", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Meera Krishnan", "role": "Coordinator", "section": "coordinator" }
+  ]
+}

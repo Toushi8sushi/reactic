@@ -1,31 +1,78 @@
-import { Link } from 'react-router-dom'
-import team from '../data/team.json'
+import { useState, useEffect, useRef } from 'react'
+import teamData from '../data/team.json'
+
+const tenures = Object.keys(teamData).sort()
+const sectionLabel = { core: 'Core Team', coordinator: 'Coordinators' }
 
 export default function Team() {
+  const [activeTenure, setActiveTenure] = useState(tenures[0])
+  const observerRef = useRef(null)
+
+  const members = teamData[activeTenure]
+
+  const grouped = {}
+  for (const m of members) {
+    if (!grouped[m.section]) grouped[m.section] = []
+    grouped[m.section].push(m)
+  }
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('.team-section')
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.2 }
+    )
+    sections.forEach((el) => obs.observe(el))
+    observerRef.current = obs
+    return () => obs.disconnect()
+  }, [activeTenure])
+
   return (
     <article className="page">
       <div className="container">
         <header className="page-header">
           <h1>Our Team</h1>
-        </header>
-        <div className="page-content">
-          <h2>Core Team</h2>
-          <p>Meet the people who make Horizon possible. Our team is composed of passionate students dedicated to creating a thriving technical community.</p>
-
-          <div className="team-grid">
-            {team.map(member => (
-              <div key={member.name} className="team-member">
-                <div className="member-avatar">{member.initials}</div>
-                <h3>{member.name}</h3>
-                <p className="role">{member.role}</p>
-                <p className="bio">{member.bio}</p>
-              </div>
+          <p>Meet the people who make Horizon possible.</p>
+          <div className="tenure-tabs">
+            {tenures.map(t => (
+              <button
+                key={t}
+                className={`btn ${activeTenure === t ? 'btn-primary' : ''}`}
+                onClick={() => setActiveTenure(t)}
+              >
+                {t}
+              </button>
             ))}
           </div>
-
-          <h2>Active Members</h2>
-          <p>Our club thrives thanks to the contributions of all our active members. We&rsquo;re always looking for enthusiastic students to join our team. If you&rsquo;re interested, please <Link to="/contact">get in touch</Link>.</p>
-        </div>
+        </header>
+      </div>
+      <div className="team-content">
+        {['core', 'coordinator'].map(section => (
+          grouped[section]?.length > 0 && (
+            <section key={section} className="team-section">
+              <h2>{sectionLabel[section]} &mdash; {activeTenure}</h2>
+              <div className="team-grid">
+                {grouped[section].map((m, i) => (
+                  <div key={m.name} className="team-card" style={{ '--reveal-delay': `${i * 0.06}s` }}>
+                    <div className="team-card__image team-card__image--placeholder">
+                      <span>{m.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()}</span>
+                    </div>
+                    <div className="team-card__info">
+                      <h3>{m.name}</h3>
+                      <p className="team-card__role">{m.role}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        ))}
       </div>
     </article>
   )
