@@ -1,5 +1,25 @@
+import { useEffect, useRef } from 'react'
 import { imagePath } from '../lib/image-path'
 export default function Guild() {
+  const observerRef = useRef(null)
+
+  useEffect(() => {
+    const els = document.querySelectorAll('.reveal')
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active')
+          }
+        })
+      },
+      { threshold: 0.15 }
+    )
+    els.forEach((el) => obs.observe(el))
+    observerRef.current = obs
+    return () => obs.disconnect()
+  }, [])
+
   return (
     <article className="guild-page">
       <section className="guild-hero">
@@ -13,7 +33,7 @@ export default function Guild() {
         </div>
       </section>
 
-      <section className="guild-section reveal active">
+      <section className="guild-section reveal">
         <div className="guild-grid">
           <div className="guild-text">
             <h2>Who We Are</h2>
@@ -38,7 +58,7 @@ export default function Guild() {
       <section className="guild-achievements">
         <h2 className="section-title">Highlights from Our Journey</h2>
 
-        <div className="achievement reveal active">
+        <div className="achievement reveal">
           <div className="achievement-text">
             <h3>Indian National Physicists&rsquo; Tournament 2024</h3>
             <p>
@@ -51,7 +71,7 @@ export default function Guild() {
           </div>
         </div>
 
-        <div className="achievement reveal reverse active">
+        <div className="achievement reveal reverse">
           <div className="achievement-text">
             <h3>International Physicists&rsquo; Tournament 2025 Qualifiers</h3>
             <p>
@@ -65,7 +85,7 @@ export default function Guild() {
           </div>
         </div>
 
-        <div className="achievement reveal active">
+        <div className="achievement reveal">
           <div className="achievement-text">
             <h3>Inter-IIT Tech Meet 2024 – Observational Astronomy</h3>
             <p>
@@ -78,7 +98,7 @@ export default function Guild() {
           </div>
         </div>
 
-        <div className="achievement reveal reverse active">
+        <div className="achievement reveal reverse">
           <div className="achievement-text">
             <h3>Decoherence 2025 – IISc</h3>
             <p>
