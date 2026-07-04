@@ -216,6 +216,79 @@
   overflow-x: hidden;
 }
 
+.astro-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.astro-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+.astro-header h1 {
+  margin-bottom: var(--spacing-sm);
+}
+.astro-header p {
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+}
+
+.astro-gallery {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.astro-tile {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+}
+.astro-tile img {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-lg);
+  transition: transform 0.4s ease;
+}
+.astro-tile:hover img {
+  transform: scale(1.05);
+}
+
+.astro-tile__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--border-radius-lg);
+}
+.astro-tile:hover .astro-tile__overlay {
+  opacity: 1;
+}
+.astro-tile__overlay h3 {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.astro-articles {
+  margin-top: var(--spacing-2xl);
+}
+
+@media (max-width: 900px) {
+  .astro-gallery { column-count: 2; }
+}
+@media (max-width: 550px) {
+  .astro-gallery { column-count: 1; }
+}
+
 .guild-hero {
   height: 80vh;
   display: flex;
