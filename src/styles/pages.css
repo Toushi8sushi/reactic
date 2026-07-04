@@ -1,0 +1,418 @@
+.hero {
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(56, 189, 248, 0.05) 100%);
+}
+.hero h1 {
+  margin-bottom: var(--spacing-md);
+  font-size: 3rem;
+}
+@media (max-width: 850px) {
+  .hero h1 { font-size: 2.25rem; }
+}
+.hero .hero-tagline {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+.hero .hero-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-what-we-do {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(120deg, rgba(8, 15, 30, 0.82) 0%, rgba(24, 41, 79, 0.74) 100%),
+    url('/assets/images/hero-bg.jpg') center/cover no-repeat;
+  color: #f8fbff;
+}
+
+.home-what-we-do .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-what-we-do h2,
+.home-what-we-do h3,
+.home-what-we-do p {
+  color: inherit;
+}
+
+.home-what-we-do .feature-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.page {
+  padding: var(--spacing-xl) 0;
+}
+.page .page-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--color-border);
+}
+.page .page-header h1 {
+  margin-bottom: 0;
+  color: var(--color-page-title);
+}
+.page .page-content {
+  max-width: 800px;
+}
+.page .page-content h2 {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  color: var(--color-page-title);
+}
+.page .page-content h3 {
+  margin-top: var(--spacing-lg);
+  color: var(--color-page-title);
+}
+
+.post {
+  padding: var(--spacing-xl) 0;
+}
+.post .post-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--color-border);
+  text-align: center;
+}
+.post .post-header h1 { margin-bottom: var(--spacing-md); }
+.post .post-header .post-meta {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+.post .post-header .post-tags {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+.post .post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+}
+.post .post-content h2 {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-md);
+}
+.post .post-content h3 { margin-top: var(--spacing-xl); }
+.post .post-content img {
+  margin: var(--spacing-xl) 0;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+.post .post-footer {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
+.post .post-footer .back-link { font-weight: var(--font-weight-medium); }
+
+.articles-list {
+  max-width: 900px;
+  margin: var(--spacing-xl) auto 0;
+}
+
+.articles-preview {
+  margin: var(--spacing-xl) 0;
+}
+
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.project-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.project-hero__image img {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.project-hero__content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-excerpt {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: 15px;
+}
+
+.project-github {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+.project-github:hover {
+  background: var(--color-primary-dark);
+}
+
+.project-divider {
+  height: 1px;
+  background: rgba(38, 42, 52, 0.4);
+  margin: 40px 0;
+}
+
+.project-content {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+.project-content h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(38, 42, 52, 0.5);
+}
+.project-content h3 { margin-top: 30px; margin-bottom: 8px; }
+.project-content p {
+  margin-bottom: 16px;
+  color: var(--color-text-light);
+}
+.project-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.project-content ul li { margin-bottom: 6px; }
+.project-content img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin: 25px 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+.project-content hr {
+  border: none;
+  border-top: 1px solid rgba(38, 42, 52, 0.4);
+  margin: 30px 0;
+}
+.project-content a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-content a:hover { text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .project-hero { grid-template-columns: 1fr; }
+}
+
+.guild-page {
+  overflow-x: hidden;
+}
+
+.guild-hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/images/guild/hero.png') center/cover;
+  color: white;
+}
+
+.guild-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.guild-section {
+  padding: 100px 20px;
+}
+
+.guild-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.guild-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.guild-achievements {
+  padding: 120px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 2rem;
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 80px auto;
+  align-items: center;
+}
+
+.achievement.reverse {
+  direction: rtl;
+}
+.achievement.reverse * {
+  direction: ltr;
+}
+
+.achievement-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+  .guild-grid, .achievement {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .guild-hero h1 { font-size: 2rem; }
+}
+
+/* Join Us Cosmic Section */
+.home-join-us {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #11162b 0%, #060814 100%);
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.home-join-us .join-us-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.home-join-us .join-us-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-join-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.home-join-us p {
+  font-size: var(--font-size-lg);
+  color: #c9cbe8;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+}
+
+/* Constellation Animation */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+@keyframes dashOffset {
+  to { stroke-dashoffset: -40; }
+}
+
+@keyframes floatFaint {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(0.5deg); }
+}
+
+@keyframes floatFaintRight {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(6px) rotate(-0.5deg); }
+}
+
+.join-us-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.join-us-spark {
+  transform-origin: 600px 200px;
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.join-us-glow-path {
+  stroke-dasharray: 8, 4;
+  animation: dashOffset 4s linear infinite;
+}
+
+.join-us-hand {
+  transform-origin: 400px 200px;
+  animation: floatFaint 6s ease-in-out infinite;
+}
+
+.join-us-hand-right {
+  transform-origin: 800px 200px;
+  animation: floatFaintRight 6s ease-in-out infinite;
+}

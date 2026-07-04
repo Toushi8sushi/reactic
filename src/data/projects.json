@@ -1,0 +1,35 @@
+[
+  {
+    "id": "optiqomm",
+    "title": "OptiQomm",
+    "date": "2026-02-12",
+    "author": "Horizon Instrumentation Team",
+    "image": "/assets/images/projects_data/optiqomm.png",
+    "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
+    "tags": ["Instrumentation", "Cosmic Rays"],
+    "github": "https://github.com/horizon/muon-detector",
+    "content": "<h2>Overview</h2><p>We built a compact <strong>cosmic ray detector</strong> using plastic scintillators and silicon photomultipliers (SiPMs) to measure atmospheric muon flux on campus.</p><p>The goal was to design a low-cost detector suitable for outreach demonstrations and long-term cosmic ray measurements.</p><hr/><h2>Motivation</h2><p>Cosmic ray muons constantly pass through the Earth's atmosphere. Detecting them allows us to:</p><ul><li>Study cosmic ray flux</li><li>Demonstrate particle detection techniques</li><li>Build affordable research instruments</li></ul><hr/><h2>Method</h2><p>The detector consists of:</p><ul><li>Plastic scintillator slab</li><li>Silicon photomultiplier (SiPM)</li><li>Amplifier circuit</li><li>Arduino-based data acquisition</li></ul><p>When a muon passes through the scintillator, photons are produced and detected by the SiPM, generating an electrical pulse that is recorded.</p><hr/><h2>Results</h2><p>The detector recorded an average muon rate of: <strong>~1 muon per cm&sup2; per minute</strong>, consistent with theoretical expectations.</p><h2>Future Improvements</h2><ul><li>Coincidence detection with two scintillators</li><li>Temperature stabilization of SiPM</li><li>Automated data logging to cloud</li></ul><hr/><h2>Resources</h2><p>GitHub Repository: <a href='https://github.com/horizon/muon-detector'>Muon Detector Code</a></p>"
+  },
+  {
+    "id": "radian",
+    "title": "Radian",
+    "date": "2026-02-12",
+    "author": "Horizon Instrumentation Team",
+    "image": "/assets/images/projects_data/radian.png",
+    "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
+    "tags": ["Instrumentation", "Cosmic Rays"],
+    "github": "https://github.com/horizon/muon-detector",
+    "content": "<h2>Overview</h2><p>We built a compact <strong>cosmic ray detector</strong> using plastic scintillators and silicon photomultipliers (SiPMs) to measure atmospheric muon flux on campus.</p><p>The goal was to design a low-cost detector suitable for outreach demonstrations and long-term cosmic ray measurements.</p>"
+  },
+  {
+    "id": "starspec",
+    "title": "Starspec",
+    "date": "2026-02-12",
+    "author": "Horizon Instrumentation Team",
+    "image": "/assets/images/projects_data/starspec.png",
+    "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
+    "tags": ["Instrumentation", "Cosmic Rays"],
+    "github": "https://github.com/horizon/muon-detector",
+    "content": "<h2>Overview</h2><p>We built a compact <strong>cosmic ray detector</strong> using plastic scintillators and silicon photomultipliers (SiPMs) to measure atmospheric muon flux on campus.</p><p>The goal was to design a low-cost detector suitable for outreach demonstrations and long-term cosmic ray measurements.</p>"
+  }
+]
