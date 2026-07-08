@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { getArticles } from '../lib/content-loader'
 import { imagePath } from '../lib/image-path'
+import MagicBento from '../components/MagicBento/MagicBento'
 
 export default function Articles() {
   const articles = getArticles()
@@ -17,9 +18,15 @@ export default function Articles() {
             <p>Explore technical tutorials, hackathon recaps, and community insights.</p>
           </div>
 
-          <div className="articles-list">
+          <MagicBento
+            containerClassName="articles-list"
+            enableTilt
+            enableMagnetism
+            clickEffect={false}
+            textAutoHide={false}
+          >
             {articles.map(article => (
-              <article key={article.id} className="article-card scroll-element">
+              <article key={article.id} className="article-card article-card--inner scroll-element">
                 <Link to={`/articles/${article.id}`} className="card-visual">
                   {article.image ? (
                     <img src={imagePath(article.image)} alt={article.title} />
@@ -48,7 +55,7 @@ export default function Articles() {
                 </div>
               </article>
             ))}
-          </div>
+          </MagicBento>
 
           {articles.length === 0 && (
             <div className="empty-state">

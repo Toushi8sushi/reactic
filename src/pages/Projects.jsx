@@ -4,6 +4,7 @@ import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
 import FloatingLines from '../components/FloatingLines/FloatingLines'
 import Ferrofluid from '../components/Ferrofluid/Ferrofluid'
+import MagicBento from '../components/MagicBento/MagicBento'
 
 const tenures = Object.keys(projects).sort()
 
@@ -65,20 +66,26 @@ export default function Projects() {
         </div>
         <div className="container">
           <div className="page-content">
-            <div className="projects-grid">
-            {filteredProjects.map(project => (
-              <Link key={project.id} to={`/projects/${project.id}`} className="project-card">
-                <div className="project-card__image">
-                  <img src={imagePath(project.image)} alt={project.title} />
-                </div>
-                <div className="project-card__content">
-                  <h3>{project.title}</h3>
-                  <p>{project.excerpt}</p>
-                  <span className="project-card__cta">View Project →</span>
-                </div>
-              </Link>
-            ))}
-            </div>
+            <MagicBento
+              containerClassName="projects-grid"
+              enableTilt
+              enableMagnetism
+              clickEffect={false}
+              textAutoHide={false}
+            >
+              {filteredProjects.map(project => (
+                <Link key={project.id} to={`/projects/${project.id}`} className="project-card project-card--inner">
+                  <div className="project-card__image">
+                    <img src={imagePath(project.image)} alt={project.title} />
+                  </div>
+                  <div className="project-card__content">
+                    <h3>{project.title}</h3>
+                    <p>{project.excerpt}</p>
+                    <span className="project-card__cta">View Project →</span>
+                  </div>
+                </Link>
+              ))}
+            </MagicBento>
           </div>
         </div>
       </div>
