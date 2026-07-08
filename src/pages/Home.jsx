@@ -2,8 +2,35 @@ import { Link } from 'react-router-dom'
 import '../styles/hero.css'
 import Starfield from '../components/Starfield'
 import Galaxy from '../components/Galaxy/Galaxy'
+import MagicBento from '../components/MagicBento/MagicBento'
 
 export default function Home() {
+  const whatWeDoCards = [
+    <Link key="events" to="/events" className="feature-card feature-card--inner">
+      <h3>Community Events</h3>
+      <p>Student-led sessions, professor lecture series, stargazing nights and physics competitions that bring together curious minds and foster a vibrant scientific community.</p>
+    </Link>,
+    <Link key="projects" to="/projects" className="feature-card feature-card--inner">
+      <h3>Club Projects</h3>
+      <p>As a club, we work on a variety of innovative projects across physics and astronomy. Click here to explore our ongoing and completed projects.</p>
+    </Link>,
+    <Link key="astrophotography" to="/astrophotography" className="feature-card feature-card--inner">
+      <h3>Astrophotgraphy</h3>
+      <p>Our astronomy team captures the beauty of the night sky through hands-on astrophotography. Click here to view our work.</p>
+    </Link>,
+    <Link key="guild" to="/guild" className="feature-card feature-card--inner">
+      <h3>Guild</h3>
+      <p>Our Guild represents the club in various technical and scientific competitions. Click here to explore our achievements.</p>
+    </Link>,
+    <Link key="articles" to="/articles" className="feature-card feature-card--inner">
+      <h3>Articles</h3>
+      <p>Explore the articles written by our club members, covering topics in Physics, Astronomy and beyond. Click here to start reading them.</p>
+    </Link>,
+    <div key="gallery" className="feature-card feature-card--inner">
+      <h3>Gallery</h3>
+      <p>A collection of photographs capturing our star parties, trips, events, workshops, and other activities. Click here to explore the gallery.</p>
+    </div>,
+  ]
   return (
     <>
       <section className="hero hero-astro">
@@ -44,32 +71,15 @@ export default function Home() {
         </div>
         <div className="container what-we-do-content">
           <h2>What We Do</h2>
-          <div className="features-grid">
-            <Link to="/events" className="feature-card">
-              <h3>Community Events</h3>
-              <p>Student-led sessions, professor lecture series, stargazing nights and physics competitions that bring together curious minds and foster a vibrant scientific community.</p>
-            </Link>
-            <Link to="/projects" className="feature-card">
-              <h3>Club Projects</h3>
-              <p>As a club, we work on a variety of innovative projects across physics and astronomy. Click here to explore our ongoing and completed projects.</p>
-            </Link>
-            <Link to="/astrophotography" className="feature-card">
-              <h3>Astrophotgraphy</h3>
-              <p>Our astronomy team captures the beauty of the night sky through hands-on astrophotography. Click here to view our work.</p>
-            </Link>
-            <Link to="/guild" className="feature-card">
-              <h3>Guild</h3>
-              <p>Our Guild represents the club in various technical and scientific competitions. Click here to explore our achievements.</p>
-            </Link>
-            <Link to="/articles" className="feature-card">
-              <h3>Articles</h3>
-              <p>Explore the articles written by our club members, covering topics in Physics, Astronomy and beyond. Click here to start reading them.</p>
-            </Link>
-            <div className="feature-card">
-              <h3>Gallery</h3>
-              <p>A collection of photographs capturing our star parties, trips, events, workshops, and other activities. Click here to explore the gallery.</p>
-            </div>
-          </div>
+          <MagicBento
+            containerClassName="features-grid"
+            enableTilt
+            enableMagnetism
+            clickEffect={false}
+            textAutoHide={false}
+          >
+            {whatWeDoCards}
+          </MagicBento>
         </div>
       
       </section>
