@@ -1,0 +1,61 @@
+{
+  "2025-26": [
+    {
+      "id": "guide-to-galaxies",
+      "title": "Guide to Galaxies",
+      "poster": "/assets/events 2025-26 posters/g2g poster.jpeg",
+      "category": "Astronomy",
+      "content": "An introductory session exploring the vast universe of galaxies, their formations, and classifications."
+    },
+    {
+      "id": "quark-to-quasars",
+      "title": "Quark to Quasars",
+      "poster": "/assets/events 2025-26 posters/q2q poster.jpeg",
+      "category": "Physics",
+      "content": "A journey from the smallest particles to the most luminous objects in the universe."
+    },
+    {
+      "id": "summerschool-2025",
+      "title": "Summer School 2025",
+      "poster": "/assets/events 2025-26 posters/summerschool poster.jpeg",
+      "category": "Workshop",
+      "content": "An intensive summer program covering fundamental concepts in physics and astronomy."
+    },
+    {
+      "id": "boltzmann-sessions",
+      "title": "Boltzmann Sessions",
+      "poster": "/assets/events 2025-26 posters/techsoc poster.jpeg",
+      "category": "Seminar",
+      "content": "Regular seminar series discussing statistical mechanics and thermodynamics topics."
+    },
+    {
+      "id": "freshie-roadmap",
+      "title": "Freshie Roadmap",
+      "poster": "/assets/events 2025-26 posters/techsoc poster.jpeg",
+      "category": "Orientation",
+      "content": "A guide for freshmen to navigate their first year in physics and astronomy."
+    },
+    {
+      "id": "research-conclave",
+      "title": "Research Conclave",
+      "poster": "/assets/events 2025-26 posters/research conclave poster.jpeg",
+      "category": "Conference",
+      "content": "A gathering of researchers presenting their latest findings and discoveries."
+    },
+    {
+      "id": "open-house",
+      "title": "Open House",
+      "poster": "/assets/events 2025-26 posters/open house poster.jpeg",
+      "category": "Outreach",
+      "content": "An open event for students to explore our labs and interact with faculty."
+    },
+    {
+      "id": "qiskit",
+      "title": "Qiskit",
+      "poster": "/assets/events 2025-26 posters/qiskit poster.jpeg",
+      "category": "Workshop",
+      "content": "A hands-on workshop exploring quantum computing with IBM's Qiskit framework."
+    }
+  ],
+  "2026-27": []
+}
