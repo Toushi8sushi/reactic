@@ -20,15 +20,20 @@
     { "name": "Harsh Meena", "role": "Coordinator", "section": "coordinator" }
   ],
   "2026-27": [
-    { "name": "Arun Sharma", "role": "Head", "section": "core" },
-    { "name": "Priya Nair", "role": "Head", "section": "core" },
-    { "name": "Vikram Joshi", "role": "Strategist", "section": "core" },
-    { "name": "Ananya Iyer", "role": "Strategist", "section": "core" },
-    { "name": "Karthik Rajan", "role": "Strategist", "section": "core" },
-    { "name": "Divya Menon", "role": "Coordinator", "section": "coordinator" },
-    { "name": "Rahul Desai", "role": "Coordinator", "section": "coordinator" },
-    { "name": "Neha Kapoor", "role": "Coordinator", "section": "coordinator" },
-    { "name": "Siddharth Rao", "role": "Coordinator", "section": "coordinator" },
-    { "name": "Meera Krishnan", "role": "Coordinator", "section": "coordinator" }
+    { "name": "Nantha Kumaran", "role": "Head", "section": "core" },
+    { "name": "Harsh Meena", "role": "Head", "section": "core" },
+    { "name": "Nikshep DC", "role": "Strategist", "section": "core" },
+    { "name": "Ananya Desle", "role": "Strategist", "section": "core" },
+    { "name": "Aditya Goel", "role": "Strategist", "section": "core" },
+    { "name": "Nikhil Kanakam", "role": "Strategist", "section": "core" },
+    { "name": "G Sathvik", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Ranesh Mohan", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Gawthaman A", "role": "Coordinator", "section": "coordinator" },
+    { "name": "S Rajeev Yuvan", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Sankeerthan Krishna P", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Vidisha", "role": "Coordinator", "section": "coordinator" },
+    { "name": "J Olive Jerusha", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Akshay KC", "role": "Coordinator", "section": "coordinator" },
+    { "name": "Rohit S", "role": "Coordinator", "section": "coordinator" }
   ]
 }

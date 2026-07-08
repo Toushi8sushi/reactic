@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
+import ShootingStars from './ShootingStars'
 
 export default function Footer() {
   const year = new Date().getFullYear()
   return (
     <footer className="site-footer">
+      <ShootingStars />
       <div className="container">
         <div className="footer-content">
           <div className="footer-section footer-brand">
