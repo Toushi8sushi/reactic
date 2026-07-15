@@ -99,23 +99,7 @@
   margin-bottom: 0;
 }
 
-.feature-card::after {
-  content: "";
-  position: absolute;
-  left: var(--spacing-lg);
-  right: var(--spacing-lg);
-  bottom: var(--spacing-lg);
-  height: 2px;
-  background-color: var(--color-primary);
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
 
-.feature-card:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 .team-member {
   text-align: center;
 }
@@ -563,7 +547,7 @@
 .g2g-session-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .g2g-session-card__placeholder {
