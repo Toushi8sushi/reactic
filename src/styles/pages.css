@@ -560,6 +560,61 @@
   .guild-hero h1 { font-size: 2rem; }
 }
 
+.team-hero-shell {
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-xl) 0 calc(var(--spacing-xl) + 1.5rem);
+  margin-bottom: calc(-1 * var(--spacing-lg));
+  background: radial-gradient(ellipse at 50% 20%, #1b1440 0%, #0d0a24 55%, #060512 100%);
+}
+
+.team-nodes-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.team-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.team-hero-shell .container {
+  position: relative;
+  z-index: 2;
+}
+
+.team-background-section {
+  position: relative;
+  margin-top: 0;
+  padding: 0 0 0;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(8, 15, 30, 0.98));
+}
+
+.team-background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.team-background-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+}
+
+.team-background-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 .team-section {
   margin-top: var(--spacing-xl);
   text-align: center;
