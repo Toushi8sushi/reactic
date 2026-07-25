@@ -20,7 +20,7 @@ export default function Header() {
     <header className="pill-header">
       <PillNav
         items={navItems}
-        activeHref={pathname}
+        activeHref={pathname === '/' ? '/__home__' : pathname}
         baseColor="var(--color-background)"
         pillColor="var(--color-border)"
         hoveredPillTextColor="#ffffff"
