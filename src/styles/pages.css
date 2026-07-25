@@ -5,13 +5,13 @@
 }
 .hero h1 {
   margin-bottom: var(--spacing-md);
-  font-size: 3rem;
+  font-size: 5rem;
 }
 @media (max-width: 850px) {
-  .hero h1 { font-size: 2.25rem; }
+  .hero h1 { font-size: 3rem; }
 }
 .hero .hero-tagline {
-  font-size: var(--font-size-lg);
+  font-size: 1.75rem;
   color: var(--color-text-light);
   max-width: 700px;
   margin: 0 auto var(--spacing-xl);
@@ -54,12 +54,8 @@
 
 .home-join-us {
   position: relative;
-  min-height: 400px; /* Adjust as needed to contain the SVG and content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f2f0ff;
-  overflow: hidden; /* To contain any overflowing parts of the SVG */
+  min-height: 400px;
+  overflow: hidden;
 }
 
 .join-us-background {
@@ -67,43 +63,13 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 0;
-  animation: moveBackground 15s linear infinite;
-  transform: translateY(0px); /* Resetting the vertical translation */
+  opacity: 0.85;
 }
 
-.join-us-svg {
-  width: 150%; /* Enlarged more to cover more */
-  height: 150%; /* Enlarged more to cover more */
-  max-width: 1200px; /* Match the SVG viewBox width */
-  max-height: 400px; /* Match the SVG viewBox height */
-  object-fit: contain; /* Ensure the SVG scales correctly */
-  animation: pulseBackground 8s ease-in-out infinite;
-}
-
-@keyframes moveBackground {
-  0% { transform: translateX(0) translateY(0); }
-  25% { transform: translateX(-20px) translateY(20px); }
-  50% { transform: translateX(0) translateY(40px); }
-  75% { transform: translateX(20px) translateY(20px); }
-  100% { transform: translateX(0) translateY(0); }
-}
-
-@keyframes pulseBackground {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.join-us-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  max-width: 600px; /* Limit width for better readability */
-  padding: var(--spacing-lg);
+.join-us-background .dot-field-container {
+  width: 100%;
+  height: 100%;
 }
 
 .page {
