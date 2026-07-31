@@ -23,10 +23,10 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 200px;
+  min-height: auto;
   width: 100%;
   max-width: 100%;
-  padding: 1.25em;
+  padding: 0.5rem;
   border-radius: 20px;
   border: 1px solid var(--border-color);
   background: var(--background-dark);
