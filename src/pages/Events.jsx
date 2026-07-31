@@ -79,6 +79,7 @@ export default function Events() {
         <div className="category-grid">
           {categories.map((cat, index) => {
             const sessionCount = cat.tiles ? cat.tiles.length : cat.subcards.length
+            const noCount = ['qiskit', 'conclave', 'cfi', 'freshie'].includes(cat.id)
             return (
             <Link
               key={cat.id}
@@ -103,11 +104,13 @@ export default function Events() {
                   <h2 className="category-card__title">{cat.title}</h2>
                 </div>
                 <p className="category-card__description">{cat.description}</p>
-                <span className="category-card__count">
-                  {sessionCount} {sessionCount === 1 ? 'session' : 'sessions'}
-                </span>
+                {!noCount && (
+                  <span className="category-card__count">
+                    {sessionCount} {sessionCount === 1 ? 'session' : 'sessions'}
+                  </span>
+                )}
                 <span className="category-card__cta">
-                  Explore Sessions <span className="category-card__arrow">{'\u2192'}</span>
+                  Explore {noCount ? 'Session' : 'Sessions'} <span className="category-card__arrow">{'\u2192'}</span>
                 </span>
               </div>
             </Link>

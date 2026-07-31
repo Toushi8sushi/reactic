@@ -81,6 +81,14 @@
           "description": "Have you heard of the thinnest material in the Universe — Graphene? It is known for its remarkable conductivity and mechanical strength. Graphene is a \"table-top laboratory\" for testing experiments that would otherwise be extremely difficult to realize. Carbon atoms arranged on a chicken-wire network provide a platform for studying relativistic quantum mechanics of massless quasi-particles, along with their many paradoxes. We will discuss how graphene research has come a long way from questioning the very existence of this thinnest possible material to becoming a catalyst for futuristic technologies.",
           "image": "/assets/images/events_poster/q2q_graphene.jpeg",
           "youtube": "https://www.youtube.com/watch?v=IPj-NhPxTdA&t=3s"
+        },
+        {
+          "id": "q2q-4",
+          "title": "Beyond the Shadow",
+          "speaker": "Assist. Prof. Prashant K — Chennai Mathematical Institute, India",
+          "description": "Placeholder description for Beyond the Shadow session.",
+          "image": "/assets/images/events_poster/q2q_shadow.jpeg",
+          "youtube": ""
         }
       ]
     },
@@ -112,7 +120,7 @@
           "title": "Neural Ordinary Differential Equations for Emulating Photodissociation Regions",
           "speaker": "Rahul (Master's in Astronomy) — Former Head of the Club (2020)",
           "description": "This session introduces Neural Ordinary Differential Equations (NeuralODEs) and their application in modelling Photodissociation Regions (PDRs) — interstellar regions influenced by UV radiation. It covers the challenges of solving stiff ODE systems in PDRs and shows how NeuralODEs can learn continuous-time dynamics to build fast and efficient emulators. The talk also briefly touches on applications in cosmology and scientific machine learning.",
-          "image": "/assets/images/events/boltzmann-3.jpg",
+          "image": "/assets/images/events_poster/boltz_neural.jpeg",
           "youtube": "https://www.youtube.com/watch?v=zZ-Wxcattyw"
         },
         {
@@ -120,7 +128,7 @@
           "title": "Why are you Alive?",
           "speaker": "Kavin Chakaravarthy (BS-MS in Bio Sciences) — Former Head of the Club (2023)",
           "description": "This talk chases one of science's most profound and still-unsolved questions: how did life begin? From the scale of the universe down to a single, impossibly improbable molecule. Along the way we'll find out why physics created life. We'll ask whether the same chemistry that built you could be running right now beneath the icy crust of Saturn's moon Enceladus — and we'll end where we began, staring at the universe, except you won't see it quite the same way again. No biology background needed. Just curiosity.",
-          "image": "/assets/images/events/boltzmann-4.jpg",
+          "image": "/assets/images/events_poster/boltz_alive.jpeg",
           "youtube": "https://www.youtube.com/watch?v=mQgqK43ya6c&t=661s"
         }
       ]
@@ -131,7 +139,7 @@
       "icon": "\ud83d\udd2d",
       "description": "Horizon organizes observational sessions that provide the IIT Madras community with firsthand experiences of celestial phenomena. From eclipse observations to constellation hunts and night-sky viewing sessions, these events inspire curiosity, promote scientific exploration, and cultivate a lasting appreciation for the beauty and mysteries of the universe.",
       "about": "Horizon has successfully conducted four observational sessions, including Freshers' Observation Night, Lunar Eclipse Observation, Solar Observation, and Night Sky Observation sessions for the institute community. These events brought together students, faculty, and campus residents, offering them a memorable opportunity to explore the cosmos through telescopic observations and experience the wonders of the night sky firsthand.",
-      "image": "/assets/images/events/observation.jpg",
+      "image": "/assets/images/events_title_images/obs_ses.jpeg",
       "tiles": [
         {
           "id": "observation-1",
@@ -236,28 +244,28 @@
       "id": "qiskit",
       "title": "Qiskit Fall Fest 2025",
       "icon": "\u269b\ufe0f",
-      "description": "Placeholder description for Qiskit Fall Fest 2025.",
+      "description": "Qiskit Fall Fest is a collection of quantum computing events created and planned by university students and volunteer hosts, with support from IBM Quantum.",
       "image": "/assets/images/events_title_images/qiskit.jpeg",
       "subcards": [
         {
           "id": "qiskit-1",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/qiskit-1.jpg",
+          "title": "Sessions on Quantum Computing & Quantum Key Distribution",
+          "description": "The Quantum community of IITM and Horizon — The Physics and Astronomy Club of IITM — organized the events. Various sessions were conducted on Qiskit: quantum computing and Quantum Key Distribution. Mr. Dhinakaran Vinayagamurthy from IBM gave a session on Qiskit Architecture and Quantum Computers. \u201cState of the Art: Quantum Key Distribution\u201d was presented by speaker Nilesh on November 3rd, who explained more about optic cable based QKDs and their progress in the country.",
+          "image": "/assets/images/events_poster/qiskit1.png",
           "youtube": ""
         },
         {
           "id": "qiskit-2",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/qiskit-2.jpg",
+          "title": "Qiskit Fall Fest Hackathon",
+          "description": "This year, about 150 universities out of 1005 applicants from 39 different countries were selected to organize events. IIT Madras was also selected this year to organize events for the Fall Fest. The Hackathon was conducted at 9:00 AM IST on the 1st and 2nd of November. Participants formed teams and simulated the Quantum Key Distribution protocol with error correction and eavesdropper identification in Python's Qiskit module.",
+          "image": "/assets/images/events_poster/qiskit2.png",
           "youtube": ""
         },
         {
           "id": "qiskit-3",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/qiskit-3.jpg",
+          "title": "Acknowledgements & Special Thanks",
+          "description": "Special Thanks to:\n\u2022 \"IBM Quantum\", for providing a wonderful opportunity to conduct Qiskit Fall Fest.\n\u2022 \"Mr. Nilesh\" and \"Dr. Dhinakaran Vinayagamurthy\" for accepting their invitation as speakers for the sessions.\n\u2022 All participants and volunteers for the wonderful Fall Fest conducted this year.",
+          "image": "/assets/images/events_poster/qiskit3.png",
           "youtube": ""
         }
       ]
@@ -273,21 +281,21 @@
           "id": "conclave-1",
           "title": "Placeholder Title",
           "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/conclave-1.jpg",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.37.jpeg",
           "youtube": ""
         },
         {
           "id": "conclave-2",
           "title": "Placeholder Title",
           "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/conclave-2.jpg",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.38.jpeg",
           "youtube": ""
         },
         {
           "id": "conclave-3",
           "title": "Placeholder Title",
           "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/conclave-3.jpg",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at f.jpeg",
           "youtube": ""
         }
       ]
