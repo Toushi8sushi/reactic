@@ -1,66 +1,115 @@
 import { useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import { getEvents } from '../lib/content-loader'
+import { Link, useLocation } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
+import eventsData from '../data/events.json'
+import SpaceBackground from '../components/SpaceBackground'
+import '../styles/events.css'
+
+const years = Object.keys(eventsData).sort().reverse()
+const categoryColors = {
+  g2g: { bg: '#2d1b69', accent: '#7c3aed' },
+  q2q: { bg: '#0c2d48', accent: '#06b6d4' },
+  boltzmann: { bg: '#451a03', accent: '#f59e0b' },
+  observation: { bg: '#022c22', accent: '#10b981' },
+  summer: { bg: '#4a1942', accent: '#ec4899' },
+}
 
 export default function Events() {
-  const [modal, setModal] = useState(null)
-  const events = getEvents()
+  const { state } = useLocation()
+  const [activeYear, setActiveYear] = useState(state?.year || years[0])
+
+  const yearData = eventsData[activeYear] || {}
+  const categories = Object.values(yearData)
 
   return (
-    <article className="page">
-      <div className="container">
-        <header className="page-header">
-          <h1>Event Horizon</h1>
-        </header>
-        <div className="page-content">
-          <div className="events-grid">
-            {events.map(event => (
-              <div
-                key={event.id}
-                className="event-card"
-                tabIndex="0"
-                onClick={() => setModal(event)}
-              >
-                <img src={imagePath(event.poster)} alt={`${event.title} poster`} />
-                <div className="event-card__content">
-                  <h3>{event.title}</h3>
-                  <span className="event-card__date">{new Date(event.date).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
-                  <p className="event-card__cta">Click to read more</p>
-                </div>
-              </div>
-            ))}
-          </div>
+    <div className="events-page">
+      <SpaceBackground />
 
-          <h2>Past Events</h2>
+      <div className="events-container">
+        <header className="events-header">
+          <h1 className="events-title">
+            <span className="events-title__icon" aria-hidden="true">
+              <span className="atom-icon">
+                <span className="atom-icon__orbit atom-icon__orbit--a">
+                  <span className="atom-icon__electron-holder">
+                    <span className="atom-icon__electron" />
+                  </span>
+                </span>
+                <span className="atom-icon__orbit atom-icon__orbit--b">
+                  <span className="atom-icon__electron-holder">
+                    <span className="atom-icon__electron" />
+                  </span>
+                </span>
+                <span className="atom-icon__orbit atom-icon__orbit--c">
+                  <span className="atom-icon__electron-holder">
+                    <span className="atom-icon__electron" />
+                  </span>
+                </span>
+                <span className="atom-icon__nucleus" />
+              </span>
+            </span>
+            Event Horizon
+          </h1>
+          <p className="events-subtitle">
+            Horizon’s flagship events bring the IIT Madras community closer to the frontiers of physics
+            through engaging talks, interactive sessions, and research showcases. From exploring the
+            mysteries of the universe to highlighting cutting-edge scientific advancements, our events
+            inspire curiosity and foster scientific discussion.
+          </p>
+        </header>
+
+        <nav className="year-pills" aria-label="Select year">
+          {years.map(year => (
+            <button
+              key={year}
+              className={`year-pill${activeYear === year ? ' year-pill--active' : ''}`}
+              onClick={() => setActiveYear(year)}
+            >
+              {activeYear === year && <span className="year-pill__comet" />}
+              <span className="year-pill__label">{year}</span>
+            </button>
+          ))}
+        </nav>
+
+        <div className="category-grid">
+          {categories.map((cat, index) => {
+            const sessionCount = cat.tiles ? cat.tiles.length : cat.subcards.length
+            return (
+            <Link
+              key={cat.id}
+              to={`/events/${cat.id}`}
+              state={{ year: activeYear }}
+              className={`category-card${index % 2 === 1 ? ' category-card--reverse' : ''}`}
+              style={{
+                '--cat-bg': categoryColors[cat.id]?.bg || '#1a1a2e',
+                '--cat-accent': categoryColors[cat.id]?.accent || '#6366f1',
+              }}
+            >
+              <div className="category-card__shooting-star" />
+
+              <div className="category-card__image">
+                <img src={imagePath(cat.image)} alt={cat.title} />
+                <div className="category-card__image-overlay" />
+              </div>
+
+              <div className="category-card__content">
+                <div className="category-card__heading">
+                  <span className="category-card__icon">{cat.icon}</span>
+                  <h2 className="category-card__title">{cat.title}</h2>
+                </div>
+                <p className="category-card__description">{cat.description}</p>
+                <span className="category-card__count">
+                  {sessionCount} {sessionCount === 1 ? 'session' : 'sessions'}
+                </span>
+                <span className="category-card__cta">
+                  Explore Sessions <span className="category-card__arrow">{'\u2192'}</span>
+                </span>
+              </div>
+            </Link>
+            )
+          })}
         </div>
       </div>
-
-      {modal && (
-        <div className="event-modal is-visible" id="eventModal">
-          <div className="event-modal__overlay" onClick={() => setModal(null)}></div>
-          <div className="event-modal__box">
-            <button className="event-modal__close" onClick={() => setModal(null)}>&times;</button>
-            <div className="event-modal__header">
-              <h2 id="modalTitle">{modal.title}</h2>
-            </div>
-            <div id="modalContent">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {modal.content}
-              </ReactMarkdown>
-            </div>
-            {modal.youtube && (
-              <a id="modalYoutube" href={modal.youtube} target="_blank" rel="noopener">
-                <span>Watch on YouTube</span>
-                <svg className="event-modal__youtube-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z" />
-                </svg>
-              </a>
-            )}
-          </div>
-        </div>
-      )}
-    </article>
+    </div>
   )
 }
