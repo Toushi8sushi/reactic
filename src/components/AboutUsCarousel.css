@@ -12,18 +12,8 @@
 .carousel-track {
   display: flex;
   height: 100%;
-  animation: scroll 60s linear infinite;
   will-change: transform;
   gap: 4px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 .carousel-item {
@@ -44,6 +34,7 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  opacity: 0.85;
 }
 
 .about-us-overlay {
