@@ -3,7 +3,7 @@ title: "Getting Started with Open Source: A Beginner's Guide"
 author: "Taylor Lee"
 date: "2025-01-10"
 tags: ["open-source", "beginner", "git", "github"]
-image: "/assets/images/hero-bg.jpg"
+image: "/assets/articles page pics/opensource.png"
 ---
 Contributing to open source can seem intimidating at first, but it's one of the best ways to improve your coding skills, learn from experienced developers, and give back to the community. This guide will walk you through the basics of getting started with open source contributions.
 

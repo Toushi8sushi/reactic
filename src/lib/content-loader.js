@@ -55,22 +55,6 @@ const projectFiles = import.meta.glob('/src/data/**/*.json', {
 })
 
 for (const [filePath, jsonData] of Object.entries(projectFiles)) {
-  if (filePath.includes('projects.json')) {
-    for (const [tenure, projects] of Object.entries(jsonData)) {
-      for (const project of projects) {
-        articles.push({
-          id: `project-${project.id}`,
-          title: project.title,
-          date: project.date,
-          content: project.content,
-          image: project.image,
-          author: project.author,
-          category: 'Project',
-          tenure: tenure,
-        })
-      }
-    }
-  }
   if (filePath.includes('events.json')) {
     for (const [tenure, eventsData] of Object.entries(jsonData)) {
       for (const event of eventsData) {
