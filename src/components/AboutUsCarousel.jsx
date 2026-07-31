@@ -25,7 +25,29 @@ const AboutUsCarousel = () => {
       const clone = item.cloneNode(true);
       carousel.appendChild(clone);
     });
-  }, []);
+    
+    const totalItems = images.length * 2;
+    const itemWidth = 450;
+    const halfTrackWidth = (totalItems * itemWidth) / 2;
+    
+    let scrollPos = 0;
+    const speed = 1;
+    
+    const animate = () => {
+      scrollPos -= speed;
+      
+      if (scrollPos <= -halfTrackWidth) {
+        scrollPos = 0;
+      }
+      
+      carousel.style.transform = `translateX(${scrollPos}px)`;
+      requestAnimationFrame(animate);
+    };
+    
+    const animationId = requestAnimationFrame(animate);
+    
+    return () => cancelAnimationFrame(animationId);
+  }, [images]);
 
   return (
     <section className="section about-us-section">

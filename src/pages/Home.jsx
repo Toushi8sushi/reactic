@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import '../styles/hero.css'
-import Starfield from '../components/Starfield'
 import Galaxy from '../components/Galaxy/Galaxy'
 import MagicBento from '../components/MagicBento/MagicBento'
 import ShinyText from '../components/ShinyText/ShinyText'
@@ -35,29 +34,8 @@ export default function Home() {
   ]
   return (
     <>
-      <section className="hero hero-astro">
-        <Starfield />
-        <div className="hero-orbit" aria-hidden="true">
-          <div className="orbit-ring orbit-ring-1">
-            <div className="orbit-planet orbit-planet-1" />
-          </div>
-          <div className="orbit-ring orbit-ring-2">
-            <div className="orbit-planet orbit-planet-2" />
-          </div>
-        </div>
-
-        <div className="container hero-content">
-          <h1><ShinyText text="Welcome to Horizon!" speed={3} color="#f2f0ff" shineColor="#ffffff" spread={150} /></h1>
-          <p className="hero-tagline"><ShinyText text="The Physics and Astronomy Club, IIT Madras" speed={4} color="#c9cbe8" shineColor="#ffffff" spread={120} /></p>
-          <div className="hero-actions">
-            <Link to="/guild" className="btn btn-primary">Learn More</Link>
-            <Link to="/articles" className="btn btn-primary">Read Articles</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section home-what-we-do">
-        <div className="what-we-do-background" aria-hidden="true">
+      <div className="home-sections-wrapper">
+        <div className="home-shared-background" aria-hidden="true">
           <Galaxy
             mouseInteraction={false}
             density={1.1}
@@ -71,20 +49,33 @@ export default function Home() {
             transparent={true}
           />
         </div>
-        <div className="container what-we-do-content">
-          <h2>What We Do</h2>
-          <MagicBento
-            containerClassName="features-grid"
-            enableTilt
-            enableMagnetism
-            clickEffect={false}
-            textAutoHide={false}
-          >
-            {whatWeDoCards}
-          </MagicBento>
-        </div>
-      
-      </section>
+
+        <section className="hero hero-astro">
+          <div className="container hero-content">
+            <h1><ShinyText text="Welcome to Horizon!" speed={3} color="#f2f0ff" shineColor="#ffffff" spread={150} /></h1>
+            <p className="hero-tagline"><ShinyText text="The Physics and Astronomy Club, IIT Madras" speed={4} color="#c9cbe8" shineColor="#ffffff" spread={120} /></p>
+            <div className="hero-actions">
+              <Link to="/contact" className="btn btn-primary">Contact Us</Link>
+              <Link to="/articles" className="btn btn-primary">Read Articles</Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="section home-what-we-do">
+          <div className="container what-we-do-content">
+            <h2>What We Do</h2>
+            <MagicBento
+              containerClassName="features-grid"
+              enableTilt
+              enableMagnetism
+              clickEffect={false}
+              textAutoHide={false}
+            >
+              {whatWeDoCards}
+            </MagicBento>
+          </div>
+        </section>
+      </div>
 
       <AboutUsCarousel />
     </>
