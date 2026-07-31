@@ -1,10 +1,28 @@
 [
   {
-    "title": "Bee Hive",
-    "image": "/assets/images/astro/beehive.jpeg"
+    "id": "beehive",
+    "title": "Beehive Cluster (Messier 44)",
+    "description": "A magnificent open star cluster in the constellation Cancer, visible to the naked eye as a fuzzy patch of light.",
+    "imageSrc": "/assets/images/astro/beehive.jpeg",
+    "highResImageSrc": "/assets/images/astro/beehive.jpeg",
+    "telescope": "RedCat 51 Apo",
+    "camera": "ZWO ASI533MC Pro",
+    "mount": "Sky-Watcher HEQ5 Pro",
+    "exposure": "45 x 180s (2.25 hrs total)",
+    "gain": "Gain 100 (-10°C)",
+    "filter": "Optolong L-eNhance"
   },
   {
-    "title": "Lagoon nebula",
-    "image": "/assets/images/astro/lagoon.jpeg"
+    "id": "lagoon",
+    "title": "Lagoon Nebula (Messier 8)",
+    "description": "Captured in Sagittarius constellation. A giant interstellar cloud in the Milky Way, consisting of gas and dust.",
+    "imageSrc": "/assets/images/astro/lagoon.jpeg",
+    "highResImageSrc": "/assets/images/astro/lagoon.jpeg",
+    "telescope": "RedCat 51 Apo",
+    "camera": "ZWO ASI533MC Pro",
+    "mount": "Sky-Watcher HEQ5 Pro",
+    "exposure": "45 x 180s (2.25 hrs total)",
+    "gain": "Gain 100 (-10°C)",
+    "filter": "Optolong L-eNhance"
   }
 ]

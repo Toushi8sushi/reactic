@@ -405,48 +405,106 @@
   overflow-x: hidden;
 }
 
-.astro-page {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: var(--spacing-xl) var(--spacing-md);
+.astro-hero-shell {
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-xl) 0;
+  background: #0d0e15;
 }
 
-.astro-header {
-  text-align: center;
-  margin-bottom: var(--spacing-2xl);
+.astro-hero-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
-.astro-header h1 {
-  margin-bottom: var(--spacing-sm);
+
+.astro-hero-layer .lightfall-container {
+  filter: saturate(1.1) brightness(0.95);
 }
-.astro-header p {
-  color: var(--color-text-light);
-  font-size: var(--font-size-lg);
+
+.astro-hero-shell .container {
+  position: relative;
+  z-index: 1;
+}
+
+.astro-page-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.astro-gallery-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: #0a0d14;
+  padding: var(--spacing-xl) 0;
+}
+
+.astro-gallery-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.astro-gallery-particles .particles-container {
+  width: 100%;
+  height: 100%;
+}
+
+.astro-gallery-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .astro-gallery-container {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+.astro-gallery-title {
+  text-align: left;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-page-title);
 }
 
 .astro-gallery {
-  column-count: 3;
-  column-gap: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.astro-tile {
-  break-inside: avoid;
-  margin-bottom: var(--spacing-sm);
-  position: relative;
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  cursor: pointer;
+.astro-gallery-bento {
+  justify-content: center;
 }
-.astro-tile img {
+
+.magic-bento-section .astro-tile__bento-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.magic-bento-section .astro-tile__bento-wrapper img {
   width: 100%;
   display: block;
   border-radius: var(--border-radius-lg);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   transition: transform 0.4s ease;
 }
-.astro-tile:hover img {
+
+.magic-bento-section .astro-tile__bento-wrapper:hover img {
   transform: scale(1.05);
 }
 
-.astro-tile__overlay {
+.magic-bento-section .astro-tile__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
@@ -457,10 +515,12 @@
   transition: opacity 0.3s ease;
   border-radius: var(--border-radius-lg);
 }
-.astro-tile:hover .astro-tile__overlay {
+
+.magic-bento-section .astro-tile__bento-wrapper:hover .astro-tile__overlay {
   opacity: 1;
 }
-.astro-tile__overlay h3 {
+
+.magic-bento-section .astro-tile__overlay h3 {
   color: white;
   margin: 0;
   font-size: 1rem;
@@ -471,11 +531,16 @@
   margin-top: var(--spacing-2xl);
 }
 
-@media (max-width: 900px) {
-  .astro-gallery { column-count: 2; }
+@media (min-width: 768px) {
+  .magic-bento-section.card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width: 550px) {
-  .astro-gallery { column-count: 1; }
+
+@media (min-width: 1024px) {
+  .magic-bento-section.card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .guild-hero {
