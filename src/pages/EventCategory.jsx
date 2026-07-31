@@ -11,6 +11,9 @@ const categoryColors = {
   boltzmann: { bg: '#451a03', accent: '#f59e0b', glow: 'rgba(245, 158, 11, 0.3)' },
   observation: { bg: '#022c22', accent: '#10b981', glow: 'rgba(16, 185, 129, 0.3)' },
   summer: { bg: '#4a1942', accent: '#ec4899', glow: 'rgba(236, 72, 153, 0.3)' },
+  qiskit: { bg: '#2e1065', accent: '#a78bfa', glow: 'rgba(167, 139, 250, 0.3)' },
+  conclave: { bg: '#431407', accent: '#fb923c', glow: 'rgba(251, 146, 60, 0.3)' },
+  cfi: { bg: '#020617', accent: '#38bdf8', glow: 'rgba(56, 189, 248, 0.3)' },
 }
 
 export default function EventCategory() {

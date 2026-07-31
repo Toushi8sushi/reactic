@@ -5,7 +5,7 @@
       "title": "Guide to Galaxy",
       "icon": "\ud83c\udf0c",
       "description": "A flagship lecture series conducted by the club coordinators, introducing fascinating topics across the vast landscape of physics — from the tiniest elementary particles to the most massive black holes. Designed to spark curiosity and make physics accessible to the IIT Madras student community.",
-      "image": "/assets/images/events/g2g.jpg",
+      "image": "/assets/images/events_title_images/g2g.jpeg",
       "subcards": [
         {
           "id": "g2g-1",
@@ -56,7 +56,7 @@
       "title": "Quarks to Quasars",
       "icon": "\u269b\ufe0f",
       "description": "An expert lecture series featuring distinguished professors and researchers from IIT Madras and beyond, who share their work and expertise in cutting-edge areas of physics. It provides students with the opportunity to engage with leading scientists and contemporary research.",
-      "image": "/assets/images/events/q2q.jpg",
+      "image": "/assets/images/events_title_images/q2q.jpeg",
       "subcards": [
         {
           "id": "q2q-1",
@@ -89,7 +89,7 @@
       "title": "Boltzmann Sessions",
       "icon": "\ud83d\udd25",
       "description": "A student-led seminar series where researchers and enthusiasts share insights from their ongoing projects and areas of study. These sessions offer the IIT Madras community a glimpse into real-world research and the process of scientific discovery.",
-      "image": "/assets/images/events/boltzmann.jpg",
+      "image": "/assets/images/events_title_images/boltzmann.jpeg",
       "subcards": [
         {
           "id": "boltzmann-1",
@@ -200,7 +200,7 @@
       "title": "Summer School Sessions",
       "icon": "\u2600\ufe0f",
       "description": "An online outreach initiative conducted by the club coordinators, introducing school students to the wonders of physics through engaging and accessible sessions. The program aims to inspire young minds and nurture a lasting interest in the physical sciences.",
-      "image": "/assets/images/events/summer.jpg",
+      "image": "/assets/images/events_title_images/ss.jpeg",
       "subcards": [
         {
           "id": "summer-1",
@@ -231,6 +231,96 @@
           "youtube": "https://www.youtube.com/watch?v=__lRiYBReUk"
         }
       ]
+    },
+    "qiskit": {
+      "id": "qiskit",
+      "title": "Qiskit Fall Fest 2025",
+      "icon": "\u269b\ufe0f",
+      "description": "Placeholder description for Qiskit Fall Fest 2025.",
+      "image": "/assets/images/events_title_images/qiskit.jpeg",
+      "subcards": [
+        {
+          "id": "qiskit-1",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/qiskit-1.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "qiskit-2",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/qiskit-2.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "qiskit-3",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/qiskit-3.jpg",
+          "youtube": ""
+        }
+      ]
+    },
+    "conclave": {
+      "id": "conclave",
+      "title": "Research Conclave",
+      "icon": "\ud83d\udd2c",
+      "description": "Placeholder description for Research Conclave.",
+      "image": "/assets/images/events_title_images/rc.jpeg",
+      "subcards": [
+        {
+          "id": "conclave-1",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/conclave-1.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "conclave-2",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/conclave-2.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "conclave-3",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/conclave-3.jpg",
+          "youtube": ""
+        }
+      ]
+    },
+    "cfi": {
+      "id": "cfi",
+      "title": "CFI Open House",
+      "icon": "\ud83c\udfdb\ufe0f",
+      "description": "Placeholder description for CFI Open House.",
+      "image": "/assets/images/events_title_images/oh.jpeg",
+      "subcards": [
+        {
+          "id": "cfi-1",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/cfi-1.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "cfi-2",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/cfi-2.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "cfi-3",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/cfi-3.jpg",
+          "youtube": ""
+        }
+      ]
     }
   },
   "2026-27": {
@@ -239,7 +329,7 @@
       "title": "Summer School Sessions",
       "icon": "\u2600\ufe0f",
       "description": "An online outreach initiative conducted by the club coordinators, introducing school students to the wonders of physics through engaging and accessible sessions. The program aims to inspire young minds and nurture a lasting interest in the physical sciences.",
-      "image": "/assets/images/events/summer.jpg",
+      "image": "/assets/images/events_title_images/ss.jpeg",
       "subcards": [
         {
           "id": "summer-1",

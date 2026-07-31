@@ -12,6 +12,9 @@ const categoryColors = {
   boltzmann: { bg: '#451a03', accent: '#f59e0b' },
   observation: { bg: '#022c22', accent: '#10b981' },
   summer: { bg: '#4a1942', accent: '#ec4899' },
+  qiskit: { bg: '#2e1065', accent: '#a78bfa' },
+  conclave: { bg: '#431407', accent: '#fb923c' },
+  cfi: { bg: '#020617', accent: '#38bdf8' },
 }
 
 export default function Events() {
