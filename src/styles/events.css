@@ -112,9 +112,10 @@
 
 .events-subtitle {
   font-family: var(--font-body);
-  font-size: var(--font-size-lg);
+  font-size: 1.2rem;
   color: var(--color-text-light);
-  max-width: 600px;
+  line-height: 1.9;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

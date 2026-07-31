@@ -15,6 +15,8 @@ const categoryColors = {
   qiskit: { bg: '#2e1065', accent: '#a78bfa' },
   conclave: { bg: '#431407', accent: '#fb923c' },
   cfi: { bg: '#020617', accent: '#38bdf8' },
+  freshie: { bg: '#3b0764', accent: '#e879f9' },
+  other: { bg: '#1e293b', accent: '#94a3b8' },
 }
 
 export default function Events() {

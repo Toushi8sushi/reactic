@@ -11,42 +11,42 @@
           "id": "g2g-1",
           "title": "Geometry of Spacetime — Horizon X Math Club Collaboration",
           "description": "A deep dive into the mathematics of curved surfaces and its applications in special relativity. Topics covered include linear transformations, jacobians, metrics and metric spaces, the need for special relativity and groundbreaking experiments which confirmed its validity, Lorentz transformations, length contraction, time dilation, simultaneity, proper length, proper time, spacetime interval, and introduction to accelerating frames. Conducted by Horizon coordinators Aditya Goel and Suraj, and Math Club coordinators Sudhanvaa and Hemanth.",
-          "image": "/assets/images/events/g2g-1.jpg",
+          "image": "/assets/images/events_poster/g2g_geometry.jpeg",
           "youtube": "https://www.youtube.com/watch?v=FifNf4TqM_8&t=1s"
         },
         {
           "id": "g2g-2",
           "title": "Introduction to General Relativity & Black Holes",
           "description": "A journey through the fascinating world of General Relativity and Black Holes. Topics covered include the Minkowski metric and spacetime interval, the time cone and its significance, Einstein's General Relativity, black holes and their formation, the event horizon and time dilation near it, and the basics of the Penrose diagram. Perfect for beginners in astrophysics or anyone curious about the nature of space, time, and gravity.",
-          "image": "/assets/images/events/g2g-2.jpg",
+          "image": "/assets/images/events_poster/g2g_gr.jpeg",
           "youtube": "https://www.youtube.com/watch?v=WqJ3ZFiI4Ic"
         },
         {
           "id": "g2g-3",
           "title": "Physics of Colours",
           "description": "We live in the world of Colours — from the glint of a Butterfly's wings to the calm blue of a flowing stream, from the colours of the rainbow to the colours of a Peacock, from the garments that decorate your wardrobe to the fireworks that decorate the sky. Colours shape our emotions as well as the perception of the world. Speakers: Hariccharan (EP24) and Srikiran (PH24).",
-          "image": "/assets/images/events/g2g-3.jpg",
+          "image": "/assets/images/events_poster/g2g_phycolor.jpeg",
           "youtube": "https://www.youtube.com/watch?v=o-QlQoSzsMQ&t=9s"
         },
         {
           "id": "g2g-4",
           "title": "Unseen Cosmic Architecture",
           "description": "A third of the universe's ordinary matter is missing. Not dark matter — just normal atoms we can't account for. This session explores the missing baryons problem: how early-universe physics tells us exactly how many atoms should exist, and how modern observations, from the CMB to Fast Radio Bursts, are finally revealing where they're hiding. Covering Big Bang Nucleosynthesis & deuterium (D/H), CMB acoustic peaks, and the cosmic web & WHIM.",
-          "image": "/assets/images/events/g2g-4.jpg",
+          "image": "/assets/images/events_poster/g2g_cosmic.jpeg",
           "youtube": "https://www.youtube.com/watch?v=w6y52bLr-og&t=2s"
         },
         {
           "id": "g2g-5",
           "title": "Fields to Fractals",
           "description": "Placeholder description for Fields to Fractals session.",
-          "image": "/assets/images/events/g2g-5.jpg",
+          "image": "/assets/images/events_poster/g2g_f2f.jpeg",
           "youtube": "https://www.youtube.com/watch?v=mOEP356TxME"
         },
         {
           "id": "g2g-6",
           "title": "Cosmic Histories",
           "description": "Placeholder description for Cosmic Histories session.",
-          "image": "/assets/images/events/g2g-6.jpg",
+          "image": "/assets/images/events_poster/g2g_histories.jpeg",
           "youtube": "https://www.youtube.com/watch?v=_h9ufmi5i_c"
         }
       ]
@@ -63,7 +63,7 @@
           "title": "Gravitational Waves & Its Career Opportunities",
           "speaker": "Prof. Suresh Doravari — IUCAA",
           "description": "In this session, Professor Suresh explores how we detect the tiniest ripples in space-time, the future and evolution of gravitational wave detectors, exciting career paths for engineers, physicists, and researchers, and how YOU can contribute to this groundbreaking field.",
-          "image": "/assets/images/events/q2q-1.jpg",
+          "image": "/assets/images/events_poster/q2q_ligo.jpeg",
           "youtube": "https://www.youtube.com/watch?v=6DkDuEHLi9o&t=13s"
         },
         {
@@ -71,7 +71,7 @@
           "title": "Introduction to Nuclear Physics",
           "speaker": "Prof. Jim Libby — Dept. of Physics, IIT Madras",
           "description": "In this talk, aimed at a non-specialist audience, Prof. Libby takes us into the world of nuclear physics, starting from the basic constituents of the atom and building up to how nuclei are bound, how they decay, and why nuclear processes play such a central role in both laboratory experiments and astrophysical phenomena. Without assuming any prior background, he carefully develops the key ideas, highlights how experimental observations shaped our picture of the nucleus, and touches upon modern directions where nuclear physics connects to particle physics and cosmology.",
-          "image": "/assets/images/events/q2q-2.jpg",
+          "image": "/assets/images/events_poster/q2q_nuclear.jpeg",
           "youtube": "https://www.youtube.com/watch?v=O6iPdkmg-hw&t=631s"
         },
         {
@@ -79,7 +79,7 @@
           "title": "GRAPHENE — Secrets of Atomic Scale Chicken Wire",
           "speaker": "Prof. Manu Jaiswal — Dept. of Physics, IIT Madras",
           "description": "Have you heard of the thinnest material in the Universe — Graphene? It is known for its remarkable conductivity and mechanical strength. Graphene is a \"table-top laboratory\" for testing experiments that would otherwise be extremely difficult to realize. Carbon atoms arranged on a chicken-wire network provide a platform for studying relativistic quantum mechanics of massless quasi-particles, along with their many paradoxes. We will discuss how graphene research has come a long way from questioning the very existence of this thinnest possible material to becoming a catalyst for futuristic technologies.",
-          "image": "/assets/images/events/q2q-3.jpg",
+          "image": "/assets/images/events_poster/q2q_graphene.jpeg",
           "youtube": "https://www.youtube.com/watch?v=IPj-NhPxTdA&t=3s"
         }
       ]
@@ -318,6 +318,66 @@
           "title": "Placeholder Title",
           "description": "Placeholder description for subcard.",
           "image": "/assets/images/events/cfi-3.jpg",
+          "youtube": ""
+        }
+      ]
+    },
+    "freshie": {
+      "id": "freshie",
+      "title": "Freshie Orientation Session",
+      "icon": "\ud83c\udf93",
+      "description": "Placeholder description for Freshie Orientation Session.",
+      "image": "/assets/images/events_title_images/freshie_orientation.jpeg",
+      "subcards": [
+        {
+          "id": "freshie-1",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/freshie-1.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "freshie-2",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/freshie-2.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "freshie-3",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/freshie-3.jpg",
+          "youtube": ""
+        }
+      ]
+    },
+    "other": {
+      "id": "other",
+      "title": "Other Events",
+      "icon": "\ud83d\udcc5",
+      "description": "Placeholder description for Other Events.",
+      "image": "/assets/images/events/other.jpg",
+      "subcards": [
+        {
+          "id": "other-1",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/other-1.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "other-2",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/other-2.jpg",
+          "youtube": ""
+        },
+        {
+          "id": "other-3",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events/other-3.jpg",
           "youtube": ""
         }
       ]
