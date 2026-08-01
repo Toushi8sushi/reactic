@@ -286,8 +286,96 @@
 .post .post-footer .back-link { font-weight: var(--font-weight-medium); }
 
 .articles-list {
-  max-width: 900px;
-  margin: var(--spacing-xl) auto 0;
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  margin: var(--spacing-xl) 0 0;
+  padding: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.articles-list .article-card {
+  aspect-ratio: auto;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  background: var(--color-surface);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.articles-list .article-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.articles-list .card-visual {
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.articles-list .card-body {
+  padding: 1.4rem 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 0.85rem;
+  overflow: hidden;
+}
+
+.articles-list .card-title {
+  font-size: 1.16rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0.15rem 0 0;
+}
+
+.articles-list .card-meta {
+  margin-bottom: 0.1rem;
+}
+
+@media (max-width: 1200px) {
+  .articles-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.95rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .articles-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .articles-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 var(--spacing-sm);
+  }
+
+  .articles-list .article-card {
+    min-height: auto;
+  }
+
+  .articles-list .card-visual {
+    height: 180px;
+  }
 }
 
 .articles-preview {
