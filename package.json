@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "gsap": "^3.15.0",
+    "motion": "^12.42.2",
+    "ogl": "^1.0.11",
+    "postprocessing": "^6.39.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.17.0",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
