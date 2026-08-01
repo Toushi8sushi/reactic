@@ -95,21 +95,20 @@ export default function EventCategory() {
               className="observation-gallery"
               style={{ '--cat-accent': colors.accent, '--cat-glow': colors.glow }}
             >
-              {(cat.tiles || []).map((tile, index) => (
-                <figure
-                  key={tile.id}
-                  className="observation-tile"
-                  style={{ '--reveal-delay': `${index * 0.08}s` }}
-                >
-                  <div className="observation-tile__media">
-                    <img src={imagePath(tile.image)} alt={tile.title} />
-                  </div>
-                  <figcaption className="observation-tile__caption">
-                    <span className="observation-tile__title">{tile.title}</span>
-                    <span className="observation-tile__text">{tile.caption}</span>
-                  </figcaption>
-                </figure>
-              ))}
+              <h2 className="observation-gallery__title">Observation Gallery</h2>
+              <div className="observation-gallery__grid">
+                {(cat.tiles || []).map((tile, index) => (
+                  <figure
+                    key={tile.id}
+                    className="observation-tile"
+                    style={{ '--reveal-delay': `${index * 0.08}s` }}
+                  >
+                    <div className="observation-tile__media">
+                      <img src={imagePath(tile.image)} alt={tile.title} />
+                    </div>
+                  </figure>
+                ))}
+              </div>
             </section>
           </div>
         ) : (
