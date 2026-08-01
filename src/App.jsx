@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import Events from './pages/Events'
+import EventCategory from './pages/EventCategory'
 import Articles from './pages/Articles'
 import ArticleDetail from './pages/ArticleDetail'
 import Astrophotography from './pages/Astrophotography'
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/events/:category" element={<EventCategory />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:id" element={<ArticleDetail />} />
         <Route path="/astrophotography" element={<Astrophotography />} />
