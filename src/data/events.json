@@ -144,62 +144,37 @@
         {
           "id": "observation-1",
           "title": "Observation Session 1",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/astro/beehive.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/IMG20250727204152.jpg"
         },
         {
           "id": "observation-2",
           "title": "Observation Session 2",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/astro/lagoon.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/IMG20250727204246.jpg"
         },
         {
           "id": "observation-3",
           "title": "Observation Session 3",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/decoherence.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/IMG20250727204436.jpg"
         },
         {
           "id": "observation-4",
           "title": "Observation Session 4",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/inpt.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/IMG20250727205018.jpg"
         },
         {
           "id": "observation-5",
           "title": "Observation Session 5",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/interiit.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/IMG20250727233949.jpg"
         },
         {
           "id": "observation-6",
           "title": "Observation Session 6",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/ipt.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/PXL_20250907_163335295.NIGHT.jpg"
         },
         {
           "id": "observation-7",
           "title": "Observation Session 7",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/telescope.jpeg"
-        },
-        {
-          "id": "observation-8",
-          "title": "Observation Session 8",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/astro/beehive.jpeg"
-        },
-        {
-          "id": "observation-9",
-          "title": "Observation Session 9",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/astro/lagoon.jpeg"
-        },
-        {
-          "id": "observation-10",
-          "title": "Observation Session 10",
-          "caption": "Placeholder caption for this observation session.",
-          "image": "/assets/images/guild/telescope.jpeg"
+          "image": "/assets/images/events_poster/obs_ses/PXL_20250907_163348643.NIGHT.jpg"
         }
       ]
     },
