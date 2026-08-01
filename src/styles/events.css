@@ -126,6 +126,18 @@
   margin-bottom: 1.25rem;
 }
 
+/* Improve link contrast on nebula background for pages using events styles (events/team/contact) */
+.events-container a,
+.events-page .page-content a {
+  color: var(--color-text-light);
+  text-decoration: underline;
+}
+
+.events-container a:hover,
+.events-page .page-content a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
 
 
 /* ===== Category Cards Grid ===== */
