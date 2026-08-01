@@ -13,14 +13,25 @@ const navItems = [
   { label: 'Contact', href: '/contact' },
 ]
 
+function getActiveHref(pathname) {
+  if (pathname === '/') return '/'
+
+  const activeItem = navItems
+    .filter(item => item.href !== '/' && pathname.startsWith(item.href))
+    .sort((a, b) => b.href.length - a.href.length)[0]
+
+  return activeItem?.href || pathname
+}
+
 export default function Header() {
   const { pathname } = useLocation()
+  const activeHref = getActiveHref(pathname)
 
   return (
     <header className="pill-header">
       <PillNav
         items={navItems}
-        activeHref={pathname === '/' ? '/__home__' : pathname}
+        activeHref={activeHref}
         baseColor="var(--color-background)"
         pillColor="var(--color-border)"
         hoveredPillTextColor="#ffffff"

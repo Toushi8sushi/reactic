@@ -30,6 +30,7 @@ function parseFrontmatter(raw) {
 
 const articles = []
 const events = []
+const iptProblems = []
 
 for (const [filePath, raw] of Object.entries(files)) {
   const { data, content } = parseFrontmatter(raw)
@@ -43,6 +44,8 @@ for (const [filePath, raw] of Object.entries(files)) {
     articles.push(entry)
   } else if (category === 'events') {
     events.push(entry)
+  } else if (category === 'ipt') {
+    iptProblems.push(entry)
   }
 }
 
@@ -82,6 +85,7 @@ for (const [filePath, jsonData] of Object.entries(projectFiles)) {
 
 articles.sort((a, b) => new Date(b.date) - new Date(a.date))
 events.sort((a, b) => new Date(b.date) - new Date(a.date))
+iptProblems.sort((a, b) => b.year - a.year)
 
 export function getArticles() {
   return articles
@@ -93,4 +97,25 @@ export function getArticle(id) {
 
 export function getEvents() {
   return events
+}
+
+export function getIPTProblems() {
+  return iptProblems
+}
+
+export function getIPTProblem(id) {
+  return iptProblems.find(p => p.id === id) || null
+}
+
+export function getIPTProblemBySlug(year, slug) {
+  return iptProblems.find(p => String(p.year) === String(year) && p.slug === slug) || null
+}
+
+export function getIPTProblemsByYear(year) {
+  return iptProblems.filter(p => p.year === year)
+}
+
+export function getIPTYears() {
+  const years = [...new Set(iptProblems.map(p => p.year))]
+  return years.sort((a, b) => b - a)
 }
