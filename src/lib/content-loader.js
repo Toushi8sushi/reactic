@@ -75,9 +75,15 @@ for (const [filePath, jsonData] of Object.entries(projectFiles)) {
     }
   }
   if (filePath.includes('events.json')) {
-    for (const [tenure, eventsData] of Object.entries(jsonData)) {
-      for (const event of eventsData) {
-        events.push({...event, tenure: tenure})
+    for (const [tenure, tenureData] of Object.entries(jsonData)) {
+      if (Array.isArray(tenureData)) {
+        for (const event of tenureData) {
+          events.push({ ...event, tenure })
+        }
+      } else {
+        for (const event of Object.values(tenureData)) {
+          events.push({ ...event, tenure })
+        }
       }
     }
   }
