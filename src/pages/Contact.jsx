@@ -3,7 +3,7 @@ import '../styles/events.css'
 
 export default function Contact() {
   return (
-    <article className="page events-page">
+    <article className="page events-page contact-page">
       <SpaceBackground />
       <div className="events-container">
         <header className="events-header">
