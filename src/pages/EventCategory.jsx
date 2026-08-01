@@ -15,6 +15,7 @@ const categoryColors = {
   conclave: { bg: '#431407', accent: '#fb923c', glow: 'rgba(251, 146, 60, 0.3)' },
   cfi: { bg: '#020617', accent: '#38bdf8', glow: 'rgba(56, 189, 248, 0.3)' },
   freshie: { bg: '#3b0764', accent: '#e879f9', glow: 'rgba(232, 121, 249, 0.3)' },
+  extra: { bg: '#1e1b4b', accent: '#a5b4fc', glow: 'rgba(165, 180, 252, 0.3)' },
   other: { bg: '#1e293b', accent: '#94a3b8', glow: 'rgba(148, 163, 184, 0.3)' },
 }
 
@@ -126,10 +127,12 @@ export default function EventCategory() {
               >
                 <div className="subcard__shooting-star" />
 
-                <div className="subcard__image">
-                  <img src={imagePath(sub.image)} alt={sub.title} />
-                  <div className="subcard__image-overlay" />
-                </div>
+                {sub.image && (
+                  <div className="subcard__image">
+                    <img src={imagePath(sub.image)} alt={sub.title} />
+                    <div className="subcard__image-overlay" />
+                  </div>
+                )}
 
                 <div className="subcard__content">
                   <h3 className="subcard__title">{sub.title}</h3>

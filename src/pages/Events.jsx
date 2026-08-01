@@ -16,6 +16,7 @@ const categoryColors = {
   conclave: { bg: '#431407', accent: '#fb923c' },
   cfi: { bg: '#020617', accent: '#38bdf8' },
   freshie: { bg: '#3b0764', accent: '#e879f9' },
+  extra: { bg: '#1e1b4b', accent: '#a5b4fc' },
   other: { bg: '#1e293b', accent: '#94a3b8' },
 }
 
@@ -78,14 +79,14 @@ export default function Events() {
 
         <div className="category-grid">
           {categories.map((cat, index) => {
-            const sessionCount = cat.tiles ? cat.tiles.length : cat.subcards.length
-            const noCount = ['qiskit', 'conclave', 'cfi', 'freshie'].includes(cat.id)
+            const sessionCount = cat.sessionCount ?? (cat.tiles ? cat.tiles.length : cat.subcards.length)
+            const noCount = ['qiskit', 'conclave', 'cfi', 'freshie', 'observation'].includes(cat.id)
             return (
             <Link
               key={cat.id}
               to={`/events/${cat.id}`}
               state={{ year: activeYear }}
-              className={`category-card${index % 2 === 1 ? ' category-card--reverse' : ''}`}
+              className={`category-card${index % 2 === 1 ? ' category-card--reverse' : ''}${cat.id === 'observation' ? ' category-card--observation' : ''}`}
               style={{
                 '--cat-bg': categoryColors[cat.id]?.bg || '#1a1a2e',
                 '--cat-accent': categoryColors[cat.id]?.accent || '#6366f1',

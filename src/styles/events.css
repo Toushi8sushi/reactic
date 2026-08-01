@@ -352,6 +352,30 @@
   transform: translateX(4px);
 }
 
+/* Observation category card — compact image sized to the title + description block */
+
+.category-card--observation {
+  align-items: center;
+}
+
+.category-card--observation .category-card__image {
+  flex: 0 0 auto;
+  width: clamp(160px, 24vw, 240px);
+  min-height: 0;
+  align-self: center;
+  aspect-ratio: 1 / 1;
+  margin: var(--spacing-xl);
+  border-radius: var(--border-radius);
+}
+
+.category-card--observation .category-card__image img {
+  object-fit: cover;
+}
+
+.category-card--observation .category-card__image-overlay {
+  border-radius: var(--border-radius);
+}
+
 /* ===== Event Category Detail Page ===== */
 
 .event-category__back {
@@ -847,6 +871,12 @@
   .category-card__image {
     flex: none;
     min-height: 200px;
+  }
+
+  .category-card--observation .category-card__image {
+    width: clamp(160px, 45vw, 220px);
+    min-height: 0;
+    margin: var(--spacing-lg) auto;
   }
 
   .category-card__content {

@@ -38,14 +38,14 @@
         {
           "id": "g2g-5",
           "title": "Fields to Fractals",
-          "description": "Placeholder description for Fields to Fractals session.",
+          "description": "Fields to Fractals introduced participants to the foundations of Quantum Field Theory, the problem of infinities, and the role of Renormalization Group Theory in connecting quantum physics with statistical mechanics and fractals. The session provided an accessible overview of these fundamental ideas while highlighting their significance in modern theoretical physics.",
           "image": "/assets/images/events_poster/g2g_f2f.jpeg",
           "youtube": "https://www.youtube.com/watch?v=mOEP356TxME"
         },
         {
           "id": "g2g-6",
           "title": "Cosmic Histories",
-          "description": "Placeholder description for Cosmic Histories session.",
+          "description": "Cosmic Histories guided participants through the evolution of the universe, from the Big Bang to the formation of galaxies and large-scale cosmic structures. The session discussed the observational evidence supporting modern cosmology and offered an engaging introduction to the history, expansion, and evolution of our universe.",
           "image": "/assets/images/events_poster/g2g_histories.jpeg",
           "youtube": "https://www.youtube.com/watch?v=_h9ufmi5i_c"
         }
@@ -86,7 +86,7 @@
           "id": "q2q-4",
           "title": "Beyond the Shadow",
           "speaker": "Assist. Prof. Prashant K — Chennai Mathematical Institute, India",
-          "description": "Placeholder description for Beyond the Shadow session.",
+          "description": "Beyond the Shadow was a special edition of Horizon's Quarks to Quasars seminar series featuring Prof. Prashant Kocherlakota from the Chennai Mathematical Institute. The session explored how black hole imaging and astrophysical observations can be used to test General Relativity, understand spacetime geometry, and uncover the physics governing some of the most extreme objects in the universe.",
           "image": "/assets/images/events_poster/q2q_shadow.jpeg",
           "youtube": ""
         }
@@ -104,7 +104,7 @@
           "title": "Beyond Qubits",
           "speaker": "Sayam Chakraborty (MSc. Physics)",
           "description": "In this session, Sayam introduced the concept of qudits — multi-level quantum systems that go beyond traditional qubits — and explored how they can enhance information storage, improve quantum algorithms, and open new directions in error correction and communication. The talk provided an accessible, non-mathematical introduction to why researchers are looking beyond qubits as a promising path toward scalable quantum technologies. This event also marked the inaugural session of the IBM Qiskit Fall Fest at IIT Madras.",
-          "image": "/assets/images/events/boltzmann-1.jpg",
+          "image": "/assets/images/events_poster/boltz_qubits.jpeg",
           "youtube": "https://www.youtube.com/watch?v=EMwkkYXmfaw&t=402s"
         },
         {
@@ -112,7 +112,7 @@
           "title": "From Flipping Spins to Quantum Worlds",
           "speaker": "Divyansh (MSc. Physics)",
           "description": "In this captivating session, Divyansh took us through the elegant world of the Ising model — where a simple chain of up and down spins unfolds into a story of magnetism, order, and quantum transformation. From the emergence of collective behavior to the mysteries of criticality and quantum phase transitions, the session beautifully showcased how simplicity in physics can give rise to astonishing complexity and beauty.",
-          "image": "/assets/images/events/boltzmann-2.jpg",
+          "image": "/assets/images/events_poster/boltz_flip.jpeg",
           "youtube": "https://www.youtube.com/watch?v=uZ3ultLKdmM&t=391s"
         },
         {
@@ -274,28 +274,20 @@
       "id": "conclave",
       "title": "Research Conclave",
       "icon": "\ud83d\udd2c",
-      "description": "Placeholder description for Research Conclave.",
+      "description": "",
       "image": "/assets/images/events_title_images/rc.jpeg",
       "subcards": [
         {
           "id": "conclave-1",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.37.jpeg",
+          "title": "Research Conclave",
+          "description": "The Research Conclave is CFI's flagship annual event that celebrates student-led research, innovation, and interdisciplinary collaboration. It brings together students, faculty, and researchers to showcase pioneering projects, exchange ideas, and foster meaningful discussions across diverse scientific and engineering domains.",
+          "image": "/assets/images/events_poster/rc_poster.jpeg",
           "youtube": ""
         },
         {
           "id": "conclave-2",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.38.jpeg",
-          "youtube": ""
-        },
-        {
-          "id": "conclave-3",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at f.jpeg",
+          "title": "Research Conclave",
+          "description": "The event serves as a platform for participants to present their work, gain valuable feedback from experts, and explore opportunities for collaboration. By highlighting cutting-edge research and innovation, the conclave inspires the institute community to pursue impactful ideas and contribute to the advancement of science and technology.",
           "youtube": ""
         }
       ]
@@ -327,6 +319,27 @@
           "description": "Placeholder description for subcard.",
           "image": "/assets/images/events/cfi-3.jpg",
           "youtube": ""
+        },
+        {
+          "id": "cfi-4",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.37.jpeg",
+          "youtube": ""
+        },
+        {
+          "id": "cfi-5",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.38.jpeg",
+          "youtube": ""
+        },
+        {
+          "id": "cfi-6",
+          "title": "Placeholder Title",
+          "description": "Placeholder description for subcard.",
+          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at f.jpeg",
+          "youtube": ""
         }
       ]
     },
@@ -334,58 +347,59 @@
       "id": "freshie",
       "title": "Freshie Orientation Session",
       "icon": "\ud83c\udf93",
-      "description": "Placeholder description for Freshie Orientation Session.",
+      "description": "",
       "image": "/assets/images/events_title_images/freshie_orientation.jpeg",
       "subcards": [
         {
           "id": "freshie-1",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
+          "title": "Freshie Orientation Session",
+          "description": "The Freshie Roadmap session introduced incoming students to the exciting world of physics and astronomy through a journey spanning everyday phenomena, cutting-edge science, and the physics behind popular science fiction. Designed as an engaging welcome event, it encouraged freshers to look at the universe with curiosity and a scientific mindset.",
           "image": "/assets/images/events/freshie-1.jpg",
           "youtube": ""
         },
         {
           "id": "freshie-2",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
+          "title": "Freshie Orientation Session",
+          "description": "The session combined interactive discussions, thought-provoking demonstrations, and fun challenges to create an immersive learning experience. By showcasing the diverse scope of physics and astronomy, it inspired students to explore new ideas, connect with like-minded peers, and become part of Horizon's vibrant scientific community.",
           "image": "/assets/images/events/freshie-2.jpg",
-          "youtube": ""
-        },
-        {
-          "id": "freshie-3",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/freshie-3.jpg",
           "youtube": ""
         }
       ]
     },
-    "other": {
-      "id": "other",
+    "extra": {
+      "id": "extra",
       "title": "Other Events",
-      "icon": "\ud83d\udcc5",
-      "description": "Placeholder description for Other Events.",
-      "image": "/assets/images/events/other.jpg",
+      "icon": "\ud83c\udf20",
+      "sessionCount": 2,
+      "description": "Beyond its flagship events, Horizon continually explores innovative ways to make physics and astronomy more engaging for the IIT Madras community. Through a diverse range of interactive and creative initiatives, the club aims to present the wonders of the universe in accessible, inspiring, and memorable ways.",
+      "image": "/assets/images/events_poster/extra_sessions/zeroshadow.jpeg",
       "subcards": [
         {
-          "id": "other-1",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/other-1.jpg",
+          "id": "extra-zeroshadow-1",
+          "title": "Zero Shadow Day",
+          "description": "Zero Shadow Day introduced the IIT Madras community to the fascinating phenomenon of the Sun passing directly overhead, causing vertical objects to cast almost no visible shadow. Through live demonstrations and interactive activities, participants witnessed this rare astronomical event firsthand.",
+          "image": "/assets/images/events_poster/extra_sessions/zeroshadow.jpeg",
           "youtube": ""
         },
         {
-          "id": "other-2",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/other-2.jpg",
+          "id": "extra-zeroshadow-2",
+          "title": "Zero Shadow Day",
+          "description": "The session blended scientific explanation with hands-on observation, encouraging students to appreciate everyday celestial phenomena. It offered a unique opportunity to experience astronomy in action while fostering curiosity about Earth's relationship with the Sun.",
+          "image": "/assets/images/events_poster/extra_sessions/zeroshadow2.jpeg",
           "youtube": ""
         },
         {
-          "id": "other-3",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/other-3.jpg",
+          "id": "extra-lovedynamics-1",
+          "title": "Love Dynamics",
+          "description": "Love Dynamics explored how mathematics can be used to model human relationships through systems of differential equations. By presenting concepts such as equilibrium, oscillations, and stability in an engaging context, the session offered a unique perspective on the intersection of mathematics and everyday life.",
+          "image": "/assets/images/events_poster/extra_sessions/lovedynamics.jpeg",
+          "youtube": ""
+        },
+        {
+          "id": "extra-lovedynamics-2",
+          "title": "Love Dynamics",
+          "description": "Blending humor with scientific reasoning, the session transformed an unconventional topic into an interactive learning experience. It demonstrated how mathematical models can provide insights into real-world phenomena while making advanced concepts accessible and entertaining.",
+          "image": "/assets/images/events_poster/extra_sessions/lovedynamics1.jpeg",
           "youtube": ""
         }
       ]
@@ -424,7 +438,7 @@
           "id": "summer-4",
           "title": "Atmospheric Ignition & The Fate of the World",
           "description": "Step into one of history's most pivotal scientific moments and examine the physics behind the first atomic bomb. Explore the fears, calculations, and ethical dilemmas that surrounded the Trinity Test and changed the course of humanity.",
-          "image": "/assets/images/events/summer-4.jpg",
+          "image": "/assets/images/events_poster/ss26/atmosignis.png",
           "youtube": "https://www.youtube.com/live/OpmGUloCP5o?si=wd44S5PCnQ3USrsL"
         },
         {
