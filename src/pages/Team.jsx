@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import teamData from '../data/team.json'
-import NodeFriends from '../components/NodeFriends/NodeFriends'
 import SpaceBackground from '../components/SpaceBackground'
 import '../styles/events.css'
 
@@ -53,33 +52,24 @@ export default function Team() {
   return (
     <article className="page events-page">
       <SpaceBackground />
-      <div className="team-hero-shell">
-        <div className="team-nodes-layer" aria-hidden="true">
-          <NodeFriends />
-        </div>
-        <div className="team-hero-overlay" aria-hidden="true"></div>
-        <div className="container">
-          <header className="events-header">
-            <h1 className="events-title">Our Team</h1>
-            <p className="events-subtitle">Meet the people who make Horizon possible.</p>
-          </header>
-          <nav className="year-pills" aria-label="Select tenure">
-            {tenures.map(t => (
-              <button
-                key={t}
-                className={`year-pill${activeTenure === t ? ' year-pill--active' : ''}`}
-                onClick={() => setActiveTenure(t)}
-              >
-                {activeTenure === t && <span className="year-pill__comet" />}
-                <span className="year-pill__label">{t}</span>
-              </button>
-            ))}
-          </nav>
-        </div>
-      </div>
-      <div className="team-background-section">
-        <div className="container">
-          <div className="team-content">
+      <div className="events-container">
+        <header className="events-header">
+          <h1 className="events-title">Our Team</h1>
+          <p className="events-subtitle">Meet the people who make Horizon possible.</p>
+        </header>
+        <nav className="year-pills" aria-label="Select tenure">
+          {tenures.map(t => (
+            <button
+              key={t}
+              className={`year-pill${activeTenure === t ? ' year-pill--active' : ''}`}
+              onClick={() => setActiveTenure(t)}
+            >
+              {activeTenure === t && <span className="year-pill__comet" />}
+              <span className="year-pill__label">{t}</span>
+            </button>
+          ))}
+        </nav>
+        <div className="team-content">
             {['core', 'coordinator'].map(section => (
               grouped[section]?.length > 0 && (
                 <section key={section} className="team-section">
@@ -106,7 +96,6 @@ export default function Team() {
             ))}
           </div>
         </div>
-      </div>
     </article>
   )
 }
