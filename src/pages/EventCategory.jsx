@@ -113,50 +113,83 @@ export default function EventCategory() {
             </section>
           </div>
         ) : (
-          <div className="subcard-list" ref={listRef}>
-            {cat.subcards.map((sub, index) => (
-              <div
-                key={sub.id}
-                className={`subcard${index % 2 === 1 ? ' subcard--reverse' : ''}`}
-                style={{
-                  '--cat-accent': colors.accent,
-                  '--cat-bg': colors.bg,
-                  '--cat-glow': colors.glow,
-                  '--reveal-delay': `${index * 0.1}s`,
-                }}
-              >
-                <div className="subcard__shooting-star" />
-
-                {sub.image && (
-                  <div className="subcard__image">
-                    <img src={imagePath(sub.image)} alt={sub.title} />
-                    <div className="subcard__image-overlay" />
+          <div className={`subcard-list subcard-list--${category}`} ref={listRef}>
+            {cat.subcards.map((sub, index) => {
+              if (sub.images && sub.images.length > 0) {
+                return (
+                  <div
+                    key={sub.id}
+                    className="subcard subcard--gallery"
+                    style={{
+                      '--cat-accent': colors.accent,
+                      '--cat-bg': colors.bg,
+                      '--cat-glow': colors.glow,
+                      '--reveal-delay': `${index * 0.1}s`,
+                    }}
+                  >
+                    <div className="subcard__shooting-star" />
+                    <div className="subcard__gallery-header">
+                      <h3 className="subcard__title subcard__title--center">{sub.title}</h3>
+                      <span className="subcard__divider subcard__divider--center" />
+                      {sub.description && (
+                        <p className="subcard__description subcard__description--center">{sub.description}</p>
+                      )}
+                    </div>
+                    <div className="subcard__gallery-grid">
+                      {sub.images.map((imgSrc, imgIdx) => (
+                        <div key={imgIdx} className="subcard__gallery-item">
+                          <img src={imagePath(imgSrc)} alt={`${sub.title} ${imgIdx + 1}`} />
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                )}
+                )
+              }
 
-                <div className="subcard__content">
-                  <h3 className="subcard__title">{sub.title}</h3>
-                  <span className="subcard__divider" />
-                  {sub.speaker && (
-                    <p className="subcard__speaker">{sub.speaker}</p>
+              return (
+                <div
+                  key={sub.id}
+                  className={`subcard${index % 2 === 1 ? ' subcard--reverse' : ''}`}
+                  style={{
+                    '--cat-accent': colors.accent,
+                    '--cat-bg': colors.bg,
+                    '--cat-glow': colors.glow,
+                    '--reveal-delay': `${index * 0.1}s`,
+                  }}
+                >
+                  <div className="subcard__shooting-star" />
+
+                  {sub.image && (
+                    <div className="subcard__image">
+                      <img src={imagePath(sub.image)} alt={sub.title} />
+                      <div className="subcard__image-overlay" />
+                    </div>
                   )}
-                  <p className="subcard__description">{sub.description}</p>
-                  {sub.youtube && (
-                    <a
-                      href={sub.youtube}
-                      className="subcard__youtube"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z" />
-                      </svg>
-                      Watch the Session Here!
-                    </a>
-                  )}
+
+                  <div className="subcard__content">
+                    <h3 className="subcard__title">{sub.title}</h3>
+                    <span className="subcard__divider" />
+                    {sub.speaker && (
+                      <p className="subcard__speaker">{sub.speaker}</p>
+                    )}
+                    <p className="subcard__description">{sub.description}</p>
+                    {sub.youtube && (
+                      <a
+                        href={sub.youtube}
+                        className="subcard__youtube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                          <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z" />
+                        </svg>
+                        Watch the Session Here!
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         )}
       </div>

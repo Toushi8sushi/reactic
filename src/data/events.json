@@ -214,28 +214,28 @@
           "id": "summer-1",
           "title": "Antenna Theory",
           "description": "Explore the fascinating world of antenna theory and discover how antennas have become one of the foundational technologies of modern civilization. This session covers the history of antennas and radio astronomy, the electromagnetic principles behind their operation, and the key parameters used to analyze antenna performance. You'll also learn about various antenna designs — including dipole, loop, horn, helical, reflector, and microstrip antennas — their real-world applications, and conclude with an introduction to smart beam steering, where antennas can electronically \"look\" in different directions without any physical movement.",
-          "image": "/assets/images/events/summer-1.jpg",
+          "image": "/assets/images/events_poster/ss25/ss25_1.jpg",
           "youtube": "https://www.youtube.com/watch?v=rdhcunW1-6o&t=1691s"
         },
         {
           "id": "summer-2",
           "title": "Introduction to Quantum Communication",
           "description": "Step into the world of quantum communication and discover how the principles of quantum mechanics are revolutionizing secure communication. This session explores the foundations of classical and quantum cryptography, covering encryption techniques such as AES and RSA, the impact of quantum algorithms like Shor's and Grover's, and the fundamentals of quantum communication through the BB84 protocol. We'll also delve into advanced quantum key distribution protocols, including E91 and BBM92, while highlighting the latest developments that are shaping the future of quantum networks.",
-          "image": "/assets/images/events/summer-2.jpg",
+          "image": "/assets/images/events_poster/ss25/ss25_2.jpg",
           "youtube": "https://www.youtube.com/watch?v=fkobD7EaY8g"
         },
         {
           "id": "summer-3",
           "title": "What if the Apple Never Fell on Newton's Head",
           "description": "Journey beyond Newton's famous apple and discover the elegant principles that form the heart of classical mechanics. This session introduces the Lagrangian formulation through D'Alembert's principle, explores conservation laws and Noether's theorem, and transitions into Hamiltonian mechanics using Legendre transforms. We'll also uncover the significance of the Principle of Least Action and see how these powerful ideas extend beyond mechanics to derive fundamental results in geometrical optics.",
-          "image": "/assets/images/events/summer-3.jpg",
+          "image": "/assets/images/events_poster/ss25/ss25_3.jpg",
           "youtube": "https://www.youtube.com/watch?v=6tH-PNDNFaM"
         },
         {
           "id": "summer-4",
           "title": "Gravitational Waves and The LIGO",
           "description": "Embark on a journey through spacetime and explore the fascinating science of gravitational waves — ripples in the fabric of the universe predicted by Einstein over a century ago. This session introduces the fundamentals of General Relativity, the origins of gravitational waves, and the remarkable story behind their historic discovery. Learn how observatories like LIGO detect signals from black hole mergers, neutron star collisions, and potentially even the earliest moments of the universe using incredibly precise laser interferometry.",
-          "image": "/assets/images/events/summer-4.jpg",
+          "image": "/assets/images/events_poster/ss25/ss25_4.jpg",
           "youtube": "https://www.youtube.com/watch?v=__lRiYBReUk"
         }
       ]
@@ -275,20 +275,29 @@
       "title": "Research Conclave",
       "icon": "\ud83d\udd2c",
       "description": "",
-      "image": "/assets/images/events_title_images/rc.jpeg",
+      "image": "/assets/images/events_poster/rc25/title.jpg",
       "subcards": [
         {
           "id": "conclave-1",
           "title": "Research Conclave",
-          "description": "The Research Conclave is CFI's flagship annual event that celebrates student-led research, innovation, and interdisciplinary collaboration. It brings together students, faculty, and researchers to showcase pioneering projects, exchange ideas, and foster meaningful discussions across diverse scientific and engineering domains.",
-          "image": "/assets/images/events_poster/rc_poster.jpeg",
+          "description": "The Research Conclave is CFI's flagship annual event that celebrates student-led research, innovation, and interdisciplinary collaboration. It brings together students, faculty, and researchers to showcase pioneering projects, exchange ideas, and foster meaningful discussions across diverse scientific and engineering domains.\n\nThe event serves as a platform for participants to present their work, gain valuable feedback from experts, and explore opportunities for collaboration. By highlighting cutting-edge research and innovation, the conclave inspires the institute community to pursue impactful ideas and contribute to the advancement of science and technology.",
+          "image": "/assets/images/events_poster/rc25/title.jpg",
           "youtube": ""
         },
         {
-          "id": "conclave-2",
-          "title": "Research Conclave",
-          "description": "The event serves as a platform for participants to present their work, gain valuable feedback from experts, and explore opportunities for collaboration. By highlighting cutting-edge research and innovation, the conclave inspires the institute community to pursue impactful ideas and contribute to the advancement of science and technology.",
-          "youtube": ""
+          "id": "conclave-gallery",
+          "title": "Scenes from Research Conclave @ Horizon",
+          "images": [
+            "/assets/images/events_poster/rc25/PXL_20251102_123437168.jpg",
+            "/assets/images/events_poster/rc25/PXL_20251102_123533733.jpg",
+            "/assets/images/events_poster/rc25/PXL_20251102_124509969.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_134522526.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_134900937.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_140416841.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_140457134.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_142559271.jpg",
+            "/assets/images/events_poster/rc25/IMG_20251102_142603718.jpg"
+          ]
         }
       ]
     },
