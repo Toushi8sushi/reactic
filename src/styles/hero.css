@@ -10,6 +10,30 @@
   color: #f2f0ff;
 }
 
+/* Apply the Event page typography to the homepage */
+.home-sections-wrapper {
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Exo 2', var(--font-family-base);
+  font-family: var(--font-body);
+}
+
+.home-sections-wrapper h1,
+.home-sections-wrapper h2,
+.home-sections-wrapper h3,
+.home-sections-wrapper h4,
+.home-sections-wrapper h5,
+.home-sections-wrapper h6 {
+  font-family: var(--font-display);
+}
+
+.home-sections-wrapper p,
+.home-sections-wrapper span,
+.home-sections-wrapper li,
+.home-sections-wrapper a,
+.home-sections-wrapper button {
+  font-family: var(--font-body);
+}
+
 .hero-orbit {
   position: absolute;
   inset: 0;

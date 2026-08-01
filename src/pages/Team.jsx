@@ -50,7 +50,7 @@ export default function Team() {
   }, [activeTenure])
 
   return (
-    <article className="page events-page">
+    <article className="page events-page team-page">
       <SpaceBackground />
       <div className="events-container">
         <header className="events-header">

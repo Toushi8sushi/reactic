@@ -862,8 +862,7 @@
 .team-content {
   max-width: var(--container-max-width);
   margin: 0 auto;
-  /* Set top padding to ~125px (~3.3cm) so distance between header and first team section is about 3-3.5cm */
-  padding: 125px var(--spacing-md) var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-2xl);
 }
 
 .team-card__image {
@@ -940,4 +939,17 @@
 .tenure-tabs .btn-primary:hover {
   background: var(--color-primary);
   color: #000;
+}
+
+.events-page.team-page .events-container,
+.events-page.contact-page .events-container {
+  padding-top: var(--spacing-xs);
+}
+
+.events-page.team-page .events-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.events-page.team-page .team-content {
+  padding-top: var(--spacing-xs);
 }
