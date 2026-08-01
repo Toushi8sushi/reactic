@@ -6,6 +6,7 @@
   overflow-x: hidden;
   --font-display: 'Orbitron', sans-serif;
   --font-body: 'Exo 2', var(--font-family-base);
+  font-family: var(--font-body);
 }
 
 .events-page a:hover,
