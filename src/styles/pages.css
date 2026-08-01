@@ -862,7 +862,8 @@
 .team-content {
   max-width: var(--container-max-width);
   margin: 0 auto;
-  padding: calc(var(--header-height) + var(--spacing-xl)) var(--spacing-md) var(--spacing-2xl); /* align with events container padding */
+  /* Set top padding to ~125px (~3.3cm) so distance between header and first team section is about 3-3.5cm */
+  padding: 125px var(--spacing-md) var(--spacing-2xl);
 }
 
 .team-card__image {
