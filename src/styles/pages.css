@@ -489,25 +489,40 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
   background: #0a0d14;
   padding: var(--spacing-xl) 0;
 }
 
 .astro-gallery-particles {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   pointer-events: none;
 }
 
-.astro-gallery-particles .particles-container {
+.astro-gallery-particles .particles-container,
+.astro-gallery-particles canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.astro-gallery-content {
+  position: relative;
+  z-index: 10;
 }
 
 .astro-gallery-container {
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
@@ -521,6 +536,7 @@
 }
 
 .astro-gallery-title {
+  position: relative;
   text-align: left;
   margin-bottom: var(--spacing-lg);
   color: var(--color-page-title);
@@ -579,6 +595,8 @@
 }
 
 .astro-articles {
+  position: relative;
+  z-index: 1;
   margin-top: var(--spacing-2xl);
 }
 

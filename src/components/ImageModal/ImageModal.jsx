@@ -1,6 +1,16 @@
 import { useEffect, useCallback } from 'react'
 import './ImageModal.css'
 
+const exifFields = [
+  { label: 'Camera', key: 'camera' },
+  { label: 'Mount', key: 'mount' },
+  { label: 'Filter', key: 'filter' },
+  { label: 'Location', key: 'location' },
+  { label: 'Telescope', key: 'telescope' },
+  { label: 'Exposure', key: 'exposure' },
+  { label: 'ISO/Gain', key: 'iso' }
+]
+
 export default function ImageModal({ image, onClose }) {
   const handleClose = useCallback(() => {
     onClose()
@@ -48,30 +58,16 @@ export default function ImageModal({ image, onClose }) {
               <div className="image-modal-divider"></div>
 
               <div className="image-modal-exif-grid">
-                <div className="exif-item">
-                  <span className="exif-label">Telescope</span>
-                  <span className="exif-value">{image.telescope}</span>
-                </div>
-                <div className="exif-item">
-                  <span className="exif-label">Camera</span>
-                  <span className="exif-value">{image.camera}</span>
-                </div>
-                <div className="exif-item">
-                  <span className="exif-label">Mount</span>
-                  <span className="exif-value">{image.mount}</span>
-                </div>
-                <div className="exif-item">
-                  <span className="exif-label">Exposure</span>
-                  <span className="exif-value">{image.exposure}</span>
-                </div>
-                <div className="exif-item">
-                  <span className="exif-label">ISO/Gain</span>
-                  <span className="exif-value">{image.gain}</span>
-                </div>
-                <div className="exif-item">
-                  <span className="exif-label">Filter</span>
-                  <span className="exif-value">{image.filter}</span>
-                </div>
+                {exifFields.map(field => {
+                  const value = image.exif?.[field.key]
+                  if (!value) return null
+                  return (
+                    <div key={field.key} className="exif-item">
+                      <span className="exif-label">{field.label}</span>
+                      <span className="exif-value">{value}</span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
