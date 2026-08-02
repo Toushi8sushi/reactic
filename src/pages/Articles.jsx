@@ -7,6 +7,12 @@ import '../styles/events.css'
 
 export default function Articles() {
   const articles = getArticles()
+  const hiddenArticleIds = new Set([
+    'getting-started-with-open-source',
+    'project-radian',
+    'project-starspec',
+  ])
+  const visibleArticles = articles.filter(article => !hiddenArticleIds.has(article.id))
 
   return (
     <article className="page events-page">
@@ -24,7 +30,7 @@ export default function Articles() {
           </div>
 
           <div className="projects-grid articles-grid">
-            {articles.slice(3).map(article => (
+            {visibleArticles.map(article => (
               <Link key={article.id} to={`/articles/${article.id}`} className="project-card project-card--inner">
                 <div className="project-card__image">
                   {article.image ? (
@@ -42,7 +48,7 @@ export default function Articles() {
             ))}
           </div>
 
-          {articles.length === 0 && (
+          {visibleArticles.length === 0 && (
             <div className="empty-state">
               <p>No articles yet. Check back soon!</p>
             </div>
