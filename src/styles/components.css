@@ -671,7 +671,7 @@
 
 .g2g-session-card__link:hover {
   color: var(--color-primary-dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* ===== Year Pills / Boxes ===== */

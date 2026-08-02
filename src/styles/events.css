@@ -131,16 +131,23 @@
 }
 
 /* Improve link contrast on nebula background for pages using events styles (events/team/contact) */
-.events-container a,
-.events-page .page-content a {
+.events-page:not(.contact-page) .events-container a,
+.events-page:not(.contact-page) .page-content a {
   color: var(--color-text-light);
-  text-decoration: underline;
+  text-decoration: none;
 }
-
-.events-container a:hover,
-.events-page .page-content a:hover {
+ 
+.project-card a,
+.subcard a,
+.category-card a,
+.events-page .page-content .project-card a {
+  text-decoration: none !important;
+}
+ 
+.events-page:not(.contact-page) .events-container a:hover,
+.events-page:not(.contact-page) .page-content a:hover {
   color: var(--color-primary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 

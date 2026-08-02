@@ -443,7 +443,7 @@
   font-weight: 500;
 }
 .project-content a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
