@@ -27,26 +27,47 @@
   border-radius: 50%;
 }
 
-.orbit-ring-1 { width: 320px; height: 320px; animation: spin 22s linear infinite; }
-.orbit-ring-2 { width: 520px; height: 520px; animation: spin 40s linear infinite reverse; }
+.orbit-ring-1 {
+  width: 320px;
+  height: 320px;
+  animation: spin 22s linear infinite;
+}
+.orbit-ring-2 {
+  width: 520px;
+  height: 520px;
+  animation: spin 40s linear infinite reverse;
+}
 
-.orbit-planet { position: absolute; border-radius: 50%; }
+.orbit-planet {
+  position: absolute;
+  border-radius: 50%;
+}
 
 .orbit-planet-1 {
-  top: -6px; left: 50%; width: 12px; height: 12px;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
   background: radial-gradient(circle at 30% 30%, #ffd9a0, #d9822b);
   box-shadow: 0 0 12px 2px rgba(217, 130, 43, 0.6);
 }
 
 .orbit-planet-2 {
-  bottom: -8px; left: 30%; width: 16px; height: 16px;
+  bottom: -8px;
+  left: 30%;
+  width: 16px;
+  height: 16px;
   background: radial-gradient(circle at 30% 30%, #b9d7ff, #4d6fb0);
   box-shadow: 0 0 14px 3px rgba(77, 111, 176, 0.6);
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-astro .hero-content {
@@ -70,5 +91,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orbit-ring { animation: none; }
+  .orbit-ring {
+    animation: none;
+  }
 }

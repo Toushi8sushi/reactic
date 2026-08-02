@@ -49,15 +49,12 @@ for (const [filePath, raw] of Object.entries(files)) {
   }
 }
 
-articles.sort((a, b) => new Date(b.date) - new Date(a.date))
-events.sort((a, b) => new Date(b.date) - new Date(a.date))
-
-const projectFiles = import.meta.glob('/src/data/**/*.json', {
+const dataFiles = import.meta.glob('/src/data/**/*.json', {
   import: 'default',
   eager: true,
 })
 
-for (const [filePath, jsonData] of Object.entries(projectFiles)) {
+for (const [filePath, jsonData] of Object.entries(dataFiles)) {
   if (filePath.includes('projects.json')) {
     for (const [tenure, projects] of Object.entries(jsonData)) {
       for (const project of projects) {
@@ -69,21 +66,20 @@ for (const [filePath, jsonData] of Object.entries(projectFiles)) {
           image: project.image,
           author: project.author,
           category: 'Project',
-          tenure: tenure,
+          tenure,
         })
       }
     }
   }
+
   if (filePath.includes('events.json')) {
     for (const [tenure, tenureData] of Object.entries(jsonData)) {
-      if (Array.isArray(tenureData)) {
-        for (const event of tenureData) {
-          events.push({ ...event, tenure })
-        }
-      } else {
-        for (const event of Object.values(tenureData)) {
-          events.push({ ...event, tenure })
-        }
+      const tenureEvents = Array.isArray(tenureData)
+        ? tenureData
+        : Object.values(tenureData)
+
+      for (const event of tenureEvents) {
+        events.push({ ...event, tenure })
       }
     }
   }

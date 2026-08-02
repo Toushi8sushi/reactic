@@ -5,7 +5,9 @@
   padding: 0 var(--spacing-md);
 }
 @media (min-width: 850px) {
-  .container { padding: 0 var(--spacing-lg); }
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
 }
 
 .main-content {
@@ -40,7 +42,9 @@
   height: 36px;
   width: auto;
   display: block;
-  transition: filter 0.25s ease, transform 0.25s ease;
+  transition:
+    filter 0.25s ease,
+    transform 0.25s ease;
 }
 .pill-header__logo:hover img {
   filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.6));
@@ -101,13 +105,17 @@
   padding: 0;
   margin: 0;
 }
-.footer-section ul li { margin-bottom: var(--spacing-sm); }
+.footer-section ul li {
+  margin-bottom: var(--spacing-sm);
+}
 .footer-section ul a {
   color: var(--color-text-light);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.footer-section ul a:hover { color: var(--color-primary); }
+.footer-section ul a:hover {
+  color: var(--color-primary);
+}
 
 .footer-section.social ul a {
   display: flex;
@@ -121,11 +129,21 @@
   flex-shrink: 0;
   fill: currentColor;
 }
-.footer-section.social a:hover .instagram { color: #e1306c; }
-.footer-section.social a:hover .email { color: #f7f7f7; }
-.footer-section.social a:hover .youtube { color: #ff0000; }
-.footer-section.social a:hover .github { color: #ffffff; }
-.footer-section.social a:hover .linkedin { color: #0a66c2; }
+.footer-section.social a:hover .instagram {
+  color: #e1306c;
+}
+.footer-section.social a:hover .email {
+  color: #f7f7f7;
+}
+.footer-section.social a:hover .youtube {
+  color: #ff0000;
+}
+.footer-section.social a:hover .github {
+  color: #ffffff;
+}
+.footer-section.social a:hover .linkedin {
+  color: #0a66c2;
+}
 
 .footer-brand .footer-logo {
   display: inline-block;
@@ -144,4 +162,6 @@
   color: var(--color-text-light);
   font-size: var(--font-size-sm);
 }
-.footer-bottom p { margin: 0; }
+.footer-bottom p {
+  margin: 0;
+}
