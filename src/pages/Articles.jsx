@@ -1,68 +1,58 @@
 import { Link } from 'react-router-dom'
 import { getArticles } from '../lib/content-loader'
 import { imagePath } from '../lib/image-path'
-import MagicBento from '../components/MagicBento/MagicBento'
+// MagicBento removed — using projects-style grid for articles
+import SpaceBackground from '../components/SpaceBackground'
+import '../styles/events.css'
 
 export default function Articles() {
   const articles = getArticles()
+  const hiddenArticleIds = new Set([
+    'getting-started-with-open-source',
+    'project-radian',
+    'project-starspec',
+    'project-optiqomm',
+    'project-sonicphase',
+    'project-ferrostats',
+    'project-quantaband',
+    'project-ligo',
+  ])
+  const visibleArticles = articles.filter(article => !hiddenArticleIds.has(article.id))
 
   return (
-    <article className="page">
-      <div className="container">
-        <header className="page-header">
-          <h1>Articles</h1>
+    <article className="page events-page">
+      <SpaceBackground />
+
+      <div className="events-container">
+        <header className="events-header" style={{ marginTop: '-4.5rem' }}>
+          <h1 className="events-title">Articles</h1>
+          <p className="events-subtitle">Our articles explore a wide range of topics in physics, from fundamental concepts and historical developments to recent research and scientific breakthroughs. They aim to present complex ideas in a clear and engaging manner, encouraging readers to learn, question, and explore further.</p>
         </header>
-        <div className="page-content">
-          <div className="articles-header">
-            <h2>Knowledge Hub</h2>
-            <p>Explore technical tutorials, hackathon recaps, and community insights.</p>
-          </div>
 
-          <MagicBento
-            containerClassName="articles-list"
-            enableTilt
-            enableMagnetism
-            clickEffect={false}
-            textAutoHide={false}
-          >
-            {articles.map(article => (
-              <article key={article.id} className="article-card article-card--inner scroll-element">
-                <Link to={`/articles/${article.id}`} className="card-visual">
-                  {article.image ? (
-                    <img src={imagePath(article.image)} alt={article.title} />
-                  ) : (
-                    <div className="pattern-bg"></div>
-                  )}
-                </Link>
-                <div className="card-body">
-                  <div className="card-meta">
-                    <span className="author">{article.author}</span>
-                    <span className="date">{new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' })}</span>
-                    {article.tags && (
-                      <div className="tags-list">
-                        {article.tags.map(tag => (
-                          <span key={tag} className="tag-pill">{tag}</span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <h3 className="card-title">
-                    <Link to={`/articles/${article.id}`}>{article.title}</Link>
-                  </h3>
-                  <Link to={`/articles/${article.id}`} className="read-link">
-                    Read Article <span className="arrow">→</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </MagicBento>
-
-          {articles.length === 0 && (
-            <div className="empty-state">
-              <p>No articles yet. Check back soon!</p>
-            </div>
-          )}
+        <div className="projects-grid" style={{ marginTop: '7rem' }}>
+          {visibleArticles.map(article => (
+            <Link key={article.id} to={`/articles/${article.id}`} className="project-card project-card--inner">
+              <div className="project-card__image">
+                {article.image ? (
+                  <img src={imagePath(article.image)} alt={article.title} />
+                ) : (
+                  <div className="pattern-bg" style={{height: '180px'}} />
+                )}
+              </div>
+              <div className="project-card__content">
+                <h3>{article.title}</h3>
+                <p>{article.excerpt || article.summary || ''}</p>
+                <span className="project-card__cta">Read Article →</span>
+              </div>
+            </Link>
+          ))}
         </div>
+
+        {visibleArticles.length === 0 && (
+          <div className="empty-state">
+            <p>No articles yet. Check back soon!</p>
+          </div>
+        )}
       </div>
     </article>
   )
