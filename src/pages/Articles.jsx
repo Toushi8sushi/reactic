@@ -11,6 +11,11 @@ export default function Articles() {
     'getting-started-with-open-source',
     'project-radian',
     'project-starspec',
+    'project-optiqomm',
+    'project-sonicphase',
+    'project-ferrostats',
+    'project-quantaband',
+    'project-ligo',
   ])
   const visibleArticles = articles.filter(article => !hiddenArticleIds.has(article.id))
 
