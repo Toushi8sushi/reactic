@@ -1,16 +1,24 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getArticles } from '../lib/content-loader'
-import { imagePath } from '../lib/image-path'
 import gallery from '../data/astro-gallery.json'
 import Lightfall from '../components/Lightfall/Lightfall'
 import Particles from '../components/Particles/Particles'
-import MagicBento from '../components/MagicBento/MagicBento'
+import Masonry from '../components/Masonry/Masonry'
 import ImageModal from '../components/ImageModal/ImageModal'
+
+const masonryHeights = [380, 320, 420, 300, 360, 400, 340, 300, 420, 360, 320, 400]
 
 export default function Astrophotography() {
   const astroPosts = getArticles().filter(a => a.tags?.includes('astrophotography'))
   const [selectedImage, setSelectedImage] = useState(null)
+
+  const formattedAstroItems = gallery.map((item, i) => ({
+    ...item,
+    id: item.id,
+    img: item.imageSrc,
+    height: masonryHeights[i % masonryHeights.length]
+  }))
 
   return (
     <article className="page">
@@ -56,22 +64,21 @@ export default function Astrophotography() {
             disableRotation={false}
           />
         </div>
+
+        <div className="astro-gallery-content">
           <div className="astro-gallery-container">
             <h2 className="astro-gallery-title" style={{ marginTop: 'var(--spacing-lg)' }}>The Cosmic Gallery</h2>
-            <MagicBento enableTilt enableMagnetism clickEffect={false} containerClassName="astro-gallery-bento">
-              {gallery.map((item, i) => (
-                <div key={i} className="astro-tile__bento-wrapper" onClick={() => setSelectedImage(item)}>
-                  <img
-                    src={item.imageSrc}
-                    alt={item.title}
-                    loading="lazy"
-                  />
-                  <div className="astro-tile__overlay">
-                    <h3>{item.title}</h3>
-                  </div>
-                </div>
-              ))}
-            </MagicBento>
+            <Masonry
+              items={formattedAstroItems}
+              ease="power3.out"
+              duration={0.6}
+              stagger={0.05}
+              animateFrom="bottom"
+              scaleOnHover={true}
+              hoverScale={0.97}
+              blurToFocus={true}
+              onItemClick={item => setSelectedImage(item)}
+            />
           </div>
 
           {selectedImage && (
@@ -80,10 +87,9 @@ export default function Astrophotography() {
               onClose={() => setSelectedImage(null)}
             />
           )}
-      </section>
 
       {astroPosts.length > 0 && (
-        <section className="astro-articles">
+        <div className="astro-articles">
           <div className="container">
             <h2 className="section-title">Articles</h2>
             <div className="articles-list">
@@ -112,8 +118,10 @@ export default function Astrophotography() {
               ))}
             </div>
           </div>
-        </section>
+        </div>
       )}
+        </div>
+      </section>
     </article>
   )
 }

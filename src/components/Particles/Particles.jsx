@@ -126,6 +126,10 @@ const Particles = ({
       camera.perspective({ aspect: gl.canvas.width / gl.canvas.height });
     };
     window.addEventListener('resize', resize, false);
+
+    const ro = new ResizeObserver(resize);
+    ro.observe(container);
+
     resize();
 
     const handleMouseMove = e => {
@@ -215,6 +219,7 @@ const Particles = ({
 
     return () => {
       window.removeEventListener('resize', resize);
+      ro.disconnect();
       if (moveParticlesOnHover) {
         document.removeEventListener('mousemove', handleMouseMove);
       }
