@@ -150,9 +150,6 @@
   margin-top: var(--spacing-xl);
 }
 
-.articles-grid {
-  gap: var(--spacing-lg) var(--spacing-2xl);
-}
 
 @media (min-width: 768px) {
   .projects-grid {
