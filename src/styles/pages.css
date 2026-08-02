@@ -148,6 +148,10 @@
   z-index: 1;
 }
 
+.projects-page .projects-grid {
+  margin-top: 4.5rem;
+}
+
 .events-hero-shell {
   position: relative;
   overflow: hidden;
