@@ -55,8 +55,8 @@ export default function Home() {
             <h1><ShinyText text="Welcome to Horizon!" speed={3} color="#f2f0ff" shineColor="#ffffff" spread={150} /></h1>
             <p className="hero-tagline"><ShinyText text="The Physics and Astronomy Club, IIT Madras" speed={4} color="#c9cbe8" shineColor="#ffffff" spread={120} /></p>
             <div className="hero-actions">
-              <Link to="/contact" className="btn btn-primary">Contact Us</Link>
-              <Link to="/articles" className="btn btn-primary">Read Articles</Link>
+              <Link to="/contact" className="year-pill">Contact Us</Link>
+              <Link to="/articles" className="year-pill">Read Articles</Link>
             </div>
           </div>
         </section>
