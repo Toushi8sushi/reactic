@@ -37,10 +37,14 @@ const InventoryCard = ({ section, dimmed }) => {
       <h3 className="inventory-card__title">{section.category}</h3>
       <ul className="inventory-card__list">
         {section.items.map(item => (
-          <li key={`${item.company}-${item.model}`} className="inventory-item">
+          <li key={`${item.company ?? ''}-${item.model}`} className="inventory-item">
             <span className="inventory-item__dot" aria-hidden="true" />
-            <span className="inventory-item__company">{item.company}</span>
+            {item.company && <span className="inventory-item__company">{item.company}</span>}
             <span className="inventory-item__model">{item.model}</span>
+            {item.tag && <span className="inventory-item__tag">{item.tag}</span>}
+            {item.quantity != null && (
+              <span className="inventory-item__qty">Qty {item.quantity}</span>
+            )}
           </li>
         ))}
       </ul>
