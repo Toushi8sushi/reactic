@@ -6,6 +6,7 @@ import Lightfall from '../components/Lightfall/Lightfall'
 import Particles from '../components/Particles/Particles'
 import Masonry from '../components/Masonry/Masonry'
 import ImageModal from '../components/ImageModal/ImageModal'
+import EquipmentInventory from '../components/EquipmentInventory'
 
 const masonryHeights = [380, 320, 420, 300, 360, 400, 340, 300, 420, 360, 320, 400]
 
@@ -80,6 +81,8 @@ export default function Astrophotography() {
               onItemClick={item => setSelectedImage(item)}
             />
           </div>
+
+          <EquipmentInventory />
 
           {selectedImage && (
             <ImageModal
