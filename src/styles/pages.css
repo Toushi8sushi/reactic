@@ -612,10 +612,6 @@
   }
 }
 
-.guild-page {
-  padding: 0;
-}
-
 .guild-achievements-section {
   padding: var(--spacing-2xl) 0;
   background: var(--color-background);
