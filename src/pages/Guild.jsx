@@ -1,113 +1,77 @@
-import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
+import competitions from '../data/competitions.json'
+
+const achievements = [
+  { year: 2024, competition: 'Indian National Physicists\' Tournament (INPT)', result: '1st & 2nd Place, ₹35,000 prizes' },
+  { year: 2025, competition: 'International Physicists\' Tournament (IPT) Qualifiers', result: 'Qualified as Team India Representative' },
+  { year: 2024, competition: 'Inter-IIT Tech Meet — Observational Astronomy', result: '3rd Place' },
+  { year: 2025, competition: 'Decoherence 2025 — IISc', result: '3rd Place' },
+]
+
 export default function Guild() {
-  const observerRef = useRef(null)
-
-  useEffect(() => {
-    const els = document.querySelectorAll('.reveal')
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active')
-          }
-        })
-      },
-      { threshold: 0.15 }
-    )
-    els.forEach((el) => obs.observe(el))
-    observerRef.current = obs
-    return () => obs.disconnect()
-  }, [])
-
   return (
     <article className="guild-page">
-      <section className="guild-hero">
-        <div className="hero-text">
-          <h1>Exploring the Universe from IIT Madras</h1>
-          <p>
-            Horizon is the Astronomy and Physics guild of IIT Madras,
-            bringing together students passionate about understanding the
-            universe—from theoretical physics to observational astronomy.
-          </p>
+      <section className="guild-achievements-section">
+        <div className="container">
+          <h2 className="section-title">Achievements</h2>
+          <ul className="guild-achievements-list">
+            {achievements.map((a, i) => (
+              <li key={i}>
+                <span className="year-tag">{a.year}</span>
+                <span className="achievement-competition">{a.competition}</span>
+                <span className="achievement-result">{a.result}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      <section className="guild-section reveal">
-        <div className="guild-grid">
-          <div className="guild-text">
-            <h2>Who We Are</h2>
-            <p>
-              Horizon is a community of students fascinated by the deepest
-              questions in physics and astronomy. Our members work on
-              research projects, participate in national competitions,
-              and organize observational events and lectures.
+      <section className="guild-ipt-section">
+        <div className="container guild-ipt-layout">
+          <div className="guild-ipt-copy">
+            <h2 className="section-title">International Physicists' Tournament</h2>
+            <p className="guild-ipt-description">
+              The IPT is a physics competition where teams of students solve challenging
+              open-ended problems and defend their solutions in scientific discussions.
+              Horizon has consistently excelled, qualifying for the international stage
+              and representing Team India.
             </p>
-            <p>
-              From building experimental detectors to analysing astronomical
-              data, the guild creates opportunities for students to explore
-              science beyond the classroom.
-            </p>
+            <div className="guild-ipt-actions">
+              <Link to="/ipt" className="btn btn-primary">Read More</Link>
+              <a
+                href="https://www.instagram.com/iptindia_iitm"
+                className="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="btn-icon" aria-hidden="true"><use href="/icons.svg#instagram-icon" /></svg>
+                Instagram
+              </a>
+            </div>
           </div>
-          <div className="guild-image">
-            <img src={imagePath('/assets/images/guild/telescope.jpeg')} alt="Telescope" />
+          <div className="guild-ipt-media">
+            <img src={imagePath('/assets/images/guild/ipt.jpeg')} alt="IPT team placeholder" />
           </div>
         </div>
       </section>
 
-      <section className="guild-achievements">
-        <h2 className="section-title">Highlights from Our Journey</h2>
-
-        <div className="achievement reveal">
-          <div className="achievement-text">
-            <h3>Indian National Physicists&rsquo; Tournament 2024</h3>
-            <p>
-              Secured <strong>1st and 2nd place</strong> with ₹35,000 in prizes,
-              demonstrating strong physics insight and teamwork.
-            </p>
-          </div>
-          <div className="achievement-image">
-            <img src={imagePath('/assets/images/guild/inpt.jpeg')} alt="INPT" />
-          </div>
-        </div>
-
-        <div className="achievement reveal reverse">
-          <div className="achievement-text">
-            <h3>International Physicists&rsquo; Tournament 2025 Qualifiers</h3>
-            <p>
-              Following our INPT success, our team qualified to represent
-              <strong> Team India</strong> in the International Physicists&rsquo;
-              Tournament.
-            </p>
-          </div>
-          <div className="achievement-image">
-            <img src={imagePath('/assets/images/guild/ipt.jpeg')} alt="IPT" />
-          </div>
-        </div>
-
-        <div className="achievement reveal">
-          <div className="achievement-text">
-            <h3>Inter-IIT Tech Meet 2024 – Observational Astronomy</h3>
-            <p>
-              Achieved <strong>3rd place</strong> using practical observing
-              techniques and advanced astronomical data analysis.
-            </p>
-          </div>
-          <div className="achievement-image">
-            <img src={imagePath('/assets/images/guild/interiit.jpeg')} alt="Inter-IIT" />
-          </div>
-        </div>
-
-        <div className="achievement reveal reverse">
-          <div className="achievement-text">
-            <h3>Decoherence 2025 – IISc</h3>
-            <p>
-              Secured <strong>3rd place</strong> among top undergraduate
-              researchers presenting physics research projects.
-            </p>
-          </div>
-          <div className="achievement-image">
-            <img src={imagePath('/assets/images/guild/telescope.jpeg')} alt="Decoherence" />
+      <section className="guild-competitions-section">
+        <div className="container">
+          <h2 className="section-title">Other Competitions</h2>
+          <div className="projects-grid">
+            {competitions.map((comp, i) => (
+              <Link key={comp.id || i} to={`/guild/competitions/${comp.id}`} className="project-card">
+                <div className="project-card__image">
+                  <img src={imagePath(comp.image)} alt={comp.name} />
+                </div>
+                <div className="project-card__content">
+                  <h3 className="project-card__title">{comp.name}</h3>
+                  <p className="project-card__excerpt">{comp.description}</p>
+                  <span className="project-card__years">Years: {comp.years.join(', ')}</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

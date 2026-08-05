@@ -1,11 +1,11 @@
-﻿{
+{
   "2025-26": [
     {
       "id": "optiqomm",
       "title": "OptiQomm",
       "date": "2026-02-12",
       "author": "Horizon Instrumentation Team",
-      "image": "/assets/images/projects_data/optiqomm.png",
+      "image": "/assets/projects of 2025-26/optiqomm.png",
       "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
       "tags": ["Instrumentation", "Cosmic Rays"],
       "github": "https://github.com/horizon/muon-detector",
@@ -16,7 +16,7 @@
       "title": "Radian",
       "date": "2026-02-12",
       "author": "Horizon Instrumentation Team",
-      "image": "/assets/images/projects_data/radian.png",
+      "image": "/assets/projects of 2025-26/radian.png",
       "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
       "tags": ["Instrumentation", "Cosmic Rays"],
       "github": "https://github.com/horizon/muon-detector",
@@ -27,7 +27,7 @@
       "title": "Starspec",
       "date": "2026-02-12",
       "author": "Horizon Instrumentation Team",
-      "image": "/assets/images/projects_data/starspec.png",
+      "image": "/assets/projects of 2025-26/starspec.png",
       "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
       "tags": ["Instrumentation", "Cosmic Rays"],
       "github": "https://github.com/horizon/muon-detector",
@@ -38,7 +38,7 @@
       "title": "Ligo",
       "date": "2026-02-12",
       "author": "Horizon Instrumentation Team",
-      "image": "",
+      "image": "/assets/projects of 2025-26/ligo.png",
       "excerpt": "A compact scintillator-based detector designed to measure atmospheric muon flux.",
       "tags": ["Instrumentation", "Cosmic Rays"],
       "github": "https://github.com/horizon/muon-detector",

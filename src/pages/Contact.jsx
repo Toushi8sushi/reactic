@@ -1,9 +1,13 @@
+import SpaceBackground from '../components/SpaceBackground'
+import '../styles/events.css'
+
 export default function Contact() {
   return (
-    <article className="page">
-      <div className="container">
-        <header className="page-header">
-          <h1>Contact Us</h1>
+    <article className="page events-page contact-page">
+      <SpaceBackground />
+      <div className="events-container">
+        <header className="events-header">
+          <h1 className="events-title">Contact Us</h1>
         </header>
         <div className="page-content">
           <h2>Get in Touch</h2>

@@ -30,6 +30,7 @@ function parseFrontmatter(raw) {
 
 const articles = []
 const events = []
+const iptProblems = []
 
 for (const [filePath, raw] of Object.entries(files)) {
   const { data, content } = parseFrontmatter(raw)
@@ -43,18 +44,17 @@ for (const [filePath, raw] of Object.entries(files)) {
     articles.push(entry)
   } else if (category === 'events') {
     events.push(entry)
+  } else if (category === 'ipt') {
+    iptProblems.push(entry)
   }
 }
 
-articles.sort((a, b) => new Date(b.date) - new Date(a.date))
-events.sort((a, b) => new Date(b.date) - new Date(a.date))
-
-const projectFiles = import.meta.glob('/src/data/**/*.json', {
+const dataFiles = import.meta.glob('/src/data/**/*.json', {
   import: 'default',
   eager: true,
 })
 
-for (const [filePath, jsonData] of Object.entries(projectFiles)) {
+for (const [filePath, jsonData] of Object.entries(dataFiles)) {
   if (filePath.includes('projects.json')) {
     for (const [tenure, projects] of Object.entries(jsonData)) {
       for (const project of projects) {
@@ -66,15 +66,20 @@ for (const [filePath, jsonData] of Object.entries(projectFiles)) {
           image: project.image,
           author: project.author,
           category: 'Project',
-          tenure: tenure,
+          tenure,
         })
       }
     }
   }
+
   if (filePath.includes('events.json')) {
-    for (const [tenure, eventsData] of Object.entries(jsonData)) {
-      for (const event of eventsData) {
-        events.push({...event, tenure: tenure})
+    for (const [tenure, tenureData] of Object.entries(jsonData)) {
+      const tenureEvents = Array.isArray(tenureData)
+        ? tenureData
+        : Object.values(tenureData)
+
+      for (const event of tenureEvents) {
+        events.push({ ...event, tenure })
       }
     }
   }
@@ -82,6 +87,7 @@ for (const [filePath, jsonData] of Object.entries(projectFiles)) {
 
 articles.sort((a, b) => new Date(b.date) - new Date(a.date))
 events.sort((a, b) => new Date(b.date) - new Date(a.date))
+iptProblems.sort((a, b) => b.year - a.year)
 
 export function getArticles() {
   return articles
@@ -93,4 +99,25 @@ export function getArticle(id) {
 
 export function getEvents() {
   return events
+}
+
+export function getIPTProblems() {
+  return iptProblems
+}
+
+export function getIPTProblem(id) {
+  return iptProblems.find(p => p.id === id) || null
+}
+
+export function getIPTProblemBySlug(year, slug) {
+  return iptProblems.find(p => String(p.year) === String(year) && p.slug === slug) || null
+}
+
+export function getIPTProblemsByYear(year) {
+  return iptProblems.filter(p => p.year === year)
+}
+
+export function getIPTYears() {
+  const years = [...new Set(iptProblems.map(p => p.year))]
+  return years.sort((a, b) => b - a)
 }

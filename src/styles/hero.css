@@ -1,24 +1,37 @@
 .hero-astro {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
-  background:
-    radial-gradient(ellipse 60% 40% at 20% 20%, rgba(120, 90, 200, 0.25), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 70%, rgba(60, 110, 200, 0.22), transparent 60%),
-    radial-gradient(ellipse at top, #1b2140 0%, #0a0e1f 60%, #06070f 100%);
   color: #f2f0ff;
 }
 
-.starfield-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+/* Apply the Event page typography to the homepage */
+.home-sections-wrapper {
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Exo 2", var(--font-family-base);
+  font-family: var(--font-body);
+}
+
+.home-sections-wrapper h1,
+.home-sections-wrapper h2,
+.home-sections-wrapper h3,
+.home-sections-wrapper h4,
+.home-sections-wrapper h5,
+.home-sections-wrapper h6 {
+  font-family: var(--font-display);
+}
+
+.home-sections-wrapper p,
+.home-sections-wrapper span,
+.home-sections-wrapper li,
+.home-sections-wrapper a,
+.home-sections-wrapper button {
+  font-family: var(--font-body);
 }
 
 .hero-orbit {
@@ -38,33 +51,54 @@
   border-radius: 50%;
 }
 
-.orbit-ring-1 { width: 320px; height: 320px; animation: spin 22s linear infinite; }
-.orbit-ring-2 { width: 520px; height: 520px; animation: spin 40s linear infinite reverse; }
+.orbit-ring-1 {
+  width: 320px;
+  height: 320px;
+  animation: spin 22s linear infinite;
+}
+.orbit-ring-2 {
+  width: 520px;
+  height: 520px;
+  animation: spin 40s linear infinite reverse;
+}
 
-.orbit-planet { position: absolute; border-radius: 50%; }
+.orbit-planet {
+  position: absolute;
+  border-radius: 50%;
+}
 
 .orbit-planet-1 {
-  top: -6px; left: 50%; width: 12px; height: 12px;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
   background: radial-gradient(circle at 30% 30%, #ffd9a0, #d9822b);
   box-shadow: 0 0 12px 2px rgba(217, 130, 43, 0.6);
 }
 
 .orbit-planet-2 {
-  bottom: -8px; left: 30%; width: 16px; height: 16px;
+  bottom: -8px;
+  left: 30%;
+  width: 16px;
+  height: 16px;
   background: radial-gradient(circle at 30% 30%, #b9d7ff, #4d6fb0);
   box-shadow: 0 0 14px 3px rgba(77, 111, 176, 0.6);
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-astro .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .hero-eyebrow {
@@ -81,5 +115,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orbit-ring { animation: none; }
+  .orbit-ring {
+    animation: none;
+  }
 }

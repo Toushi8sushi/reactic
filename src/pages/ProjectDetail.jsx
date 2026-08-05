@@ -4,7 +4,7 @@ import projects from '../data/projects.json'
 
 export default function ProjectDetail() {
   const { id } = useParams()
-  const project = projects.find(p => p.id === id)
+  const project = Object.values(projects).flat().find(p => p.id === id)
 
   if (!project) {
     return (
