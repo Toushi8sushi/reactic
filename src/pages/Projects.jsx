@@ -7,6 +7,24 @@ import '../styles/events.css'
 
 const tenures = Object.keys(projects).sort()
 
+const projectPalette = [
+  { bg: '#1e1b4b', accent: '#818cf8', glow: 'rgba(129, 140, 248, 0.35)' },
+  { bg: '#4a1942', accent: '#f472b6', glow: 'rgba(244, 114, 182, 0.35)' },
+  { bg: '#022c22', accent: '#34d399', glow: 'rgba(52, 211, 153, 0.35)' },
+  { bg: '#451a03', accent: '#fbbf24', glow: 'rgba(251, 191, 36, 0.35)' },
+  { bg: '#2e1065', accent: '#a78bfa', glow: 'rgba(167, 139, 250, 0.35)' },
+  { bg: '#431407', accent: '#f87171', glow: 'rgba(248, 113, 113, 0.35)' },
+  { bg: '#083344', accent: '#2dd4bf', glow: 'rgba(45, 212, 191, 0.35)' },
+  { bg: '#1e293b', accent: '#fb923c', glow: 'rgba(251, 146, 60, 0.35)' },
+]
+
+const fallbackImages = {
+  optiqomm: '/assets/projects of 2025-26/optiqomm.png',
+  radian: '/assets/projects of 2025-26/radian.png',
+  starspec: '/assets/projects of 2025-26/starspec.png',
+  ligo: '/assets/projects of 2025-26/ligo.png',
+}
+
 export default function Projects() {
   const [activeTenure, setActiveTenure] = useState(tenures[0])
 
@@ -35,19 +53,40 @@ export default function Projects() {
           ))}
         </nav>
 
-        <div className="projects-grid">
-          {filteredProjects.map(project => (
-            <Link key={project.id} to={`/projects/${project.id}`} className="project-card project-card--inner">
-              <div className="project-card__image">
-                <img src={imagePath(project.image)} alt={project.title} />
-              </div>
-              <div className="project-card__content">
-                <h3>{project.title}</h3>
-                <p>{project.excerpt}</p>
-                <span className="project-card__cta">View Project →</span>
-              </div>
-            </Link>
-          ))}
+        <div className={`projects-grid projects-grid--${filteredProjects.length}`}>
+          {filteredProjects.map((project, index) => {
+            const colors = projectPalette[index % projectPalette.length]
+            const image = project.image || fallbackImages[project.id] || fallbackImages.optiqomm
+
+            return (
+              <Link
+                key={project.id}
+                to={`/projects/${project.id}`}
+                className="project-card project-card--inner"
+                style={{
+                  '--cat-bg': colors.bg,
+                  '--cat-accent': colors.accent,
+                  '--cat-glow': colors.glow,
+                }}
+              >
+                <div className="project-card__shooting-star" />
+
+                <div className="project-card__image">
+                  <img src={imagePath(image)} alt={project.title} />
+                  <div className="project-card__image-overlay" />
+                </div>
+
+                <div className="project-card__content">
+                  <h3 className="project-card__title">{project.title}</h3>
+                  <span className="project-card__divider" />
+                  <p>{project.excerpt}</p>
+                  <span className="project-card__cta">
+                    View Project <span className="project-card__arrow">{'\u2192'}</span>
+                  </span>
+                </div>
+              </Link>
+            )
+          })}
         </div>
       </div>
     </article>

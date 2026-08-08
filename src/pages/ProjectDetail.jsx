@@ -1,55 +1,106 @@
 import { useParams, Link } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
+import SpaceBackground from '../components/SpaceBackground'
+import '../styles/events.css'
+
+const projectPalette = [
+  { bg: '#1e1b4b', accent: '#818cf8', glow: 'rgba(129, 140, 248, 0.35)' },
+  { bg: '#4a1942', accent: '#f472b6', glow: 'rgba(244, 114, 182, 0.35)' },
+  { bg: '#022c22', accent: '#34d399', glow: 'rgba(52, 211, 153, 0.35)' },
+  { bg: '#451a03', accent: '#fbbf24', glow: 'rgba(251, 191, 36, 0.35)' },
+  { bg: '#2e1065', accent: '#a78bfa', glow: 'rgba(167, 139, 250, 0.35)' },
+  { bg: '#431407', accent: '#f87171', glow: 'rgba(248, 113, 113, 0.35)' },
+  { bg: '#083344', accent: '#2dd4bf', glow: 'rgba(45, 212, 191, 0.35)' },
+  { bg: '#1e293b', accent: '#fb923c', glow: 'rgba(251, 146, 60, 0.35)' },
+]
+
+const fallbackImages = {
+  optiqomm: '/assets/projects of 2025-26/optiqomm.png',
+  radian: '/assets/projects of 2025-26/radian.png',
+  starspec: '/assets/projects of 2025-26/starspec.png',
+  ligo: '/assets/projects of 2025-26/ligo.png',
+}
 
 export default function ProjectDetail() {
   const { id } = useParams()
-  const project = Object.values(projects).flat().find(p => p.id === id)
+  const allProjects = Object.values(projects).flat()
+  const project = allProjects.find(p => p.id === id)
 
   if (!project) {
     return (
-      <article className="page">
-        <div className="container">
+      <div className="events-page">
+        <SpaceBackground />
+        <div className="events-container">
           <p>Project not found.</p>
-          <Link to="/projects">← Back to Projects</Link>
+          <Link to="/projects">{'\u2190'} Back to Projects</Link>
         </div>
-      </article>
+      </div>
     )
   }
 
+  const colors = projectPalette[allProjects.indexOf(project) % projectPalette.length]
+  const image = project.image || fallbackImages[project.id] || fallbackImages.optiqomm
+  const dateLabel = new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
+
   return (
-    <article className="project-page">
-      <div className="container">
-        <header className="project-hero">
-          <div className="project-hero__image">
-            <img src={imagePath(project.image)} alt={project.title} />
+    <div className="events-page project-detail-page">
+      <SpaceBackground />
+
+      <div className="events-container">
+        <Link to="/projects" className="event-category__back">
+          {'\u2190'} All Projects
+        </Link>
+
+        <header
+          className="event-category__header"
+          style={{ '--cat-accent': colors.accent, '--cat-bg': colors.bg }}
+        >
+          <div className="event-category__heading">
+            <h1 className="event-category__title">{project.title}</h1>
           </div>
-          <div className="project-hero__content">
-            <h1>{project.title}</h1>
-            <div className="project-meta">
-              <span className="project-date">📅 {new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</span>
-              <span className="project-author">👤 {project.author}</span>
-            </div>
-            <p className="project-excerpt">{project.excerpt}</p>
-            {project.tags && (
-              <div className="article-tags">
-                {project.tags.map(tag => (
-                  <span key={tag} className="tag-pill">{tag}</span>
-                ))}
-              </div>
-            )}
-            {project.github && (
-              <a href={project.github} className="project-github" target="_blank" rel="noopener">
-                View on GitHub →
-              </a>
-            )}
-          </div>
+          <p className="event-category__year">{dateLabel}</p>
         </header>
 
-        <div className="project-divider"></div>
+        <div className="subcard-list">
+          <div
+            className="subcard revealed"
+            style={{ '--cat-accent': colors.accent, '--cat-bg': colors.bg, '--cat-glow': colors.glow }}
+          >
+            <div className="subcard__shooting-star" />
 
-        <div className="project-content" dangerouslySetInnerHTML={{ __html: project.content }} />
+            <div className="subcard__image">
+              <img src={imagePath(image)} alt={project.title} />
+              <div className="subcard__image-overlay" />
+            </div>
+
+            <div className="subcard__content">
+              <h3 className="subcard__title">{project.title}</h3>
+              <span className="subcard__divider" />
+              <p className="subcard__speaker">{project.author}</p>
+              <p className="subcard__description">{project.excerpt}</p>
+              {project.tags && (
+                <div className="article-tags">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="tag-pill">{tag}</span>
+                  ))}
+                </div>
+              )}
+              {project.github && (
+                <a href={project.github} className="subcard__youtube" target="_blank" rel="noopener noreferrer">
+                  View on GitHub {'\u2192'}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="project-divider" />
+
+        <div className="project-content" style={{ '--cat-accent': colors.accent }}>
+          <div dangerouslySetInnerHTML={{ __html: project.content }} />
+        </div>
       </div>
-    </article>
+    </div>
   )
 }
