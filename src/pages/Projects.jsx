@@ -19,10 +19,11 @@ const projectPalette = [
 ]
 
 const fallbackImages = {
-  optiqomm: '/assets/projects of 2025-26/optiqomm.png',
-  radian: '/assets/projects of 2025-26/radian.png',
-  starspec: '/assets/projects of 2025-26/starspec.png',
-  ligo: '/assets/projects of 2025-26/ligo.png',
+  optiqomm: '/assets/images/projects/2025/optiqomm.png',
+  radian: '/assets/images/projects/2025/radian.png',
+  starspec: '/assets/images/projects/2025/starspec.png',
+  ligo: '/assets/images/projects/2025/ligo.png',
+  placeholder: '/assets/images/projects/2025/placeholder.svg',
 }
 
 export default function Projects() {
@@ -56,7 +57,7 @@ export default function Projects() {
         <div className={`projects-grid projects-grid--${filteredProjects.length}`}>
           {filteredProjects.map((project, index) => {
             const colors = projectPalette[index % projectPalette.length]
-            const image = project.image || fallbackImages[project.id] || fallbackImages.optiqomm
+            const image = project.image || fallbackImages[project.id] || fallbackImages.placeholder
 
             return (
               <Link
@@ -79,10 +80,40 @@ export default function Projects() {
                 <div className="project-card__content">
                   <h3 className="project-card__title">{project.title}</h3>
                   <span className="project-card__divider" />
-                  <p>{project.excerpt}</p>
-                  <span className="project-card__cta">
-                    View Project <span className="project-card__arrow">{'\u2192'}</span>
-                  </span>
+
+                  <div className="project-card__sub">
+                    <p className="project-card__description">{project.excerpt}</p>
+
+                    {project.tags && (
+                      <div className="article-tags">
+                        {project.tags.map(tag => (
+                          <span key={tag} className="tag-pill">{tag}</span>
+                        ))}
+                      </div>
+                    )}
+
+                    {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
+                      <div className="project-card__team">
+                        <h4 className="project-card__team-title">Project Team</h4>
+                        {project.team.leads?.length > 0 && (
+                          <div className="project-card__team-row">
+                            <span className="project-card__team-label">Project Leads</span>
+                            <p className="project-card__team-names">{project.team.leads.join(', ')}</p>
+                          </div>
+                        )}
+                        {project.team.members?.length > 0 && (
+                          <div className="project-card__team-row">
+                            <span className="project-card__team-label">Project Members</span>
+                            <p className="project-card__team-names">{project.team.members.join(', ')}</p>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    <span className="project-card__cta">
+                      View Project <span className="project-card__arrow">{'\u2192'}</span>
+                    </span>
+                  </div>
                 </div>
               </Link>
             )

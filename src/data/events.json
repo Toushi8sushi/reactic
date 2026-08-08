@@ -10,6 +10,7 @@
         {
           "id": "g2g-1",
           "title": "Geometry of Spacetime — Horizon X Math Club Collaboration",
+          "speaker": "Aditya Goel and Suraj (Horizon) & Sudhanvaa and Hemanth (Math Club)",
           "description": "A deep dive into the mathematics of curved surfaces and its applications in special relativity. Topics covered include linear transformations, jacobians, metrics and metric spaces, the need for special relativity and groundbreaking experiments which confirmed its validity, Lorentz transformations, length contraction, time dilation, simultaneity, proper length, proper time, spacetime interval, and introduction to accelerating frames. Conducted by Horizon coordinators Aditya Goel and Suraj, and Math Club coordinators Sudhanvaa and Hemanth.",
           "image": "/assets/images/events_poster/g2g_geometry.jpeg",
           "youtube": "https://www.youtube.com/watch?v=FifNf4TqM_8&t=1s"
@@ -17,6 +18,7 @@
         {
           "id": "g2g-2",
           "title": "Introduction to General Relativity & Black Holes",
+          "speaker": "Nikshep and Avinash",
           "description": "A journey through the fascinating world of General Relativity and Black Holes. Topics covered include the Minkowski metric and spacetime interval, the time cone and its significance, Einstein's General Relativity, black holes and their formation, the event horizon and time dilation near it, and the basics of the Penrose diagram. Perfect for beginners in astrophysics or anyone curious about the nature of space, time, and gravity.",
           "image": "/assets/images/events_poster/g2g_gr.jpeg",
           "youtube": "https://www.youtube.com/watch?v=WqJ3ZFiI4Ic"
@@ -24,6 +26,7 @@
         {
           "id": "g2g-3",
           "title": "Physics of Colours",
+          "speaker": "Srikiran and Harichharan",
           "description": "We live in the world of Colours — from the glint of a Butterfly's wings to the calm blue of a flowing stream, from the colours of the rainbow to the colours of a Peacock, from the garments that decorate your wardrobe to the fireworks that decorate the sky. Colours shape our emotions as well as the perception of the world. Speakers: Hariccharan (EP24) and Srikiran (PH24).",
           "image": "/assets/images/events_poster/g2g_phycolor.jpeg",
           "youtube": "https://www.youtube.com/watch?v=o-QlQoSzsMQ&t=9s"
@@ -31,6 +34,7 @@
         {
           "id": "g2g-4",
           "title": "Unseen Cosmic Architecture",
+          "speaker": "Harsh and Rachana",
           "description": "A third of the universe's ordinary matter is missing. Not dark matter — just normal atoms we can't account for. This session explores the missing baryons problem: how early-universe physics tells us exactly how many atoms should exist, and how modern observations, from the CMB to Fast Radio Bursts, are finally revealing where they're hiding. Covering Big Bang Nucleosynthesis & deuterium (D/H), CMB acoustic peaks, and the cosmic web & WHIM.",
           "image": "/assets/images/events_poster/g2g_cosmic.jpeg",
           "youtube": "https://www.youtube.com/watch?v=w6y52bLr-og&t=2s"
@@ -38,6 +42,7 @@
         {
           "id": "g2g-5",
           "title": "Fields to Fractals",
+          "speaker": "Asim, Abhishekpriyan and Nantha",
           "description": "Fields to Fractals introduced participants to the foundations of Quantum Field Theory, the problem of infinities, and the role of Renormalization Group Theory in connecting quantum physics with statistical mechanics and fractals. The session provided an accessible overview of these fundamental ideas while highlighting their significance in modern theoretical physics.",
           "image": "/assets/images/events_poster/g2g_f2f.jpeg",
           "youtube": "https://www.youtube.com/watch?v=mOEP356TxME"
@@ -45,6 +50,7 @@
         {
           "id": "g2g-6",
           "title": "Cosmic Histories",
+          "speaker": "Kirtana and Ajeya",
           "description": "Cosmic Histories guided participants through the evolution of the universe, from the Big Bang to the formation of galaxies and large-scale cosmic structures. The session discussed the observational evidence supporting modern cosmology and offered an engaging introduction to the history, expansion, and evolution of our universe.",
           "image": "/assets/images/events_poster/g2g_histories.jpeg",
           "youtube": "https://www.youtube.com/watch?v=_h9ufmi5i_c"
@@ -212,6 +218,13 @@
           "description": "Embark on a journey through spacetime and explore the fascinating science of gravitational waves — ripples in the fabric of the universe predicted by Einstein over a century ago. This session introduces the fundamentals of General Relativity, the origins of gravitational waves, and the remarkable story behind their historic discovery. Learn how observatories like LIGO detect signals from black hole mergers, neutron star collisions, and potentially even the earliest moments of the universe using incredibly precise laser interferometry.",
           "image": "/assets/images/events_poster/ss25/ss25_4.jpg",
           "youtube": "https://www.youtube.com/watch?v=__lRiYBReUk"
+        },
+        {
+          "id": "summer-5",
+          "title": "Are we Alone?",
+          "description": "The search for intelligent life: What do we mean by 'intelligent'? How do we classify civilizations (Kardashev Scale) and address the Fermi Paradox and its possible solutions? Ongoing and upcoming missions: From Mars to Europa, how do we classify habitability, what are the key missions, and what have we found so far? Origins and development of life: What conditions make life possible? How did life emerge from inorganic matter on Earth, and could similar evolution happen elsewhere? Detecting life beyond Earth: How do scientists identify biosignatures, detect exoplanets, and use tools like telescopes and spectroscopy to find signs of life far away? This session is a collaborative effort between the Horizon and the Biotech Club of IIT Madras.",
+          "image": "/assets/images/events_poster/ss25/ss25_5.jpg",
+          "youtube": "https://www.youtube.com/live/cWs7m5pFPRo"
         }
       ]
     },
@@ -278,52 +291,33 @@
     },
     "cfi": {
       "id": "cfi",
-      "title": "CFI Open House",
+      "title": "CFI Delta Expo",
       "icon": "\ud83c\udfdb\ufe0f",
-      "description": "Placeholder description for CFI Open House.",
-      "image": "/assets/images/events_title_images/oh.jpeg",
+      "description": "",
+      "image": "/assets/images/events_poster/open_house/oh_poster.jpeg",
       "subcards": [
         {
-          "id": "cfi-1",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/cfi-1.jpg",
-          "youtube": ""
+          "id": "cfi-about",
+          "title": "Delta Expo 2026",
+          "description": "Delta Expo is an annual showcase of student innovation, where students present projects they have designed and developed across diverse fields of technology and engineering. The event brings together innovative ideas spanning areas such as robotics, artificial intelligence, embedded systems, sustainable technology, and more.\n\nThe 2026 edition showcased a wide range of student-built projects, highlighting the creativity, technical skills, and problem-solving abilities of students. It provided visitors with an opportunity to interact with project teams, explore their work, and experience the culture of hands-on innovation and experimentation."
         },
         {
-          "id": "cfi-2",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/cfi-2.jpg",
-          "youtube": ""
-        },
-        {
-          "id": "cfi-3",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events/cfi-3.jpg",
-          "youtube": ""
-        },
-        {
-          "id": "cfi-4",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.37.jpeg",
-          "youtube": ""
-        },
-        {
-          "id": "cfi-5",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at 23.10.38.jpeg",
-          "youtube": ""
-        },
-        {
-          "id": "cfi-6",
-          "title": "Placeholder Title",
-          "description": "Placeholder description for subcard.",
-          "image": "/assets/images/events_poster/research_conclave/WhatsApp Image 2026-07-31 at f.jpeg",
-          "youtube": ""
+          "id": "cfi-gallery",
+          "title": "Horizon at Delta Expo 2026",
+          "images": [
+            "/assets/images/events_poster/open_house/oh1.jpg",
+            "/assets/images/events_poster/open_house/oh2.jpg",
+            "/assets/images/events_poster/open_house/oh3.jpeg",
+            "/assets/images/events_poster/open_house/oh4.jpeg",
+            "/assets/images/events_poster/open_house/oh5.jpg",
+            "/assets/images/events_poster/open_house/oh6.jpg",
+            "/assets/images/events_poster/open_house/oh7.jpg",
+            "/assets/images/events_poster/open_house/oh8.jpg",
+            "/assets/images/events_poster/open_house/oh9.jpg",
+            "/assets/images/events_poster/open_house/oh10.jpg",
+            "/assets/images/events_poster/open_house/oh11.jpg",
+            "/assets/images/events_poster/open_house/oh12.jpg"
+          ]
         }
       ]
     },
@@ -338,14 +332,14 @@
           "id": "freshie-1",
           "title": "Freshie Orientation Session",
           "description": "The Freshie Roadmap session introduced incoming students to the exciting world of physics and astronomy through a journey spanning everyday phenomena, cutting-edge science, and the physics behind popular science fiction. Designed as an engaging welcome event, it encouraged freshers to look at the universe with curiosity and a scientific mindset.",
-          "image": "/assets/images/events/freshie-1.jpg",
+          "image": "/assets/images/freshieorientation1 (1).png",
           "youtube": ""
         },
         {
           "id": "freshie-2",
           "title": "Freshie Orientation Session",
           "description": "The session combined interactive discussions, thought-provoking demonstrations, and fun challenges to create an immersive learning experience. By showcasing the diverse scope of physics and astronomy, it inspired students to explore new ideas, connect with like-minded peers, and become part of Horizon's vibrant scientific community.",
-          "image": "/assets/images/events/freshie-2.jpg",
+          "image": "/assets/images/freshieorientation1 (2).png",
           "youtube": ""
         }
       ]
@@ -359,32 +353,32 @@
       "image": "/assets/images/events_poster/extra_sessions/zeroshadow.jpeg",
       "subcards": [
         {
-          "id": "extra-zeroshadow-1",
+          "id": "extra-zeroshadow",
           "title": "Zero Shadow Day",
-          "description": "Zero Shadow Day introduced the IIT Madras community to the fascinating phenomenon of the Sun passing directly overhead, causing vertical objects to cast almost no visible shadow. Through live demonstrations and interactive activities, participants witnessed this rare astronomical event firsthand.",
-          "image": "/assets/images/events_poster/extra_sessions/zeroshadow.jpeg",
-          "youtube": ""
+          "entries": [
+            {
+              "description": "Zero Shadow Day introduced the IIT Madras community to the fascinating phenomenon of the Sun passing directly overhead, causing vertical objects to cast almost no visible shadow. Through live demonstrations and interactive activities, participants witnessed this rare astronomical event firsthand.",
+              "image": "/assets/images/events_poster/extra_sessions/zeroshadow.jpeg"
+            },
+            {
+              "description": "The session blended scientific explanation with hands-on observation, encouraging students to appreciate everyday celestial phenomena. It offered a unique opportunity to experience astronomy in action while fostering curiosity about Earth's relationship with the Sun.",
+              "image": "/assets/images/events_poster/extra_sessions/zeroshadow2.jpeg"
+            }
+          ]
         },
         {
-          "id": "extra-zeroshadow-2",
-          "title": "Zero Shadow Day",
-          "description": "The session blended scientific explanation with hands-on observation, encouraging students to appreciate everyday celestial phenomena. It offered a unique opportunity to experience astronomy in action while fostering curiosity about Earth's relationship with the Sun.",
-          "image": "/assets/images/events_poster/extra_sessions/zeroshadow2.jpeg",
-          "youtube": ""
-        },
-        {
-          "id": "extra-lovedynamics-1",
+          "id": "extra-lovedynamics",
           "title": "Love Dynamics",
-          "description": "Love Dynamics explored how mathematics can be used to model human relationships through systems of differential equations. By presenting concepts such as equilibrium, oscillations, and stability in an engaging context, the session offered a unique perspective on the intersection of mathematics and everyday life.",
-          "image": "/assets/images/events_poster/extra_sessions/lovedynamics.jpeg",
-          "youtube": ""
-        },
-        {
-          "id": "extra-lovedynamics-2",
-          "title": "Love Dynamics",
-          "description": "Blending humor with scientific reasoning, the session transformed an unconventional topic into an interactive learning experience. It demonstrated how mathematical models can provide insights into real-world phenomena while making advanced concepts accessible and entertaining.",
-          "image": "/assets/images/events_poster/extra_sessions/lovedynamics1.jpeg",
-          "youtube": ""
+          "entries": [
+            {
+              "description": "Love Dynamics explored how mathematics can be used to model human relationships through systems of differential equations. By presenting concepts such as equilibrium, oscillations, and stability in an engaging context, the session offered a unique perspective on the intersection of mathematics and everyday life.",
+              "image": "/assets/images/events_poster/extra_sessions/lovedynamics.jpeg"
+            },
+            {
+              "description": "Blending humor with scientific reasoning, the session transformed an unconventional topic into an interactive learning experience. It demonstrated how mathematical models can provide insights into real-world phenomena while making advanced concepts accessible and entertaining.",
+              "image": "/assets/images/events_poster/extra_sessions/lovedynamics1.jpeg"
+            }
+          ]
         }
       ]
     }
@@ -395,27 +389,27 @@
       "title": "Summer School Sessions",
       "icon": "\u2600\ufe0f",
       "description": "An online outreach initiative conducted by the club coordinators, introducing school students to the wonders of physics through engaging and accessible sessions. The program aims to inspire young minds and nurture a lasting interest in the physical sciences.",
-      "image": "/assets/images/events_title_images/ss.jpeg",
+      "image": "/assets/images/events_poster/ss26/ss26poster.png",
       "subcards": [
         {
           "id": "summer-1",
           "title": "The Big Bang Theory",
           "description": "Embark on a journey through the history of the cosmos, from the Big Bang to the formation of stars, galaxies, and the large-scale structure of the Universe. Explore dark matter, cosmic evolution, and the fundamental questions surrounding our origins.",
-          "image": "/assets/images/events/summer-1.jpg",
+          "image": "/assets/images/events_poster/ss26/bigbang.png",
           "youtube": "https://www.youtube.com/live/5GEiF_cIcmo?si=AJTnRA9bFNpfj4IG"
         },
         {
           "id": "summer-2",
           "title": "Journey through the Stellar Evolution",
           "description": "Discover the complete life cycle of stars—from their birth in vast nebulae to their ultimate fate as white dwarfs, neutron stars, or black holes. Learn how a star's mass determines its evolution and what the future holds for our own Sun.",
-          "image": "/assets/images/events/summer-2.jpg",
+          "image": "/assets/images/events_poster/ss26/stellarevol.jpeg",
           "youtube": "https://www.youtube.com/live/rCSqRzsYAww?si=WG_6DfnR2vMJMNbq"
         },
         {
           "id": "summer-3",
           "title": "Fusion & Fission - Stars, Oppenheimer & Clean Energy",
           "description": "Uncover the nuclear processes that power the stars and shaped human history. This session explores the science behind fusion and fission, their role in energy production, and their impact on technology, warfare, and the future of clean energy.",
-          "image": "/assets/images/events/summer-3.jpg",
+          "image": "/assets/images/events_poster/ss26/fusion.jpeg",
           "youtube": "https://www.youtube.com/live/Ba8pnpJiCMw?si=IHqseTdBxi0ePUTo"
         },
         {
@@ -429,7 +423,7 @@
           "id": "summer-5",
           "title": "Quantum Mechanics and Quantum Computing",
           "description": "Trace the evolution of quantum computing from the foundations of quantum mechanics to modern quantum technologies. Explore concepts such as qubits, superposition, entanglement, the Bloch sphere, Bell's theorem, and the principles that make quantum computers fundamentally different from classical ones.",
-          "image": "/assets/images/events/summer-5.jpg",
+          "image": "/assets/images/events_poster/ss26/quantumcomp.png",
           "youtube": "https://www.youtube.com/live/CJgfSlwMjOA?si=aCS8hFO62BT9Mis6"
         }
       ]
