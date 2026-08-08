@@ -7,12 +7,23 @@ const tenures = Object.keys(teamData).sort()
 const sectionLabel = { core: 'Core Team', coordinator: 'Coordinators' }
 
 const imageMap = {
-  'Aditya Goel': '/assets/images of team members/aditya.jpeg',
-  'Ananya Desle': '/assets/images of team members/andy.jpeg',
-  'Harsh Meena': '/assets/images of team members/harsh.jpeg',
-  'Nantha Kumaran': '/assets/images of team members/nantha.jpeg',
-  'Nikhil Kanakam': '/assets/images of team members/nikhil.jpeg',
-  'Nikshep DC': '/assets/images of team members/nikshep.jpeg',
+  'Nantha Kumaran': '/assets/images-of-team-members/nantha.jpeg',
+  'Harsh Meena': '/assets/images-of-team-members/harsh.jpeg',
+  'Nikshep DC': '/assets/images-of-team-members/nikshep.jpeg',
+  'Ananya Desle': '/assets/images-of-team-members/andy.jpeg',
+  'Aditya Goel': '/assets/images-of-team-members/aditya.jpeg',
+  'Nikhil Kanakam': '/assets/images-of-team-members/nikhil.jpeg',
+  'G Sathvik': '/assets/images-of-team-members/coordinators_26_27/sathvik.jpeg',
+  'Ranesh Mohan': '/assets/images-of-team-members/coordinators_26_27/ranesh.jpeg',
+  'S Rajeev Yuvan': '/assets/images-of-team-members/coordinators_26_27/rajeev.jpeg',
+  'Sankeerthan Krishna P': '/assets/images-of-team-members/coordinators_26_27/sankeerth.jpeg',
+  'J Olive Jerusha': '/assets/images-of-team-members/coordinators_26_27/olive%20jerusha.jpeg',
+  'Akshay KC': '/assets/images-of-team-members/coordinators_26_27/akshay%20kc.jpeg',
+  'V. Thiruselvi': '/assets/images-of-team-members/coordinators_26_27/thiruselvi.jpeg',
+  'Gawthaman A': '/assets/images-of-team-members/coordinators_26_27/gawthaman.jpeg',
+  'Rohit S': '/assets/images-of-team-members/coordinators_26_27/rohit.jpeg',
+  'Keerthana': '/assets/images-of-team-members/coordinators_26_27/keerthana.jpeg',
+  'Vidisha': '/assets/images-of-team-members/coordinators_26_27/vidisha.jpeg',
 }
 
 const imagePosition = {
@@ -23,6 +34,7 @@ const imagePosition = {
 export default function Team() {
   const [activeTenure, setActiveTenure] = useState('2026-27')
   const observerRef = useRef(null)
+  const [failedImages, setFailedImages] = useState(new Set())
 
   const members = teamData[activeTenure]
 
@@ -30,6 +42,10 @@ export default function Team() {
   for (const m of members) {
     if (!grouped[m.section]) grouped[m.section] = []
     grouped[m.section].push(m)
+  }
+
+  const handleImageError = (name) => {
+    setFailedImages(prev => new Set(prev).add(name))
   }
 
   useEffect(() => {
@@ -75,21 +91,32 @@ export default function Team() {
                 <section key={section} className="team-section">
                   <h2 className="team-section-title">{sectionLabel[section]} &mdash; {activeTenure}</h2>
                   <div className="team-grid">
-                    {grouped[section].map((m, i) => (
-                      <div key={m.name} className="team-card" style={{ '--reveal-delay': `${i * 0.06}s` }}>
-                        <div className={`team-card__image${!imageMap[m.name] ? ' team-card__image--placeholder' : ''}`}>
-                          {imageMap[m.name] ? (
-                            <img src={imageMap[m.name]} alt={m.name} loading="lazy" style={imagePosition[m.name] ? { objectPosition: imagePosition[m.name] } : undefined} />
-                          ) : (
-                            <span>{m.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()}</span>
-                          )}
+                    {grouped[section].map((m, i) => {
+                      const imageSrc = imageMap[m.name]
+                      const hasImage = !!imageSrc && !failedImages.has(m.name)
+                      const initials = m.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase()
+                      return (
+                        <div key={m.name} className="team-card" style={{ '--reveal-delay': `${i * 0.06}s` }}>
+                          <div className={`team-card__image${!hasImage ? ' team-card__image--placeholder' : ''}`}>
+                            {hasImage ? (
+                              <img
+                                src={imageSrc}
+                                alt={m.name}
+                                loading="lazy"
+                                style={imagePosition[m.name] ? { objectPosition: imagePosition[m.name] } : undefined}
+                                onError={() => handleImageError(m.name)}
+                              />
+                            ) : (
+                              <span>{initials}</span>
+                            )}
+                          </div>
+                          <div className="team-card__info">
+                            <h3 className="team-card__name">{m.name}</h3>
+                            <p className="team-card__role">{m.role}</p>
+                          </div>
                         </div>
-                        <div className="team-card__info">
-                          <h3 className="team-card__name">{m.name}</h3>
-                          <p className="team-card__role">{m.role}</p>
-                        </div>
-                      </div>
-                    ))}
+                      )
+                    })}
                   </div>
                 </section>
               )
