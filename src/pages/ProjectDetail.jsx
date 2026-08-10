@@ -16,10 +16,11 @@ const projectPalette = [
 ]
 
 const fallbackImages = {
-  optiqomm: '/assets/projects of 2025-26/optiqomm.png',
-  radian: '/assets/projects of 2025-26/radian.png',
-  starspec: '/assets/projects of 2025-26/starspec.png',
-  ligo: '/assets/projects of 2025-26/ligo.png',
+  optiqomm: '/assets/images/projects/2025/optiqomm.png',
+  radian: '/assets/images/projects/2025/radian.png',
+  starspec: '/assets/images/projects/2025/starspec.png',
+  ligo: '/assets/images/projects/2025/ligo.png',
+  placeholder: '/assets/images/projects/2025/placeholder.svg',
 }
 
 export default function ProjectDetail() {
@@ -40,7 +41,7 @@ export default function ProjectDetail() {
   }
 
   const colors = projectPalette[allProjects.indexOf(project) % projectPalette.length]
-  const image = project.image || fallbackImages[project.id] || fallbackImages.optiqomm
+  const image = project.image || fallbackImages[project.id] || fallbackImages.placeholder
   const dateLabel = new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
 
   return (
@@ -100,6 +101,42 @@ export default function ProjectDetail() {
         <div className="project-content" style={{ '--cat-accent': colors.accent }}>
           <div dangerouslySetInnerHTML={{ __html: project.content }} />
         </div>
+
+        {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
+          <div className="subcard__team project-team-block">
+            <div className="subcard__team-media">
+              <img
+                src={imagePath(project.team.image || fallbackImages.placeholder)}
+                alt={`${project.title} team`}
+              />
+              <div className="subcard__image-overlay" />
+            </div>
+            <div className="subcard__team-content">
+              <h4 className="subcard__team-title">Project Team</h4>
+              <span className="subcard__divider" />
+              {project.team.leads?.length > 0 && (
+                <div className="subcard__team-group">
+                  <span className="subcard__team-label">Project Lead</span>
+                  <ul className="subcard__team-list">
+                    {project.team.leads.map(name => (
+                      <li key={name}>{name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {project.team.members?.length > 0 && (
+                <div className="subcard__team-group">
+                  <span className="subcard__team-label">Project Members</span>
+                  <ul className="subcard__team-list">
+                    {project.team.members.map(name => (
+                      <li key={name}>{name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
