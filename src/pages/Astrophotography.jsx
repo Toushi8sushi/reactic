@@ -85,13 +85,6 @@ export default function Astrophotography() {
                           <h3 className="card-title">
                             <Link to={`/articles/${post.id}`}>{post.title}</Link>
                           </h3>
-                          {post.tags && (
-                            <div className="tags-list">
-                              {post.tags.map(tag => (
-                                <span key={tag} className="tag-pill">{tag}</span>
-                              ))}
-                            </div>
-                          )}
                           <Link to={`/articles/${post.id}`} className="read-link">
                             Read more <span className="arrow">&rarr;</span>
                           </Link>

@@ -1,6 +1,9 @@
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css'
 import { getArticle } from '../lib/content-loader'
 
 export default function ArticleDetail() {
@@ -37,7 +40,7 @@ export default function ArticleDetail() {
         </header>
 
         <div className="post-content">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>
             {article.content}
           </ReactMarkdown>
         </div>
