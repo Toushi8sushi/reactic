@@ -283,6 +283,7 @@
   color: var(--color-text-light);
   line-height: 1.7;
   margin-bottom: var(--spacing-md);
+  white-space: pre-line;
 }
 
 .category-card__count {
