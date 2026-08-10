@@ -42,7 +42,6 @@ export default function ProjectDetail() {
 
   const colors = projectPalette[allProjects.indexOf(project) % projectPalette.length]
   const image = project.image || fallbackImages[project.id] || fallbackImages.placeholder
-  const dateLabel = new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
 
   return (
     <div className="events-page project-detail-page">
@@ -60,7 +59,6 @@ export default function ProjectDetail() {
           <div className="event-category__heading">
             <h1 className="event-category__title">{project.title}</h1>
           </div>
-          <p className="event-category__year">{dateLabel}</p>
         </header>
 
         <div className="subcard-list">

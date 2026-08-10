@@ -293,13 +293,13 @@
       "id": "cfi",
       "title": "CFI Delta Expo",
       "icon": "\ud83c\udfdb\ufe0f",
-      "description": "",
+      "description": "Delta Expo is an annual showcase of student innovation, where students present projects they have designed and developed across diverse fields of technology and engineering. The event brings together innovative ideas spanning areas such as robotics, artificial intelligence, embedded systems, sustainable technology, and more.\n\nThe 2026 edition showcased a wide range of student-built projects, highlighting the creativity, technical skills, and problem-solving abilities of students. It provided visitors with an opportunity to interact with project teams, explore their work, and experience the culture of hands-on innovation and experimentation.",
       "image": "/assets/images/events_poster/open_house/oh_poster.jpeg",
       "subcards": [
         {
           "id": "cfi-about",
           "title": "Delta Expo 2026",
-          "description": "Delta Expo is an annual showcase of student innovation, where students present projects they have designed and developed across diverse fields of technology and engineering. The event brings together innovative ideas spanning areas such as robotics, artificial intelligence, embedded systems, sustainable technology, and more.\n\nThe 2026 edition showcased a wide range of student-built projects, highlighting the creativity, technical skills, and problem-solving abilities of students. It provided visitors with an opportunity to interact with project teams, explore their work, and experience the culture of hands-on innovation and experimentation."
+          "description": "Horizon - the Physics and Astronomy Club showcased three of its ambitious projects \u2014 OptiQomm, StarSpec, and Radian \u2014 in Delta Expo 2026, each exploring the boundaries of physics, astronomy, and engineering.\n\nWith 7000+ attendees, including 3000+ students, over the span of two days, March 14th and 15th, the energy, curiosity, and engagement of the event made it a learning experience for all."
         },
         {
           "id": "cfi-gallery",
