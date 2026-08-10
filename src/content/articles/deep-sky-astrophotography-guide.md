@@ -3,7 +3,7 @@ title: "Deep-Sky Astrophotography: A Beginner's Guide"
 author: "Horizon"
 date: "2025-06-15"
 tags: ["astrophotography", "beginner", "tutorial"]
-image: "/assets/images/astro/lagoon.jpeg"
+image: "/assets/images/astro/Whirlpool Galaxy.jpeg"
 ---
 
 Deep-sky astrophotography lets you capture objects beyond our solar system — nebulae, galaxies, and star clusters. This guide covers the essentials for getting started with minimal equipment.
