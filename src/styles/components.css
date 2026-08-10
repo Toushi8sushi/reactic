@@ -156,11 +156,9 @@
 }
 
 @media (min-width: 768px) {
-  .projects-grid--4 .project-card {
-    width: calc((100% - var(--spacing-lg)) / 2);
-  }
-
-  .projects-grid--5 .project-card {
+  .projects-grid--4 .project-card,
+  .projects-grid--5 .project-card,
+  .projects-grid--6 .project-card {
     width: calc((100% - var(--spacing-lg)) / 2);
   }
 }
@@ -170,8 +168,9 @@
     width: calc((100% - var(--spacing-lg)) / 2);
   }
 
-  .projects-grid--5 .project-card {
-    width: calc((100% - var(--spacing-lg)) / 2);
+  .projects-grid--5 .project-card,
+  .projects-grid--6 .project-card {
+    width: calc((100% - 2 * var(--spacing-lg)) / 3);
   }
 }
 
@@ -332,6 +331,12 @@
 .projects-grid--5 .project-card:nth-child(3) { animation: projectCardFadeIn 0.4s ease-out 0.3s backwards; }
 .projects-grid--5 .project-card:nth-child(4) { animation: projectCardFadeIn 0.4s ease-out 0.4s backwards; }
 .projects-grid--5 .project-card:nth-child(5) { animation: projectCardFadeIn 0.4s ease-out 0.5s backwards; }
+.projects-grid--6 .project-card:nth-child(1) { animation: projectCardFadeIn 0.4s ease-out 0.1s backwards; }
+.projects-grid--6 .project-card:nth-child(2) { animation: projectCardFadeIn 0.4s ease-out 0.2s backwards; }
+.projects-grid--6 .project-card:nth-child(3) { animation: projectCardFadeIn 0.4s ease-out 0.3s backwards; }
+.projects-grid--6 .project-card:nth-child(4) { animation: projectCardFadeIn 0.4s ease-out 0.4s backwards; }
+.projects-grid--6 .project-card:nth-child(5) { animation: projectCardFadeIn 0.4s ease-out 0.5s backwards; }
+.projects-grid--6 .project-card:nth-child(6) { animation: projectCardFadeIn 0.4s ease-out 0.6s backwards; }
 
 @keyframes projectCardFadeIn {
   from {
