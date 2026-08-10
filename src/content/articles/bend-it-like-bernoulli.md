@@ -16,10 +16,7 @@ standing well to the right of the goal even ducked, thinking it would hit him.
 Then, almost magically, the ball swung mid-air, curving left smoothly into the
 goal! The goalkeeper was so astonished, he could only stop and stare.
 
-<p align="center">
-   <img src="/assets/images/articles/17-1.webp" alt>
-  <em>Carlos taking the famous free kick (picture credits fourfourtwo.com)</em>
-</p>
+![Carlos taking the famous free kick (picture credits fourfourtwo.com)](/assets/images/articles/17-1.webp)
 
 This is the famous "banana kick", and Carlos' goal is the most notorious
 example of it. The banana kick has perplexed players and pundits alike, and a
@@ -67,10 +64,7 @@ ball's motion. Since the ball is also spinning, the result is that on one side o
 ball, the flow of fluid is in the same direction as the spin of the ball, while on the
 other side, the flow is opposite to the spin. We can see this in the figure.
 
-<p align="center">
-   <img src="/assets/images/articles/17-2.webp" alt>
-  <em> The Magnus effect (picture credits Wikipedia)</em>
-</p>
+![The Magnus effect (picture credits Wikipedia)](/assets/images/articles/17-2.webp)
 
 From Bernoulli's theorem, we can understand how this difference between the 
 two sides creates a pressure differential; the side where the directions of spin 
@@ -90,10 +84,7 @@ miraculous, can be neatly explained by one of the most important principles of
 fluid dynamics.
 <br>
 <br>
-<p align="center">
-   <img src="/assets/images/articles/17-3.webp" alt>
-   <em> Carlos' kick (picture credits ESPN)</em>
-</p>
+![Carlos' kick (picture credits ESPN)](/assets/images/articles/17-3.webp)
 
 Of course, Carlos was not an expert on the finer details of Bernoulli's theorem, 
 but he did have an intuitive understanding of the motion of the ball. He took 

@@ -42,10 +42,7 @@ There isn't an explanation which is as intuitive and easy as for the previous qu
 
 This was first discovered by Christiaan Huygens in 1659. It is mind-blowing for cycloids to be the solution for this problem as well.  You might be confused as to how both these different questions have the same solution. However, the Brachistochrone curve is only a part of the cycloid (can be any part), and the Tautochrone curve is the entire cycloid. This property can be understood by looking at isochronous cycloidal pendulums. As you might have heard, the time period of a simple pendulum is independent of its amplitude under a small angle approximation, but in the case of a cycloidal pendulum, it holds true for any angle (amplitude). Cycloidal pendulums are used in making highly accurate timed clocks. Here is an insight of how they work:
 
-<p align="center">
-    <img src="/assets/images/articles/9-2.webp" alt>
-    <em>5 cycloidal pendula with different amplitudes. As we can see, the time period of all the pendula is same (Courtesy: Wikipedia)</em>
-</p>
+![5 cycloidal pendula with different amplitudes. As we can see, the time period of all the pendula is same (Courtesy: Wikipedia)](/assets/images/articles/9-2.webp)
 ------
 
 ### OK... but why do we care?

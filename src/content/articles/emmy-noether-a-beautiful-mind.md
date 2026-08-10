@@ -14,10 +14,7 @@ If I ask you to name a few mathematicians (and theoretical physicists) who chang
 
 She is **Amalie Emmy Noether**.  
 
-<p align="center">
-   <img src="/assets/images/articles/12-1.webp" alt>
-   <em>Emmy Noether (1882-1935) [Courtesy: Wikipedia]</em>
-</p>
+![Emmy Noether (1882-1935) [Courtesy: Wikipedia]](/assets/images/articles/12-1.webp)
 
 ------
 
@@ -39,10 +36,7 @@ So, what does the theorem exactly say? Understanding the theorem requires knowle
 
 Using calculus of variations, it can be shown that the trajectory that the system follows is the solution of Euler-Lagrange equations with given intial conditions. Here comes the good part: if this action itself has a symmetry (more precisely, a continuous global symmetry) under infinitesimal transformations, then there is a corresponding conserved quantity along the solution trajectory. Moreover, the theorem not only tells that there exists a conserved quantity, but it also gives an explicit prescription of the conserved quantity. 
 
-<p align="center">
-   <img src="/assets/images/articles/12-2.webp" alt>
-   <em>An accompanying visual for the principle of least action</em>
-</p>
+![An accompanying visual for the principle of least action](/assets/images/articles/12-2.webp)
 
 The paragraphs above may feel extremely vague if you haven't studied some advanced theoretical mechanics, but the beauty and power of the theorem can be easily demonstrated in a slightly non-rigorous way. Consider a pendulum swinging in vacuum under gravity. It will continue swinging forever as energy is conserved. Then, by virtue of **Noether's first theorem** (there are actually two Noether's theorems, we are only concerned about the first one here), the action of the pendulum is symmetric under time translation. This actually signifies that the laws of nature governing pendulum motion do not change over time. What a wonderful insight! Energy conservation is exactly same as stating that laws of nature are invariant over time! Similarly, space translational symmetry gives rise to **conservation of linear momentum**, rotational symmetry leads to **conservation of angular momentum** and the list continues to more exotic symmetries and conserved quantities. Surpassing classical mechanics, this powerful theorem is applied in quantum mechanics, field theories and has guided our present understanding of fundamental particles and interactions between them at all steps. Just imagine what a magnificient leap in understanding it was!
 
@@ -53,10 +47,7 @@ The German revolution of 1918-1919 brought some changes in social attitude towar
 
 Her works in **abstract algebra** carried out by her 1920 onwards is now considered absolutely fundamental which played crucial role in the development of this budding mathematical discipline. Abstract algebra is that branch of mathematics which deals with algebraic structures like groups, fields, rings, modules and their properties. She also paved the way for application of algebra in topology leading to the birth of **algebraic topology**. In this article, we shall not be dealing about her great contributions in these areas, but it is worth noting that she spent most of her life as an "algebraist" making groundbreaking discoveries in these areas. 
 
-<p align="center">
-   <img src="/assets/images/articles/12-3.webp" alt>
-   <em>Prof. Noether with mathematicians at Göttingen, 1931 (Courtesy: National Library of Israel)</em>
-</p>
+![Prof. Noether with mathematicians at Göttingen, 1931 (Courtesy: National Library of Israel)](/assets/images/articles/12-3.webp)
 
 In 1932, she and Emil Artin (for the math folk reading this, **Emil Artin** is the father of MIT professor **Michael Artin**, the author of the super-famous textbook "Algebra") received **Ackermann-Teubner Memorial Award**. However inspite of that, she was not elected into Gottingen Academy of Sciences and was never promoted to the post of full professor. In September of the same year, she was invited as a speaker at the International Congress of Mathematicians at Zurich. 
 

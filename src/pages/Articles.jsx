@@ -16,6 +16,8 @@ export default function Articles() {
     'project-ferrostats',
     'project-quantaband',
     'project-ligo',
+    'project-apteam',
+    'project-apteam-2627',
   ])
   const visibleArticles = articles.filter(article => !hiddenArticleIds.has(article.id))
 

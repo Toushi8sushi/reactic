@@ -19,9 +19,7 @@ day.
 yet hard to extract and store. Such research is being done to make this vision 
 come true. But what about until then? It begs the question of how else is this much 
 energy dealt with.
-<p align="center">
-   <img src="/assets/images/articles/20-1.jpg" alt>
-</p>
+![](/assets/images/articles/20-1.jpg)
 It is simple if a strike hits the earth transferring the entire high voltage of the 
 clouds onto the earthʼs surface, which is a large neutral body and cannot be charged significantly by a lightening bolt, neutralising the cloud. If it doesn't strike 
 the earth, the lightening branches on the sky, piercing the atmosphere ionising the 
@@ -42,9 +40,7 @@ been in use for multiple decades proving to be a reliable method of protection
 against these strikes. Yet, they only provide a conducting low resistance path for 
 the lightning and do not prevent them from damaging other structures that donʼt 
 have a protection system.
-<p align="center">
-   <img src="/assets/images/articles/20-2.jpg" alt>
-</p>
+![](/assets/images/articles/20-2.jpg)
 As an alternative to the Franklin rod, the Early Streamer Emission ESE lightning 
 arrester are being used. Here instead of providing a less resistive channel, an 
 opposite-charged leader is induced to trap a lightning into a desired channel.
@@ -52,9 +48,7 @@ opposite-charged leader is induced to trap a lightning into a desired channel.
  Such a method is also used through the Rocket and Wire technique, where a 
 rocket is fired from the ground with a conductive wire attached, inducing a 
 lightning strike completely down to the ground in a straight path.
-<p align="center">
-   <img src="/assets/images/articles/20-3.jpg" alt>
-</p>
+![](/assets/images/articles/20-3.jpg)
 Although these methods are more ranged than the Franklin rod, they canʼt be used 
 for emergency purposes but are best to avoid a heavy lightning strike expected 
 during a storm.
@@ -88,9 +82,7 @@ average and is equipped with multiple sensors to record the lightning current,
 electromagnetic fields at various distances, X-rays and radiation sources from the 
 lightning discharges.
 
-<p align="center">
-   <img src="/assets/images/articles/20-4.jpeg" alt>
-</p>
+![](/assets/images/articles/20-4.jpeg)
 Between 21 July and 30 September 2021, the laser was operated during a 6.3
 hour thunderstorm activity occurring within 3 km of the tower. The tower was hit 
 by at least 16 lightning flashes, four of
@@ -115,9 +107,7 @@ charges.
 that observes and locates the Lightning flashes in frames of microseconds. This 
 system was used to compare the effectivity of laser beams and Franklinrodsd by 
 comparing L1 flash and N07 flash respectively.
-<p align="center">
-   <img src="/assets/images/articles/20-5.jpeg" alt>
-</p>
+![](/assets/images/articles/20-5.jpeg)
 In comparison, the beam-influenced flash was more confined to the tower than 
 the Franklin rod by 45% reducing the risk of damage to other facilities if it were to 
 be installed on other buildings.
@@ -137,9 +127,7 @@ m-tall telecommunication tower. The laser system is installed in the radome
 building, cased in an air-tight, air-conditioned and thermally isolated tent, with an 
 exit for the laser output directed downwards by a conduit through the
  radome wall to the terrace. 
- <p align="center">
-   <img src="/assets/images/articles/20-6.jpeg" alt>
-</p>
+ ![](/assets/images/articles/20-6.jpeg)
 The laser is reflected by a 4-inch folding mirror into a cope of 7.14 magnification 
 ratio. The leakage and perturbation till the telescope is reduced by the use of 
 isolated aluminium housing.
@@ -152,9 +140,7 @@ tower tip in order to set the onset of the filamentation process in the desired 
 150 m to produce a dense filamentation area of 30 - 50 m above the tower. 
 Filamentation is an important part the this process of the ionisation of atmospheric 
 gases.
-<p align="center">
-   <img src="/assets/images/articles/20-7.jpeg" alt>
-</p>
+![](/assets/images/articles/20-7.jpeg)
  During this operation time, the airspace was closed by the traffic authority. 
 On 24 July, 2021 the L2 lightning strike was observed with the two high-speed 
 cameras: one operating at 24,000 fps, installed on the Kronberg mountain; and the 

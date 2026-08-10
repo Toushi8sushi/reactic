@@ -23,10 +23,7 @@ Anything flagged by the detection pipelines is considered an event. However, it 
 > "Our candidates alerts don't start out with the GW prefix, as we still need to do lots of work to check if they are real. Their names start with S for superevent (not for hope), then the date, and then a letter indicating the order it was uploaded to our database of candidates (we upload candidates with false alarm rates of around one per hour, so there are multiple database entries per day, and most are false alarms). S190425z was the 26th superevent uploaded on 2019 April 25th."
 
 Once the superevent is confirmed to be a real signal, the name switches to the convention followed for GWs.
-<p align="center">
-   <img src="/assets/images/articles/11-1.webp" alt>
-   <em>(Courtesy: Carl Knox, OzGrav/Swinburne University)</em>
-</p>
+![Courtesy: Carl Knox, OzGrav/Swinburne University](/assets/images/articles/11-1.webp)
 
 This system was observed at the **Advanced LIGO detector** in Louisiana in the US. The **Advanced Virgo detector** in Italy detected the gravitational waves that were produced by the inward spiral of these objects. Another wave was detected later, this time by both the LIGO detectors in Louisiana and Hanford as well as the Virgo detector. Surprisingly this wave was of another NSBH binary barely detected within ten days of the first discovery!
 
@@ -59,10 +56,7 @@ LSC members can access the US-based Advanced LIGO detectors in Hanford, Washingt
 
 ### About LIGO & Other Detectors
 
-<p align="center">
-   <img src="/assets/images/articles/11-3.webp" alt>
-   <em> (Image credit: <a href="https://www.pinterest.com/pin/554294666630051909/">Pinterest</a>)</em>
-</p>
+![Image credit: Pinterest](/assets/images/articles/11-3.webp)
 
 [LIGO](https://www.ligo.caltech.edu/page/what-is-ligo "What is LIGO?"), Laser Interferometer Gravitational-wave Observatory, in a nutshell, is based on laser interferometry, a technique that superimposes waves and analyses the interference pattern to extract information about the nature of the waves and predict the astronomical objects and events that produce them.
 
@@ -70,9 +64,9 @@ LIGO is the world's largest gravitational wave observatory and an engineering ma
 
 > LIGO (and other detectors like it) is unlike any other observatory on Earth. Ask someone to draw a picture of an observatory and odds are they will draw a gleaming white telescope dome perched on a mountain-top. As a gravitational wave observatory, LIGO bears no resemblance to this whatsoever.
 
-<p align="center"> <img src="/assets/images/articles/11-4.webp" alt> <em> Each detector has two arms extending a whopping 4000 meters and comprising 1.2 m-wide steel vacuum tubes arranged in an "L" shape.  (Courtesy: Kim Fetrow/Imageworks) </em> </p>
+![Each detector has two arms extending a whopping 4000 meters and comprising 1.2 m-wide steel vacuum tubes arranged in an "L" shape. (Courtesy: Kim Fetrow/Imageworks)](/assets/images/articles/11-4.webp)
 
-<p align="center"> <img src="/assets/images/articles/11-5.webp" alt> <em> An exposed segment of LIGO Livingston's vacuum tube. These tubes are protected from the outside environment by 10-foot wide and 12-foot tall shelter made out of concrete. (Courtesy: Caltech/MIT/LIGO Lab) </em> </p>
+![An exposed segment of LIGO Livingston's vacuum tube. These tubes are protected from the outside environment by 10-foot wide and 12-foot tall shelter made out of concrete. (Courtesy: Caltech/MIT/LIGO Lab)](/assets/images/articles/11-5.webp)
 
 
 The detectors used something known as "matched filtering", which compares the observed noise with the predictions of signals from Einstein's General Relativity and picks up the required needle from the haystack.
@@ -90,15 +84,13 @@ It's likely that NSBHs in general form via various formation channels, rather th
 
 Another thing that makes this merger special is that the event was a rather quiet one, involving no **tidal disruption**. A tidal disruption event, as described by a standard wiki page, is an astronomical phenomenon that occurs when a star approaches sufficiently close to a supermassive black hole and is pulled apart by the black hole's tidal force, experiencing spaghettification.
 
-<p align="center"> <img src="/assets/images/articles/11-6.webp" alt> <em> Image from a numerical simulation in which the neutron star gets tidally disrupted during the merger process. This is similar to the above embedded video, but for a system with different masses and for which the tidal disruption of the neutron star is visible. This illustrates the tidal disruption process, which is believed to have not occurred in the two observed systems reported here. (Courtesy: S.V.Chaurasia, T. Dietrich, N. Fischer, S. Ossokine, H. Pfeiffer, T. Vu) </em> </p>
+![Image from a numerical simulation in which the neutron star gets tidally disrupted during the merger process. (Courtesy: S.V.Chaurasia, T. Dietrich, N. Fischer, S. Ossokine, H. Pfeiffer, T. Vu)](/assets/images/articles/11-6.webp)
 
 ### Rarity Of The Event
 
 After observing so many mergers and other events involving Binary Neutron Stars (BNS) and Binary BLack Holes (BBH), this is the very first time that we observed an NSBH system. These events occurred 900 million years and almost 1 billion years ago respectively, but it took so long to reach the earth! 
 
-<p align="center"> <img src="/assets/images/articles/11-7.webp" alt> <em> This is the so-called stellar graveyard, a graphical catalog of black holes and neutron stars observed so far. The numbers on the vertical axis denote the mass of the stellar objects in factors of solar masses. Connected points indicate mergers. LSA has detected numerous BBHs (blue) and a couple of BNSs (orange). But there are only two systems connecting blue and orange points (as highlighted in the image), our first discovery of NSBH mergers! Read more about it 
-<a href="https://astrobites.org/2021/06/30/first-nsbh-merger/">here</a>. (Courtesy: LIGO-Virgo Collaboration; Frank Elavsky, Aaron Geller) </em>
- </p>
+![This is the so-called stellar graveyard, a graphical catalog of black holes and neutron stars observed so far. (Courtesy: LIGO-Virgo Collaboration; Frank Elavsky, Aaron Geller)](/assets/images/articles/11-7.webp)
 
 To know how rare these are, they use two methods. First one by assuming these events to be representative of the whole population, and second by constructing a broader population and considering less significant events that could've gone undetected. This produced a range of merger rate estimates, generally supporting the conclusions that NSBHs are rarer than BNSs, and *much* rarer than BBHs — for every 10 or so BNSs, we can expect 1 NSBH. This result is broadly consistent with the fact that no NSBHs have been detected previously.
 
