@@ -536,64 +536,6 @@
   margin-top: var(--spacing-sm);
 }
 
-/* Project Team subtile on project cards */
-
-.projects-page .project-card__team,
-.project-detail-page .project-card__team--detail {
-  margin-top: var(--spacing-md);
-  padding-top: var(--spacing-md);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.projects-page .project-card__team-title,
-.project-detail-page .project-card__team--detail .project-card__team-title {
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--cat-accent, var(--color-primary));
-  text-shadow: 0 0 12px var(--cat-glow, rgba(129, 140, 248, 0.35));
-  margin: 0 0 var(--spacing-sm);
-  text-align: center;
-}
-
-.projects-page .project-card__team-row,
-.project-detail-page .project-card__team--detail .project-card__team-row {
-  margin-bottom: var(--spacing-xs);
-}
-
-.projects-page .project-card__team-row:last-child,
-.project-detail-page .project-card__team--detail .project-card__team-row:last-child {
-  margin-bottom: 0;
-}
-
-.projects-page .project-card__team-label,
-.project-detail-page .project-card__team--detail .project-card__team-label {
-  display: inline-block;
-  font-family: var(--font-display);
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--cat-accent, var(--color-primary));
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 3px 10px;
-  border-radius: 9999px;
-  margin-bottom: 4px;
-}
-
-.projects-page .project-card__team-names,
-.project-detail-page .project-card__team--detail .project-card__team-names {
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--color-text-light);
-  margin: 0;
-}
-
-
 .article-card {
   display: flex;
   flex-direction: column;

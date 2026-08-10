@@ -10,7 +10,8 @@
       "tags": ["Instrumentation", "Cosmic Rays"],
       "team": {
         "leads": ["Lekhashree"],
-        "members": []
+        "members": ["Balendu", "Ananya", "Hariccharan", "Arudhra", "Suraj", "Chandra Teja", "Mohan krishna", "Thanoof", "Mizal", "Sayam", "Tanisha"],
+        "image": "/assets/images/projects/2025/optiqommteam.jpeg"
       },
       "github": "https://github.com/horizon/muon-detector",
       "content": "<h2>Overview</h2><p>We built a compact <strong>cosmic ray detector</strong> using plastic scintillators and silicon photomultipliers (SiPMs) to measure atmospheric muon flux on campus.</p><p>The goal was to design a low-cost detector suitable for outreach demonstrations and long-term cosmic ray measurements.</p><hr/><h2>Motivation</h2><p>Cosmic ray muons constantly pass through the Earth's atmosphere. Detecting them allows us to:</p><ul><li>Study cosmic ray flux</li><li>Demonstrate particle detection techniques</li><li>Build affordable research instruments</li></ul><hr/><h2>Method</h2><p>The detector consists of:</p><ul><li>Plastic scintillator slab</li><li>Silicon photomultiplier (SiPM)</li><li>Amplifier circuit</li><li>Arduino-based data acquisition</li></ul><p>When a muon passes through the scintillator, photons are produced and detected by the SiPM, generating an electrical pulse that is recorded.</p><hr/><h2>Results</h2><p>The detector recorded an average muon rate of: <strong>~1 muon per cm² per minute</strong>, consistent with theoretical expectations.</p><h2>Future Improvements</h2><ul><li>Coincidence detection with two scintillators</li><li>Temperature stabilization of SiPM</li><li>Automated data logging to cloud</li></ul><hr/><h2>Resources</h2><p>GitHub Repository: <a href='https://github.com/horizon/muon-detector'>Muon Detector Code</a></p>"
@@ -40,7 +41,8 @@
       "tags": ["Astronomy", "Spectroscopy"],
       "team": {
         "leads": ["Rohit Jain"],
-        "members": ["Mahesh", "Srikiran", "Rachana", "Harshita", "Aparna", "Anwesh"]
+        "members": ["Mahesh", "Srikiran", "Rachana", "Harshita", "Aparna", "Anwesh", "Harsh"],
+        "image": "/assets/images/projects/2025/starspecteam.jpg"
       },
       "github": "https://github.com/horizon/starspec",
       "content": "<h2>Overview</h2><p><strong>StarSpec</strong> is a spectroscopy project dedicated to studying the Sun, stars, and planets by analyzing the light they emit. Spectroscopy allows astronomers to determine properties such as temperature, chemical composition, motion, and luminosity, making it one of the most powerful tools for understanding celestial objects.</p><hr/><h2>Motivation</h2><ul><li>Use spectroscopy to uncover the physical properties of stars, planets, and the Sun</li><li>Gain hands-on experience by designing, building, and operating spectrographs</li><li>Explore how light can reveal information hidden across the cosmos</li></ul><hr/><h2>Method</h2><p><strong>Solar Spectroscopy (Sol'Ex):</strong> Use the <strong>Solar Explorer (Sol'Ex)</strong> spectrograph to observe sunspots, solar flares, and the solar atmosphere.</p><p><strong>Spectrum Formation:</strong> Sunlight passes through a <strong>10 µm slit</strong>, is collimated, dispersed by a <strong>2400 lines/mm diffraction grating</strong>, and focused onto a detector to produce a spectrum.</p><p><strong>Data Analysis:</strong> Analyze the recorded spectra using <strong>SpecINTI</strong>, calibrated with a neon lamp spectrum, to measure properties such as solar flare velocities through the <strong>Doppler effect</strong>.</p><p><strong>Stellar Spectroscopy (Star'Ex):</strong> A modified version of Sol'Ex with a <strong>100 lines/mm diffraction grating</strong> and a guiding module enables observations of distant stars by improving light collection and maintaining accurate tracking.</p><hr/><h2>Results</h2><ul><li>Successfully captures and analyzes spectra from the Sun, bright stars, and planets</li><li>Extracts valuable information such as temperature, chemical composition, luminosity, and motion from observed spectra</li><li>Demonstrates the effectiveness of custom-built spectrographs for both solar and stellar observations</li></ul><hr/><h2>Future Improvements</h2><ul><li>Build more advanced, in-house spectroscopy instruments, including the <strong>UVEX (UltraViolet EXplorer)</strong></li><li>Conduct new studies such as measuring galaxy redshifts, detecting supernovae, and monitoring the time evolution of hydrogen spectral lines</li><li>Expand collaborative research through participation in the <strong>AAVSOnet Telescope Spectroscopy Working Group</strong> and contribute to the development of a dedicated spectroscopy telescope</li></ul>"
@@ -78,7 +80,7 @@
       "title": "Sonicphase",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "/assets/images/projects/2025/placeholder.svg",
+      "image": "/assets/images/projects/2026/sonicphase.jpeg",
       "excerpt": "An innovative project exploring advancements in sonic phase manipulation.",
       "tags": ["Technology", "Acoustics"],
       "github": "https://github.com/horizon/sonicphase",
@@ -89,7 +91,7 @@
       "title": "Quantaband",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "/assets/images/projects/2025/placeholder.svg",
+      "image": "/assets/images/projects/2026/quantabands.jpeg",
       "excerpt": "A project focused on quantum bandgap engineering for advanced materials.",
       "tags": ["Technology", "Quantum Physics", "Materials Science"],
       "github": "https://github.com/horizon/quantaband",

@@ -92,24 +92,6 @@ export default function Projects() {
                       </div>
                     )}
 
-                    {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
-                      <div className="project-card__team">
-                        <h4 className="project-card__team-title">Project Team</h4>
-                        {project.team.leads?.length > 0 && (
-                          <div className="project-card__team-row">
-                            <span className="project-card__team-label">Project Leads</span>
-                            <p className="project-card__team-names">{project.team.leads.join(', ')}</p>
-                          </div>
-                        )}
-                        {project.team.members?.length > 0 && (
-                          <div className="project-card__team-row">
-                            <span className="project-card__team-label">Project Members</span>
-                            <p className="project-card__team-names">{project.team.members.join(', ')}</p>
-                          </div>
-                        )}
-                      </div>
-                    )}
-
                     <span className="project-card__cta">
                       View Project <span className="project-card__arrow">{'\u2192'}</span>
                     </span>

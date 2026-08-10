@@ -80,23 +80,6 @@ export default function ProjectDetail() {
               <span className="subcard__divider" />
               <p className="subcard__speaker">{project.author}</p>
               <p className="subcard__description">{project.excerpt}</p>
-              {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
-                <div className="project-card__team project-card__team--detail">
-                  <h4 className="project-card__team-title">Project Team</h4>
-                  {project.team.leads?.length > 0 && (
-                    <div className="project-card__team-row">
-                      <span className="project-card__team-label">Project Leads</span>
-                      <p className="project-card__team-names">{project.team.leads.join(', ')}</p>
-                    </div>
-                  )}
-                  {project.team.members?.length > 0 && (
-                    <div className="project-card__team-row">
-                      <span className="project-card__team-label">Project Members</span>
-                      <p className="project-card__team-names">{project.team.members.join(', ')}</p>
-                    </div>
-                  )}
-                </div>
-              )}
               {project.tags && (
                 <div className="article-tags">
                   {project.tags.map(tag => (
@@ -118,6 +101,42 @@ export default function ProjectDetail() {
         <div className="project-content" style={{ '--cat-accent': colors.accent }}>
           <div dangerouslySetInnerHTML={{ __html: project.content }} />
         </div>
+
+        {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
+          <div className="subcard__team project-team-block">
+            <div className="subcard__team-media">
+              <img
+                src={imagePath(project.team.image || fallbackImages.placeholder)}
+                alt={`${project.title} team`}
+              />
+              <div className="subcard__image-overlay" />
+            </div>
+            <div className="subcard__team-content">
+              <h4 className="subcard__team-title">Project Team</h4>
+              <span className="subcard__divider" />
+              {project.team.leads?.length > 0 && (
+                <div className="subcard__team-group">
+                  <span className="subcard__team-label">Project Lead</span>
+                  <ul className="subcard__team-list">
+                    {project.team.leads.map(name => (
+                      <li key={name}>{name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {project.team.members?.length > 0 && (
+                <div className="subcard__team-group">
+                  <span className="subcard__team-label">Project Members</span>
+                  <ul className="subcard__team-list">
+                    {project.team.members.map(name => (
+                      <li key={name}>{name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
