@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import teamData from '../data/team.json'
 import SpaceBackground from '../components/SpaceBackground'
+import GalleryRow from '../components/GalleryRow'
 import '../styles/events.css'
 
 const tenures = Object.keys(teamData).sort()
@@ -36,8 +37,10 @@ const imageMap = {
   'Suraj Ramnath': '/assets/images-of-team-members/coordinators 2025-26/Suraj.jpg',
   'Kirtana Prakash': '/assets/images-of-team-members/coordinators 2025-26/Kirtana.jpg',
   'Gedela Avinash': '/assets/images-of-team-members/coordinators 2025-26/Avinash.jpg',
-  'Asim Vats': '/assets/images-of-team-members/coordinators 2025-26/Asim.jpg',
-}
+   'Asim Vats': '/assets/images-of-team-members/coordinators 2025-26/Asim.jpg',
+   'Srikiran Ravanam': '/assets/images-of-team-members/coordinators 2025-26/Srikiran.jpeg',
+   'Ajeya P': '/assets/images-of-team-members/coordinators 2025-26/Ajeya.png',
+ }
 
 const imagePosition = {
   'Toshith': 'center 20%',
@@ -50,6 +53,7 @@ const imagePosition = {
   'Gedela Avinash': 'center 10%',
   'Rohit': 'center 25%',
   'Shruti': 'center 25%',
+  'Srikiran Ravanam': 'center 22%',
 }
 
 const getMemberStyle = (name) => {
@@ -59,8 +63,109 @@ const getMemberStyle = (name) => {
   }
 }
 
+const galleryGroups = {
+  '2025-26': [
+    {
+      title: 'Trip 2025-26',
+      images: [
+        '/assets/Gallery/Horizon trip/IMG_20260125_110703.jpg',
+        '/assets/Gallery/Horizon trip/IMG_20260124_143016.jpg',
+        '/assets/Gallery/Horizon trip/IMG_20260124_143008.jpg',
+        '/assets/Gallery/Horizon trip/IMG_20260124_131403.jpg',
+        '/assets/Gallery/Horizon trip/IMG20260125181152.jpg',
+        '/assets/Gallery/Horizon trip/IMG20260125124734.jpg',
+        '/assets/Gallery/Horizon trip/IMG20260124152341.jpg',
+        '/assets/Gallery/Horizon trip/IMG20260124145534.jpg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.54.42.jpeg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.54.03.jpeg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.53.40.jpeg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.55.41.jpeg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.55.23.jpeg',
+        '/assets/Gallery/Horizon trip/WhatsApp Image 2026-08-11 at 20.56.37.jpeg',
+        '/assets/Gallery/Horizon trip/PXL_20260124_090452778.jpg',
+        '/assets/Gallery/Horizon trip/PXL_20260124_075629971.jpg',
+        '/assets/Gallery/Horizon trip/IMG_20260125_120324.jpg',
+        '/assets/Gallery/Horizon trip/PXL_20260125_070150513.jpg',
+        '/assets/Gallery/Horizon trip/PXL_20260125_122156832.jpg',
+        '/assets/Gallery/Horizon trip/PXL_20260125_144012296.jpg',
+      ],
+    },
+    {
+      title: 'Star party',
+      images: [
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.09.13.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.07.09.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.06.58.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.06.49.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.01.59.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.00.43.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.00.04.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 20.59.33.jpeg',
+        '/assets/Gallery/star party 25-26/WhatsApp Image 2026-08-11 at 21.09.57.jpeg',
+      ],
+    },
+    {
+      title: 'Research conclave',
+      images: [
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_124306440.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_124107030.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_123625609.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_123437168.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_123325275.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_123103903.PORTRAIT.jpg',
+        '/assets/Gallery/Research conclave 2025-25/PXL_20251102_123040052.jpg',
+        '/assets/Gallery/Research conclave 2025-25/IMG_20251102_190436408_HDR.jpg',
+        '/assets/Gallery/Research conclave 2025-25/IMG_20251102_141827611.jpg',
+        '/assets/Gallery/Research conclave 2025-25/IMG20251102175311.jpg',
+      ],
+    },
+    {
+      title: 'Open house',
+      images: [
+        '/assets/Gallery/open house 25-26/IMG20260314171500.jpg',
+        '/assets/Gallery/open house 25-26/IMG20260314165610.jpg',
+        '/assets/Gallery/open house 25-26/IMG_20260314_111005.jpg',
+        '/assets/Gallery/open house 25-26/IMG20260315170301_01.jpg',
+        '/assets/Gallery/open house 25-26/IMG20260315110718.jpg',
+        '/assets/Gallery/open house 25-26/IMG20260314172018.jpg',
+        '/assets/Gallery/open house 25-26/IMG_20260314_174005.jpg',
+        '/assets/Gallery/open house 25-26/IMG_20260314_142402.jpg',
+        '/assets/Gallery/open house 25-26/IMG_20260315_112755.jpg',
+      ],
+    },
+    {
+      title: 'Observation session',
+      images: [
+        '/assets/Gallery/Observation session 25-26/IMG20250728001932.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727205018.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204436.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204319.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204246.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204214.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204152.jpg',
+        '/assets/Gallery/Observation session 25-26/IMG20250727204027.jpg',
+      ],
+    },
+    {
+      title: 'Zero shadow day',
+      images: [
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_124002.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_121714.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_121651.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_121649.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_121614.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_120937.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_120847.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG_20250818_120838.jpg',
+        '/assets/Gallery/zero shadow day 25-26/IMG20250818121728.jpg',
+      ],
+    },
+  ],
+}
+
 export default function Team() {
   const [activeTenure, setActiveTenure] = useState('2026-27')
+  const [activeGalleryTenure, setActiveGalleryTenure] = useState('2025-26')
   const observerRef = useRef(null)
   const [failedImages, setFailedImages] = useState(new Set())
 
@@ -149,6 +254,33 @@ export default function Team() {
                 </section>
               )
             ))}
+
+            <div id="gallery" className="team-section" style={{ marginTop: 'calc(var(--spacing-2xl) * 1.5)' }}>
+              <div className="project-divider" style={{ marginBottom: 'var(--spacing-2xl)' }} />
+              <div className="events-header" style={{ marginBottom: 'var(--spacing-md)' }}>
+                <h2 className="events-title">Gallery &mdash; {activeGalleryTenure}</h2>
+                <p className="events-subtitle">From star parties and observation sessions to events and moments behind the scenes — a glimpse into our journey at Horizon</p>
+              </div>
+              <nav className="year-pills" aria-label="Select gallery tenure" style={{ marginBottom: 'var(--spacing-lg)' }}>
+                {tenures.map(t => (
+                  <button
+                    key={t}
+                    className={`year-pill${activeGalleryTenure === t ? ' year-pill--active' : ''}`}
+                    onClick={() => setActiveGalleryTenure(t)}
+                  >
+                    {activeGalleryTenure === t && <span className="year-pill__comet" />}
+                    <span className="year-pill__label">{t}</span>
+                  </button>
+                ))}
+              </nav>
+              {activeGalleryTenure === '2025-26' && (
+                <div className="gallery-sections">
+                  {galleryGroups['2025-26'].map((group) => (
+                    <GalleryRow key={group.title} title={group.title} images={group.images} />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
     </article>
