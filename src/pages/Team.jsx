@@ -9,10 +9,15 @@ const sectionLabel = { core: 'Core Team', coordinator: 'Coordinators' }
 const imageMap = {
   'Nantha Kumaran': '/assets/images-of-team-members/nantha.jpeg',
   'Harsh Meena': '/assets/images-of-team-members/harsh.jpeg',
-  'Nikshep DC': '/assets/images-of-team-members/nikshep.jpeg',
+  'Nikshep DC': '/assets/images-of-team-members/Nikshep.jpeg',
   'Ananya Desle': '/assets/images-of-team-members/andy.jpeg',
   'Aditya Goel': '/assets/images-of-team-members/aditya.jpeg',
-  'Nikhil Kanakam': '/assets/images-of-team-members/nikhil.jpeg',
+  'Nikhil Kanakam': '/assets/images-of-team-members/Nikhil%20Kanakam.jpg',
+  'Mirudhula': '/assets/images-of-team-members/Mirudhula.jpg',
+  'Toshith': '/assets/images-of-team-members/Toshith.jpeg',
+  'Lekhashree': '/assets/images-of-team-members/lekhashree.jpeg',
+  'Rohit': '/assets/images-of-team-members/Rohith.jpeg',
+  'Shruti': '/assets/images-of-team-members/Shruthi.jpeg',
   'G Sathvik': '/assets/images-of-team-members/coordinators_26_27/sathvik.jpeg',
   'Ranesh Mohan': '/assets/images-of-team-members/coordinators_26_27/ranesh.jpeg',
   'S Rajeev Yuvan': '/assets/images-of-team-members/coordinators_26_27/rajeev.jpeg',
@@ -24,11 +29,34 @@ const imageMap = {
   'Rohit S': '/assets/images-of-team-members/coordinators_26_27/rohit.jpeg',
   'Keerthana': '/assets/images-of-team-members/coordinators_26_27/keerthana.jpeg',
   'Vidisha': '/assets/images-of-team-members/coordinators_26_27/vidisha.jpeg',
+  'RACHANA SRI': '/assets/images-of-team-members/coordinators 2025-26/Rachana.jpg',
+  'HARICCHARAN M': '/assets/images-of-team-members/coordinators 2025-26/Hariccharan.jpg',
+  'Nikshep': '/assets/images-of-team-members/Nikshep.jpeg',
+  'Abishekapriyan S': '/assets/images-of-team-members/coordinators 2025-26/Abhishek.jpg',
+  'Suraj Ramnath': '/assets/images-of-team-members/coordinators 2025-26/Suraj.jpg',
+  'Kirtana Prakash': '/assets/images-of-team-members/coordinators 2025-26/Kirtana.jpg',
+  'Gedela Avinash': '/assets/images-of-team-members/coordinators 2025-26/Avinash.jpg',
+  'Asim Vats': '/assets/images-of-team-members/coordinators 2025-26/Asim.jpg',
 }
 
 const imagePosition = {
+  'Toshith': 'center 20%',
+  'Aditya Goel': 'center 10%',
   'Nantha Kumaran': 'center 10%',
-  'Nikhil Kanakam': 'center 70%',
+  'Suraj Ramnath': 'center 10%',
+  'Lekhashree': 'center 10%',
+  'HARICCHARAN M': 'center 10%',
+  'Abishekapriyan S': 'center 10%',
+  'Gedela Avinash': 'center 10%',
+  'Rohit': 'center 25%',
+  'Shruti': 'center 25%',
+}
+
+const getMemberStyle = (name) => {
+  return {
+    objectFit: 'cover',
+    ...(imagePosition[name] && { objectPosition: imagePosition[name] }),
+  }
 }
 
 export default function Team() {
@@ -103,7 +131,7 @@ export default function Team() {
                                 src={imageSrc}
                                 alt={m.name}
                                 loading="lazy"
-                                style={imagePosition[m.name] ? { objectPosition: imagePosition[m.name] } : undefined}
+                                style={getMemberStyle(m.name)}
                                 onError={() => handleImageError(m.name)}
                               />
                             ) : (
