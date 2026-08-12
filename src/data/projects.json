@@ -31,7 +31,7 @@
       "excerpt": "Turning starlight into rainbows — decoding the temperature, composition, and motion of the Sun, stars, and planets through spectroscopy.",
       "tags": ["Astronomy", "Spectroscopy"],
       "github": "https://github.com/horizon/starspec",
-      "content": "<h2>Overview</h2><p><strong>StarSpec</strong> is a spectroscopy project dedicated to studying the Sun, stars, and planets by analyzing the light they emit. Spectroscopy allows astronomers to determine properties such as temperature, chemical composition, motion, and luminosity, making it one of the most powerful tools for understanding celestial objects.</p><hr/><h2>Motivation</h2><ul><li>Use spectroscopy to uncover the physical properties of stars, planets, and the Sun</li><li>Gain hands-on experience by designing, building, and operating spectrographs</li><li>Explore how light can reveal information hidden across the cosmos</li></ul><hr/><h2>Method</h2><p><strong>Solar Spectroscopy (Sol'Ex):</strong> Use the <strong>Solar Explorer (Sol'Ex)</strong> spectrograph to observe sunspots, solar flares, and the solar atmosphere.</p><p><strong>Spectrum Formation:</strong> Sunlight passes through a <strong>10 µm slit</strong>, is collimated, dispersed by a <strong>2400 lines/mm diffraction grating</strong>, and focused onto a detector to produce a spectrum.</p><p><strong>Data Analysis:</strong> Analyze the recorded spectra using <strong>SpecINTI</strong>, calibrated with a neon lamp spectrum, to measure properties such as solar flare velocities through the <strong>Doppler effect</strong>.</p><p><strong>Stellar Spectroscopy (Star'Ex):</strong> A modified version of Sol'Ex with a <strong>100 lines/mm diffraction grating</strong> and a guiding module enables observations of distant stars by improving light collection and maintaining accurate tracking.</p><hr/><h2>Results</h2><ul><li>Successfully captures and analyzes spectra from the Sun, bright stars, and planets</li><li>Extracts valuable information such as temperature, chemical composition, luminosity, and motion from observed spectra</li><li>Demonstrates the effectiveness of custom-built spectrographs for both solar and stellar observations</li></ul><hr/><h2>Future Improvements</h2><ul><li>Build more advanced, in-house spectroscopy instruments, including the <strong>UVEX (UltraViolet EXplorer)</strong></li><li>Conduct new studies such as measuring galaxy redshifts, detecting supernovae, and monitoring the time evolution of hydrogen spectral lines</li><li>Expand collaborative research through participation in the <strong>AAVSOnet Telescope Spectroscopy Working Group</strong> and contribute to the development of a dedicated spectroscopy telescope</li></ul>"
+      "content": "<h2>Overview</h2><p>StarSpec is a spectroscopy project dedicated to studying the Sun, stars, and planets by analyzing the light they emit. Spectroscopy allows astronomers to determine properties such as temperature, chemical composition, motion, and luminosity, making it one of the most powerful tools for understanding celestial objects.</p><p>In this project we use spectroscopy to uncover the physical properties of stars, planets, and the Sun. We do this by using Solar Explorer (Sol'Ex) spectrograph to observe sunspots, solar flares, and the solar atmosphere. We then do data analysis by using SpecINTI, calibrated with a neon lamp spectrum, to measure properties such as solar flare velocities through the Doppler effect. This process allows us to do stuff like successfully capturing and analyzing spectra from the Sun, bright stars, and planets.</p>"
     },
     {
       "id": "ligo",
@@ -62,7 +62,7 @@
       "title": "Sonicphase",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "",
+      "image": "/assets/projects 2026-27 pics/Sonicphasepic.jpg",
       "excerpt": "An innovative project exploring advancements in sonic phase manipulation.",
       "tags": ["Technology", "Acoustics"],
       "github": "https://github.com/horizon/sonicphase",
@@ -73,33 +73,33 @@
       "title": "Quantaband",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "",
-      "excerpt": "A project focused on quantum bandgap engineering for advanced materials.",
+      "image": "/assets/projects 2026-27 pics/Quantabandspiccover.jpg",
+      "excerpt": "Project QuantaBands aims to construct a complete computational pipeline to extract the electronic band structures of real materials using quantum computing techniques",
       "tags": ["Technology", "Quantum Physics", "Materials Science"],
       "github": "https://github.com/horizon/quantaband",
-      "content": "<h2>Overview</h2><p>Quantaband explores the principles of quantum mechanics to engineer the bandgaps of novel materials.</p><p>This work has potential applications in semiconductor technology and quantum computing.</p>"
+      "content": "<h2>Overview</h2><p>Real materials contain electrons whose quantum mechanical interactions determine all electronic properties such as conductivity, band gaps, and magnetism. While Density Functional Theory (DFT) is a standard approach, the exact solution is computationally intractable on classical computers for strongly correlated systems where DFT fails. Quantum computers offer a natural representation of fermionic quantum states; however, current Noisy Intermediate-Scale Quantum (NISQ) hardware is too noisy for large systems. </p><p> The goal of this project is to build a full pipeline; from crystal structure to quantum Hamiltonian to quantum circuit; to extract the electronic band structure for a material and test the effectiveness of Quantum Computing based methods to obtain band structures of these materials. </p>"
     },
     {
       "id": "ferrostats",
       "title": "Ferrostats",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "",
-      "excerpt": "Development of ferroelectric statistical models for advanced device applications.",
+      "image": "/assets/projects 2026-27 pics/ferrostatspic.jpg",
+      "excerpt": "Ferrostats aims to probe upon the phenomena of pattern formation especially in ferrofluids under time varying magnetic fields using the principles of Non-Equilibrium Statistical Physics and Ferrohydrodynamics",
       "tags": ["Technology", "Physics", "Materials Science"],
       "github": "https://github.com/horizon/ferrostats",
-      "content": "<h2>Overview</h2><p>Ferrostats focuses on developing sophisticated statistical models for ferroelectric materials.</p><p>These models are crucial for designing next-generation electronic devices that utilize ferroelectric properties.</p>"
+      "content": "<h2>Overview</h2><p>The said system is being driven away from equilibrium, which leads to the said dynamic patterns. However there is an Universality between different systems driven from equilibrium, The said Universality can be used to construct equivalence classes of phenomena where seemingly unrelated systems are found to fall in the same equivalence class. </p><p> The Project also aims to better understand such universality classes and the fundamental components that define the equivalence class using techniques such as Lie Point analysis to study the PDE's that describe the said systems</p>"
     },
     {
       "id": "starspec",
       "title": "StarSpec",
       "date": "2027-01-15",
       "author": "Horizon Instrumentation Team",
-      "image": "",
+      "image": "/assets/projects of 2025-26/starspec.png",
       "excerpt": "Turning starlight into rainbows — decoding the temperature, composition, and motion of the Sun, stars, and planets through spectroscopy.",
       "tags": ["Astronomy", "Spectroscopy"],
       "github": "https://github.com/horizon/starspec",
-      "content": "<h2>Overview</h2><p><strong>StarSpec</strong> is a spectroscopy project dedicated to studying the Sun, stars, and planets by analyzing the light they emit. Spectroscopy allows astronomers to determine properties such as temperature, chemical composition, motion, and luminosity, making it one of the most powerful tools for understanding celestial objects.</p><hr/><h2>Motivation</h2><ul><li>Use spectroscopy to uncover the physical properties of stars, planets, and the Sun</li><li>Gain hands-on experience by designing, building, and operating spectrographs</li><li>Explore how light can reveal information hidden across the cosmos</li></ul><hr/><h2>Method</h2><p><strong>Solar Spectroscopy (Sol'Ex):</strong> Use the <strong>Solar Explorer (Sol'Ex)</strong> spectrograph to observe sunspots, solar flares, and the solar atmosphere.</p><p><strong>Spectrum Formation:</strong> Sunlight passes through a <strong>10 µm slit</strong>, is collimated, dispersed by a <strong>2400 lines/mm diffraction grating</strong>, and focused onto a detector to produce a spectrum.</p><p><strong>Data Analysis:</strong> Analyze the recorded spectra using <strong>SpecINTI</strong>, calibrated with a neon lamp spectrum, to measure properties such as solar flare velocities through the <strong>Doppler effect</strong>.</p><p><strong>Stellar Spectroscopy (Star'Ex):</strong> A modified version of Sol'Ex with a <strong>100 lines/mm diffraction grating</strong> and a guiding module enables observations of distant stars by improving light collection and maintaining accurate tracking.</p><hr/><h2>Results</h2><ul><li>Successfully captures and analyzes spectra from the Sun, bright stars, and planets</li><li>Extracts valuable information such as temperature, chemical composition, luminosity, and motion from observed spectra</li><li>Demonstrates the effectiveness of custom-built spectrographs for both solar and stellar observations</li></ul><hr/><h2>Future Improvements</h2><ul><li>Build more advanced, in-house spectroscopy instruments, including the <strong>UVEX (UltraViolet EXplorer)</strong></li><li>Conduct new studies such as measuring galaxy redshifts, detecting supernovae, and monitoring the time evolution of hydrogen spectral lines</li><li>Expand collaborative research through participation in the <strong>AAVSOnet Telescope Spectroscopy Working Group</strong> and contribute to the development of a dedicated spectroscopy telescope</li></ul>"
+      "content": "<h2>Overview</h2><p>StarSpec is a spectroscopy project dedicated to studying the Sun, stars, and planets by analyzing the light they emit. Spectroscopy allows astronomers to determine properties such as temperature, chemical composition, motion, and luminosity, making it one of the most powerful tools for understanding celestial objects.</p><p>In this project we use spectroscopy to uncover the physical properties of stars, planets, and the Sun. We do this by using Solar Explorer (Sol'Ex) spectrograph to observe sunspots, solar flares, and the solar atmosphere. We then do data analysis by using SpecINTI, calibrated with a neon lamp spectrum, to measure properties such as solar flare velocities through the Doppler effect. This process allows us to do stuff like successfully capturing and analyzing spectra from the Sun, bright stars, and planets.</p>"
     }
   ]
 }
