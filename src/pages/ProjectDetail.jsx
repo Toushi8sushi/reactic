@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useSearchParams, useLocation } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
 import SpaceBackground from '../components/SpaceBackground'
@@ -25,8 +25,30 @@ const fallbackImages = {
 
 export default function ProjectDetail() {
   const { id } = useParams()
+  const [searchParams] = useSearchParams()
+  const location = useLocation()
+
+  const tenureParam = searchParams.get('tenure') || searchParams.get('year') || location.state?.tenure || location.state?.year
+
+  let project = null
+  let activeTenure = tenureParam
+
+  if (activeTenure && projects[activeTenure]) {
+    project = (projects[activeTenure] || []).find(p => p.id === id)
+  }
+
+  if (!project) {
+    for (const [tenure, list] of Object.entries(projects)) {
+      const found = list.find(p => p.id === id)
+      if (found) {
+        project = found
+        if (!activeTenure) activeTenure = tenure
+        break
+      }
+    }
+  }
+
   const allProjects = Object.values(projects).flat()
-  const project = allProjects.find(p => p.id === id)
 
   if (!project) {
     return (
@@ -40,6 +62,7 @@ export default function ProjectDetail() {
     )
   }
 
+  const backUrl = activeTenure ? `/projects?tenure=${activeTenure}` : '/projects'
   const colors = projectPalette[allProjects.indexOf(project) % projectPalette.length]
   const image = project.image || fallbackImages[project.id] || fallbackImages.placeholder
   const dateLabel = project.date ? new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' }) : null
@@ -49,7 +72,7 @@ export default function ProjectDetail() {
       <SpaceBackground />
 
       <div className="events-container">
-        <Link to="/projects" className="event-category__back">
+        <Link to={backUrl} state={{ tenure: activeTenure }} className="event-category__back">
           {'\u2190'} All Projects
         </Link>
 
@@ -104,9 +127,11 @@ export default function ProjectDetail() {
 
         {project.team && (project.team.leads?.length > 0 || project.team.members?.length > 0) && (
           project.team.leads?.length > 0 && typeof project.team.leads[0] === 'object' ? (
-            <div className="project-team-block">
-              <h4 className="subcard__team-title">Team Members</h4>
-              <span className="subcard__divider" />
+            <div className="project-team-block project-team-block--centered">
+              <div className="project-team-header">
+                <h3 className="project-team-heading">Team Members</h3>
+                <span className="subcard__divider subcard__divider--center" />
+              </div>
               <div className="team-members-grid">
                 {project.team.leads?.map(person => (
                   <div key={person.name} className="team-member-card">
@@ -114,7 +139,9 @@ export default function ProjectDetail() {
                       <img
                         src={imagePath(person.image || fallbackImages.placeholder)}
                         alt={person.name}
+                        onError={(e) => { e.target.src = imagePath(fallbackImages.placeholder); }}
                       />
+                      <div className="team-member-card__overlay" />
                     </div>
                     <div className="team-member-card__info">
                       <span className="team-member-card__role">Project Lead</span>
@@ -128,7 +155,9 @@ export default function ProjectDetail() {
                       <img
                         src={imagePath(person.image || fallbackImages.placeholder)}
                         alt={person.name}
+                        onError={(e) => { e.target.src = imagePath(fallbackImages.placeholder); }}
                       />
+                      <div className="team-member-card__overlay" />
                     </div>
                     <div className="team-member-card__info">
                       <span className="team-member-card__role">Member</span>
@@ -139,37 +168,42 @@ export default function ProjectDetail() {
               </div>
             </div>
           ) : (
-            <div className="subcard__team project-team-block">
-              <div className="subcard__team-media">
-                <img
-                  src={imagePath(project.team.image || fallbackImages.placeholder)}
-                  alt={`${project.title} team`}
-                />
-                <div className="subcard__image-overlay" />
+            <div className="project-team-block project-team-block--centered">
+              <div className="project-team-header">
+                <h3 className="project-team-heading">Project Team</h3>
+                <span className="subcard__divider subcard__divider--center" />
               </div>
-              <div className="subcard__team-content">
-                <h4 className="subcard__team-title">Project Team</h4>
-                <span className="subcard__divider" />
-                {project.team.leads?.length > 0 && (
-                  <div className="subcard__team-group">
-                    <span className="subcard__team-label">Project Lead</span>
-                    <ul className="subcard__team-list">
-                      {project.team.leads.map(name => (
-                        <li key={name}>{name}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {project.team.members?.length > 0 && (
-                  <div className="subcard__team-group">
-                    <span className="subcard__team-label">Project Members</span>
-                    <ul className="subcard__team-list">
-                      {project.team.members.map(name => (
-                        <li key={name}>{name}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+              <div className="subcard__team">
+                <div className="subcard__team-media">
+                  <img
+                    src={imagePath(project.team.image || fallbackImages.placeholder)}
+                    alt={`${project.title} team`}
+                    onError={(e) => { e.target.src = imagePath(fallbackImages.placeholder); }}
+                  />
+                  <div className="subcard__image-overlay" />
+                </div>
+                <div className="subcard__team-content">
+                  {project.team.leads?.length > 0 && (
+                    <div className="subcard__team-group">
+                      <span className="subcard__team-label">Project Lead</span>
+                      <ul className="subcard__team-list">
+                        {project.team.leads.map(name => (
+                          <li key={name}>{name}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {project.team.members?.length > 0 && (
+                    <div className="subcard__team-group">
+                      <span className="subcard__team-label">Project Members</span>
+                      <ul className="subcard__team-list">
+                        {project.team.members.map(name => (
+                          <li key={name}>{name}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           )

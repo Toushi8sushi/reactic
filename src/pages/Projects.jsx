@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams, useLocation } from 'react-router-dom'
 import { imagePath } from '../lib/image-path'
 import projects from '../data/projects.json'
 import SpaceBackground from '../components/SpaceBackground'
@@ -27,7 +26,16 @@ const fallbackImages = {
 }
 
 export default function Projects() {
-  const [activeTenure, setActiveTenure] = useState(tenures[0])
+  const [searchParams, setSearchParams] = useSearchParams()
+  const location = useLocation()
+
+  const yearParam = searchParams.get('tenure') || searchParams.get('year')
+  const stateTenure = location.state?.tenure || location.state?.year
+  const activeTenure = (yearParam && tenures.includes(yearParam))
+    ? yearParam
+    : (stateTenure && tenures.includes(stateTenure))
+      ? stateTenure
+      : tenures[0]
 
   const filteredProjects = projects[activeTenure] || []
 
@@ -46,7 +54,7 @@ export default function Projects() {
             <button
               key={year}
               className={`year-pill${activeTenure === year ? ' year-pill--active' : ''}`}
-              onClick={() => setActiveTenure(year)}
+              onClick={() => setSearchParams({ tenure: year }, { replace: true })}
             >
               {activeTenure === year && <span className="year-pill__comet" />}
               <span className="year-pill__label">{year}</span>
@@ -62,7 +70,8 @@ export default function Projects() {
             return (
               <Link
                 key={project.id}
-                to={`/projects/${project.id}`}
+                to={`/projects/${project.id}?tenure=${activeTenure}`}
+                state={{ tenure: activeTenure }}
                 className="project-card project-card--inner"
                 style={{
                   '--cat-bg': colors.bg,
