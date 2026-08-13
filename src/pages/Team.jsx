@@ -6,24 +6,26 @@ import '../styles/events.css'
 const tenures = Object.keys(teamData).sort()
 const sectionLabel = { core: 'Core Team', coordinator: 'Coordinators' }
 
+const baseUrl = import.meta.env.BASE_URL
+
 const imageMap = {
-  'Nantha Kumaran': '/assets/images-of-team-members/nantha.jpeg',
-  'Harsh Meena': '/assets/images-of-team-members/harsh.jpeg',
-  'Nikshep DC': '/assets/images-of-team-members/nikshep.jpeg',
-  'Ananya Desle': '/assets/images-of-team-members/andy.jpeg',
-  'Aditya Goel': '/assets/images-of-team-members/aditya.jpeg',
-  'Nikhil Kanakam': '/assets/images-of-team-members/nikhil.jpeg',
-  'G Sathvik': '/assets/images-of-team-members/coordinators_26_27/sathvik.jpeg',
-  'Ranesh Mohan': '/assets/images-of-team-members/coordinators_26_27/ranesh.jpeg',
-  'S Rajeev Yuvan': '/assets/images-of-team-members/coordinators_26_27/rajeev.jpeg',
-  'Sankeerthan Krishna P': '/assets/images-of-team-members/coordinators_26_27/sankeerth.jpeg',
-  'J Olive Jerusha': '/assets/images-of-team-members/coordinators_26_27/olive%20jerusha.jpeg',
-  'Akshay KC': '/assets/images-of-team-members/coordinators_26_27/akshay%20kc.jpeg',
-  'V. Thiruselvi': '/assets/images-of-team-members/coordinators_26_27/thiruselvi.jpeg',
-  'Gawthaman A': '/assets/images-of-team-members/coordinators_26_27/gawthaman.jpeg',
-  'Rohit S': '/assets/images-of-team-members/coordinators_26_27/rohit.jpeg',
-  'Keerthana': '/assets/images-of-team-members/coordinators_26_27/keerthana.jpeg',
-  'Vidisha': '/assets/images-of-team-members/coordinators_26_27/vidisha.jpeg',
+  'Nantha Kumaran': `${baseUrl}assets/images-of-team-members/nantha.jpeg`,
+  'Harsh Meena': `${baseUrl}assets/images-of-team-members/harsh.jpeg`,
+  'Nikshep DC': `${baseUrl}assets/images-of-team-members/nikshep.jpeg`,
+  'Ananya Desle': `${baseUrl}assets/images-of-team-members/andy.jpeg`,
+  'Aditya Goel': `${baseUrl}assets/images-of-team-members/aditya.jpeg`,
+  'Nikhil Kanakam': `${baseUrl}assets/images-of-team-members/nikhil.jpeg`,
+  'G Sathvik': `${baseUrl}assets/images-of-team-members/coordinators_26_27/sathvik.jpeg`,
+  'Ranesh Mohan': `${baseUrl}assets/images-of-team-members/coordinators_26_27/ranesh.jpeg`,
+  'S Rajeev Yuvan': `${baseUrl}assets/images-of-team-members/coordinators_26_27/rajeev.jpeg`,
+  'Sankeerthan Krishna P': `${baseUrl}assets/images-of-team-members/coordinators_26_27/sankeerth.jpeg`,
+  'J Olive Jerusha': `${baseUrl}assets/images-of-team-members/coordinators_26_27/olive%20jerusha.jpeg`,
+  'Akshay KC': `${baseUrl}assets/images-of-team-members/coordinators_26_27/akshay%20kc.jpeg`,
+  'V. Thiruselvi': `${baseUrl}assets/images-of-team-members/coordinators_26_27/thiruselvi.jpeg`,
+  'Gawthaman A': `${baseUrl}assets/images-of-team-members/coordinators_26_27/gawthaman.jpeg`,
+  'Rohit S': `${baseUrl}assets/images-of-team-members/coordinators_26_27/rohit.jpeg`,
+  'Keerthana': `${baseUrl}assets/images-of-team-members/coordinators_26_27/keerthana.jpeg`,
+  'Vidisha': `${baseUrl}assets/images-of-team-members/coordinators_26_27/vidisha.jpeg`,
 }
 
 const imagePosition = {

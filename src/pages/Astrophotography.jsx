@@ -9,6 +9,7 @@ import EquipmentInventory from '../components/EquipmentInventory'
 import '../styles/events.css'
 import './Astrophotography.css'
 
+const baseUrl = import.meta.env.BASE_URL
 const masonryHeights = [380, 320, 420, 300, 360, 400, 340, 300, 420, 360, 320, 400]
 
 export default function Astrophotography() {
@@ -18,7 +19,8 @@ export default function Astrophotography() {
   const formattedAstroItems = gallery.map((item, i) => ({
     ...item,
     id: item.id,
-    img: item.imageSrc,
+    img: `${baseUrl}${item.imageSrc}`,
+    highResImageSrc: `${baseUrl}${item.highResImageSrc}`,
     height: masonryHeights[i % masonryHeights.length]
   }))
 
