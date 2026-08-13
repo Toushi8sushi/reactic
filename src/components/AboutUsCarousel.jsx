@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import './AboutUsCarousel.css';
 import VariableProximity from './VariableProximity/VariableProximity';
+import { imagePath } from '../lib/image-path';
 
 const AboutUsCarousel = () => {
   const images = [
@@ -13,48 +14,15 @@ const AboutUsCarousel = () => {
     '/assets/aboutus homepage section/WhatsApp Image 2026-07-24 at 12.40.16.jpeg',
   ];
 
-  const carouselRef = useRef(null);
   const overlayRef = useRef(null);
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
-
-    const items = carousel.querySelectorAll('.carousel-item');
-    items.forEach(item => {
-      const clone = item.cloneNode(true);
-      carousel.appendChild(clone);
-    });
-    
-    const totalItems = images.length * 2;
-    const itemWidth = 450;
-    const halfTrackWidth = (totalItems * itemWidth) / 2;
-    
-    let scrollPos = 0;
-    const speed = 1;
-    
-    const animate = () => {
-      scrollPos -= speed;
-      
-      if (scrollPos <= -halfTrackWidth) {
-        scrollPos = 0;
-      }
-      
-      carousel.style.transform = `translateX(${scrollPos}px)`;
-      requestAnimationFrame(animate);
-    };
-    
-    const animationId = requestAnimationFrame(animate);
-    
-    return () => cancelAnimationFrame(animationId);
-  }, [images]);
+  const trackImages = [...images, ...images];
 
   return (
     <section className="section about-us-section">
-      <div className="carousel-track" ref={carouselRef}>
-        {images.map((image, idx) => (
+      <div className="carousel-track">
+        {trackImages.map((image, idx) => (
           <div key={idx} className="carousel-item">
-            <img src={image} alt={`About Us ${idx + 1}`} />
+            <img src={imagePath(image)} alt={`About Us ${(idx % images.length) + 1}`} />
           </div>
         ))}
       </div>
@@ -79,4 +47,3 @@ const AboutUsCarousel = () => {
 };
 
 export default AboutUsCarousel;
-
