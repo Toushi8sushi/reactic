@@ -9,10 +9,21 @@
   background: #0a0e1f;
 }
 
+@keyframes scrollTrack {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .carousel-track {
   display: flex;
   height: 100%;
+  width: max-content;
   will-change: transform;
+  animation: scrollTrack 60s linear infinite;
   gap: 4px;
 }
 

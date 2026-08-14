@@ -9,9 +9,7 @@ description: "There are events far more devastating in the universe with the pow
 
 Gamma Ray Bursts are highly energetic beams emitted from the explosions of a dying star, which in turn results in the birth of either a black hole or a neutron star. These luminous electromagnetic events are some of the most energetic events known to us next to the Big Bang. Some of these bursts can last a few milliseconds, while others may survive for several hours based on the origin of that GRB. During a GRB, a highly concentrated beam of gamma rays is shot from the poles of the star's explosion. This beam slowly fades into weaker electromagnetic waves, which astronomers call the [afterglow](https://astronomy.swin.edu.au/cosmos/G/Gamma+Ray+Burst+Afterglow). The recorded sources of these GRBs are billions of light years away from our planet, making their scale of emitted energy tremendously powerful.
 
-<p align="center">
-   <img src="/assets/images/articles/14-1.webp" alt>
-</p>
+![](/assets/images/articles/14-1.webp)
 
 ------
 
@@ -67,9 +65,7 @@ Several attempts have been made to classify these GRBs, the only identifiable di
 
 These GRBs have a duration of less than about two seconds. They account for about 30% of gamma-ray bursts. The fact that they were so short-lived did not allow astronomers to observe the afterglow until 2005, thereby causing their origins to remain unclear. After 2005, several short GRBs have been detected and localised. These GRBs originate from regions with little to no star formation, such as large elliptical galaxies. According to some astrophysicists, these short GRBs have a different origin than massive stars and have no relation to supernovae events, while Others proposed this origin from another type of explosion called kilonovae, resulting from the merger of a binary neutron star or a neutron star with a black hole.
 
-<p align="center">
-   <img src="/assets/images/articles/14-2.webp" alt>
-</p>
+![](/assets/images/articles/14-2.webp)
 
 
 ### Long gamma-ray bursts
@@ -86,16 +82,12 @@ These are the events at the end of the long GRB, lasting longer than 10,000 seco
 
 For an event such as a GRB to be observable at this distance, it must have an extremely energetic source. The energy of a GRB is mostly in the form of gamma rays, with some exceptions having powerful optic counterparts. Numerically, it is calculated by studying its light curve, which is a graph that shows the brightness of the burst over time. It is done based on a simple analysis and further calculations. For example, consider the [GRB 080319B](https://en.wikipedia.org/wiki/GRB_080319B), which has an incredible optical counterpart, even visible to the naked eye. For this GRB, assuming the gamma rays are spherically distributed, the energy output would be around two times the rest mass energy equivalent of the Sun. which means the energy emitted if the Sun converts entirely to radiation.
 
-<p align="center">
-   <img src="/assets/images/articles/14-3.webp" alt>
-</p>
+![](/assets/images/articles/14-3.webp)
 However, there is a catch in this if the radiations for the GRBs are distributed spherically, the earth would have been hit with several gamma-ray bursts, which is certainly not the case.
 Astrophysicists claim these Gamma Ray Bursts are highly focused explosions, with the energy of the entire burst concentrated on a narrow jet. The angular width of the jet beam is estimated by observing achromatic jet breaks in the afterglow light curves. The time after the slow decaying of the afterglow begins to fade rapidly. The observed time of the afterglow jet break after the prompt GRB contains information about the angular size of the outflows that produce these transients; general observations suggest that most jets have an angular width between 2 to 20 degrees.
 Since these are narrow beams, they appear much brighter than how they would look for a spherically emitted GRB. This concludes that the energy from the GRB to around 1/2000 solar mass energy equivalent. The angular width of short GRBs is not measured accurately because they are less luminous than long GRBs and have a concise duration. This leaves us pondering whether they are less likely to collimate or not collimated at all.
 
-<p align="center">
-   <img src="/assets/images/articles/14-4.webp" alt>
-</p>
+![](/assets/images/articles/14-4.webp)
 
 ------
 

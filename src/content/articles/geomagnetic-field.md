@@ -86,9 +86,7 @@ Therefore, there are still many gaps and challenges in our understanding of the 
 
 Remember when we discussed the Earth being a gigantic magnetic dipole? Yes, that is an approximation of the current-carrying fluid flow around the outer core. In reality, the fluid flow is not uniform and feedbacks fluctuate the magnetic field. This leads to variations in the direction, declination and intensity of the magnetic field in different parts of the world. These changes have been observed in different observatories across the globe over hundreds of years. On such large timescales, the declinations are observed to vary tens of degrees away from the initial point.
 
-<p align="center">
-   <img src="/assets/images/articles/18-1.webp" alt>
-</p>
+![](/assets/images/articles/18-1.webp)
 
 
 What is responsible for these variations? The existing magnetic field itself. Earth has a magnetic moment, simplified into two parts. A dipole moment and a non-dipole moment.
@@ -138,9 +136,7 @@ where θ is the angle of rotation, m1 is the initial dipole moment, and m2 is th
 
 A full reversal corresponds to a rotation of 180 degrees, while an excursion corresponds to a smaller rotation.
 
-<p align="center">
-   <img src="/assets/images/articles/18-4.webp" alt>
-</p>
+![](/assets/images/articles/18-4.webp)
 
 These reversals have occurred numerous times in the earth's history, with varying frequencies and durations. The last reversal happened about 780,000 years ago. Thus the effects and consequences of such reversals are not fully understood. But one will cause serious problems with changes in climate, cosmic radiation, navigation and communication systems.
 
@@ -150,9 +146,7 @@ Earth's geomagnetic field does not only have its benefits on our planet but also
 
 This magnetosphere protects our planet from harmful solar winds that explode their way out of the sun's outer surface, the corona. A solar wind contains highly energetic charged particles that move hundreds of kilometres per second. These winds also carry their magnetic field that affects the shape and structure of the earth's geomagnetic field.
 
-<p align="center">
-   <img src="/assets/images/articles/18-2.webp" alt>
-</p>
+![](/assets/images/articles/18-2.webp)
 
 **********************Bow Shock.********************** When the solar wind encounters the magnetosphere, it creates a shock wave called the bow shock. This happens due to the abrupt slowdown of the solar wind.
 
@@ -180,9 +174,7 @@ Generally, green is the most common colour of the aurora, followed by red, blue,
 
 For example, oxygen atoms emit green light at altitudes of around 100 to 300 kilometres, but red light at altitudes above  240 kilometres. Nitrogen molecules emit blue light at altitudes up to 100 kilometres, but red light at altitudes above 100 kilometres.
 
-<p align="center">
-   <img src="/assets/images/articles/18-3.webp" alt>
-</p>
+![](/assets/images/articles/18-3.webp)
 
 The latitude of the aurora determines how close it is to the magnetic poles, where the solar wind particles enter the atmosphere more easily. Auroras are more frequent and intense near the poles, where they form an oval shape around each magnetic pole. The oval shape can expand or contract depending on the strength of the solar wind and the interplanetary magnetic field. Auroras can sometimes be seen at lower latitudes during strong solar storms when the oval shape becomes larger and more distorted.
 

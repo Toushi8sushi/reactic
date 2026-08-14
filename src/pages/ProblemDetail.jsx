@@ -1,6 +1,9 @@
 import { useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css'
 import { getIPTProblemBySlug } from '../lib/content-loader'
 import { imagePath } from '../lib/image-path'
 
@@ -37,7 +40,7 @@ export default function ProblemDetail() {
         </div>
 
         <div className="problem-detail-body">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>
             {problem.content}
           </ReactMarkdown>
         </div>

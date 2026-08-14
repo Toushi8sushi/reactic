@@ -9,11 +9,7 @@ description: "The Dwarf and the Prince is a tale of how the great Carl Gauss pio
 
 "Nowhere in the annals of astronomy do we meet with so great an opportunity, and a greater one can hardly be imagined, for most strikingly, the value of this problem,…,when all hope of discovering in the heavens this planetary atom, among innumerable small stars after lapse of nearly a year, rested solely upon a sufficiently approximate knowledge of its orbit to be based on these very few observations.
 
-<p align="center">
-   <img src="/assets/images/articles/21-0.webp" alt>
-   <br>
-   <em>  Carl Friedrich Gauss (1777-1855) </em>
-</p> 
+![Carl Friedrich Gauss (1777-1855)](/assets/images/articles/21-0.webp)
 ---------------------------------------------------------------------------------------------------------------
 
 ### **A DWARF AMONG THE GIANTS**
@@ -49,9 +45,7 @@ Gauss came up with his own system (least squares criterion) to locate the orbit 
 > (Note: Although it seems obvious, the concept of the "Average" as the definitive representative of a dataset was not universally embraced throughout history. Many astronomers preferred median over the mean. The debate between mean and median persisted for centuries before ultimately favouring the latter as the preferred measure.)
 > 
 
-<p align="center">
-   <img src="/assets/images/articles/21-1.webp" alt>
-</p>
+![](/assets/images/articles/21-1.webp)
 
 Fig. 4: Orbit of a planet with its 6 elements: *i*, Ω, π, *a, e, 𝜏*
 
@@ -59,9 +53,7 @@ The 25-year-old Gauss used Kepler's 3 laws (Yes, those 3 laws we studied in scho
 
 And voila! In December of 1801, astronomers were able to relocate Ceres using Gauss' predictions.
 
-<p align="center">
-   <img src="/assets/images/articles/21-2.webp" alt>
-</p>
+![](/assets/images/articles/21-2.webp)
 
 "Gauss has discovered more in his country than a planet: a super-terrestrial spirit in a human body: - Laplace on Gauss (1801)
 
@@ -76,9 +68,7 @@ Gauss' discovery of Ceres orbit stood as a pivotal moment in history as:
 
 Today, we know a lot more about Ceres than just its orbit. We have categorized it as a "Dwarf Planet" just like Pluto. It is the most accessible ocean world candidate and the largest reservoir of water in the inner solar system. It shows active hydrothermal activities that have resulted in minerals not found in any other planets to date except for Earth's upper crust.
 
-<p align="center">
-   <img src="/assets/images/articles/21-3.webp" alt>
-</p>
+![](/assets/images/articles/21-3.webp)
 
 We are asking questions such as, "Was Ceres habitable in the past, and is it still today?" So, it was fitting that the mission to return samples obtained from Ceres is named after the man who re-discovered it in the first place.
 

@@ -11,9 +11,7 @@ How amazing is it to look at streaks of light in the night sky? Breathtaking isn
 meteor shower pours down in the night sky during certain times of the year. But is it light
 that is falling? what are these streaks of light exactly? Let's find out.
 
-<p align="center">
-   <img src="/assets/images/articles/15-1.webp" alt>
-</p>
+![](/assets/images/articles/15-1.webp)
 
 ---
 ## What is a comet?
@@ -22,15 +20,9 @@ Comets are large objects made of dust and ice that orbit the sun. The path of th
 looks like ovals. when a comet gets close to the Sun, it starts heating up. Eventually, the ice
 begins to turn to gas. This can also cause jets of gas to burst out of the comet, bringing dust
 with it. The gas and dust create a huge, fuzzy cloud around the nucleus called the coma.
-<p align="center">
-   <img src="/assets/images/articles/15-2.webp" alt>
-  <figcaption>This represents the 76-year, elliptical orbit of Halley's comet (the white dot) against the
-more circular orbits of the planets. Credit: NASA/JPL-Caltech  </figcaption>
-</p>
+![This represents the 76-year, elliptical orbit of Halley's comet (the white dot) against the more circular orbits of the planets. Credit: NASA/JPL-Caltech](/assets/images/articles/15-2.webp)
 
-<p align="center">
-   <img src="/assets/images/articles/15-3.webp" alt>
-</p>
+![](/assets/images/articles/15-3.webp)
 
 As a result of this, the comets leave behind dust and small particles(debris) along their path.
 Thanks to that we can see meteor showers on Earth.
@@ -53,9 +45,7 @@ it travels on its 133-year orbit. The shower is visible each year from mid-July 
 It is named Perseid because they appear from the general direction of the constellation
 Perseus which in turn is named after Perseus the Greek hero who slayed Medusa.
 
-<p align="center">
-   <img src="/assets/images/articles/15-4.webp" alt>
-</p>
+![](/assets/images/articles/15-4.webp)
 ---
 
 ### Perseid shower 2023
@@ -63,9 +53,7 @@ Perseus which in turn is named after Perseus the Greek hero who slayed Medusa.
 - Peak: Aug. 12- 13 (around midnight)
 - Location: Northern hemisphere
 
-<p align="center">
-   <img src="/assets/images/articles/15-5.webp" alt>
-</p>
+![](/assets/images/articles/15-5.webp)
 
 ### Perseid shower 2024
 - When: July 14 to August 24

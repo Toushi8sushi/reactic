@@ -23,7 +23,6 @@ export default function Contact() {
           <p>Stay updated with our latest events, articles, and announcements:</p>
           <ul>
             <li><strong>Instagram</strong>: <a href="https://www.instagram.com/horizoniitm/">@HorizonIITM</a></li>
-            <li><strong>GitHub</strong>: <a href="https://github.com/HorizonIITM">github.com/HorizonIITM</a></li>
             <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/company/horizon-cfi-iitm/">Horizon CFI IITM</a></li>
             <li><strong>YouTube</strong>: <a href="https://www.youtube.com/@HorizonIITM">@HorizonIITM</a></li>
           </ul>

@@ -112,8 +112,41 @@ export default function EventCategory() {
             </section>
           </div>
         ) : (
-          <div className={`subcard-list subcard-list--${category}`} ref={listRef}>
+          <div className={`subcard-list subcard-list--${category} subcard-list--year-${year}`} ref={listRef}>
             {cat.subcards.map((sub, index) => {
+              if (sub.entries && sub.entries.length > 0) {
+                return (
+                  <div
+                    key={sub.id}
+                    className="subcard subcard--merged"
+                    style={{
+                      '--cat-accent': colors.accent,
+                      '--cat-bg': colors.bg,
+                      '--cat-glow': colors.glow,
+                      '--reveal-delay': `${index * 0.1}s`,
+                    }}
+                  >
+                    <div className="subcard__shooting-star" />
+                    <div className="subcard__merged-header">
+                      <h3 className="subcard__title subcard__title--center">{sub.title}</h3>
+                      <span className="subcard__divider subcard__divider--center" />
+                    </div>
+                    <div className="subcard__merged-list">
+                      {sub.entries.map((entry, entryIdx) => (
+                        <div key={entryIdx} className="subcard__merged-entry">
+                          <div className="subcard__merged-entry-media">
+                            <img src={imagePath(entry.image)} alt={sub.title} />
+                          </div>
+                          <div className="subcard__merged-entry-body">
+                            <p className="subcard__description">{entry.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )
+              }
+
               if (sub.images && sub.images.length > 0) {
                 return (
                   <div
@@ -166,8 +199,8 @@ export default function EventCategory() {
                   )}
 
                   <div className="subcard__content">
-                    <h3 className="subcard__title">{sub.title}</h3>
-                    <span className="subcard__divider" />
+                    {sub.title && <h3 className="subcard__title">{sub.title}</h3>}
+                    {sub.title && <span className="subcard__divider" />}
                     {sub.speaker && (
                       <p className="subcard__speaker">{sub.speaker}</p>
                     )}

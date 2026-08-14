@@ -27,10 +27,10 @@ export default function Home() {
       <h3>Articles</h3>
       <p>Explore the articles written by our club members, covering topics in Physics, Astronomy and beyond. Click here to start reading them.</p>
     </Link>,
-    <div key="gallery" className="feature-card feature-card--inner">
+    <Link key="gallery" to="/team#gallery" className="feature-card feature-card--inner">
       <h3>Gallery</h3>
       <p>A collection of photographs capturing our star parties, trips, events, workshops, and other activities. Click here to explore the gallery.</p>
-    </div>,
+    </Link>,
   ]
   return (
     <>
